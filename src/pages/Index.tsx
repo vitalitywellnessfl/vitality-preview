@@ -1,14 +1,241 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { 
+  Stethoscope, 
+  Users, 
+  Award, 
+  MapPin,
+  Phone,
+  Clock,
+  Syringe,
+  HeartPulse,
+  Sparkles,
+  Pill,
+  Droplet,
+  Activity
+} from "lucide-react";
 
-const Index = () => {
+const services = [
+  {
+    icon: Syringe,
+    title: "GLP-1 Medical Weight Loss",
+    description: "Transform your body safely with FDA-approved GLP-1 medications like semaglutide and tirzepatide, prescribed under expert medical guidance for sustainable results.",
+    link: "/weight-loss"
+  },
+  {
+    icon: HeartPulse,
+    title: "Hormone Replacement Therapy (HRT)",
+    description: "Restore balance and vitality through bioidentical hormone therapy for men and women. Improve energy, mood, libido, and overall well-being.",
+    link: "/hormone-therapy"
+  },
+  {
+    icon: Sparkles,
+    title: "NAD+ Therapy",
+    description: "Boost cellular energy, support longevity, and enhance mental clarity with medical-grade NAD+ infusions.",
+    link: "/services"
+  },
+  {
+    icon: Pill,
+    title: "Peptide Therapy",
+    description: "Personalized peptide treatment plans for weight loss, recovery, and performance optimization — customized to your health needs.",
+    link: "/services"
+  },
+  {
+    icon: Droplet,
+    title: "IV Therapy",
+    description: "Replenish and rejuvenate with IV vitamin therapy in our Weston clinic. Perfect for hydration, immune support, and post-travel recovery.",
+    link: "/iv-therapy"
+  },
+  {
+    icon: Activity,
+    title: "IM Injections",
+    description: "Targeted intramuscular injections including B12, vitamin D, and lipotropic formulas to promote energy and metabolism.",
+    link: "/services"
+  }
+];
+
+const features = [
+  {
+    icon: Stethoscope,
+    title: "Licensed & Certified",
+    description: "All treatments are delivered under medical supervision by a licensed practitioner."
+  },
+  {
+    icon: Users,
+    title: "Telehealth Available",
+    description: "Convenient virtual consultations for patients across Florida."
+  },
+  {
+    icon: Award,
+    title: "Accepting New Clients",
+    description: "Personalized, compassionate care tailored to your health goals."
+  }
+];
+
+export default function Index() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      <main className="flex-1">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20 py-20 lg:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl text-center">
+              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-6">
+                🌿 The Body You Deserve <span className="text-primary">Starts Here</span>
+              </h1>
+              <p className="text-lg leading-8 text-muted-foreground mb-8">
+                Welcome to <strong>Vitality Wellness Clinic</strong>, your trusted destination for medical weight loss, IV therapy, hormone replacement, and holistic wellness solutions in Weston, Florida.
+              </p>
+              <p className="text-base leading-7 text-muted-foreground mb-10">
+                Led by <strong>Dr. Xochil Echeona, DNP</strong>, our minority-, woman-, and veteran-owned medical practice provides evidence-based, medically supervised treatments designed to help you achieve your healthiest, most confident self.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" asChild className="text-lg px-8">
+                  <Link to="/book">Schedule Consultation</Link>
+                </Button>
+                <Button size="lg" variant="outline" asChild className="text-lg px-8">
+                  <a href="tel:9548164002">Call (954) 816-4002</a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
+                🩺 Why Choose Vitality Wellness Clinic?
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Proudly serving Weston, FL and surrounding areas including Davie, Pembroke Pines, and Sunrise.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+              {features.map((feature, index) => (
+                <Card key={index} className="border-2 hover:border-primary transition-colors">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col items-center text-center">
+                      <div className="mb-4 rounded-full bg-primary/10 p-4">
+                        <feature.icon className="h-8 w-8 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+                      <p className="text-muted-foreground">{feature.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Services Section */}
+        <section className="py-16 bg-muted/30">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
+                💉 Our Wellness Services
+              </h2>
+            </div>
+            
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {services.map((service, index) => (
+                <Card key={index} className="hover:shadow-lg transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="mb-4 rounded-lg bg-secondary/10 p-3 inline-block">
+                      <service.icon className="h-6 w-6 text-secondary" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                    <p className="text-muted-foreground mb-4">{service.description}</p>
+                    <Link to={service.link} className="text-primary font-medium hover:underline">
+                      Learn More →
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* About Dr. Echeona */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
+                  🧠 Meet Dr. Xochil Echeona, DNP
+                </h2>
+              </div>
+              <Card className="border-2">
+                <CardContent className="p-8">
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Location & Contact */}
+        <section className="py-16 bg-vitality-charcoal text-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <div>
+                <h2 className="text-3xl font-bold mb-6">📍 Visit Us in Weston, FL</h2>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="h-6 w-6 text-vitality-teal flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold">Vitality Wellness Clinic</p>
+                      <p>1500 Weston Rd, Weston, FL 33326</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Phone className="h-6 w-6 text-vitality-teal flex-shrink-0" />
+                    <a href="tel:9548164002" className="hover:text-vitality-teal transition-colors">
+                      (954) 816-4002
+                    </a>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Clock className="h-6 w-6 text-vitality-teal flex-shrink-0 mt-1" />
+                    <div>
+                      <p>Mon–Fri: 9 AM – 6 PM</p>
+                      <p>Sat: 9 AM – 2 PM</p>
+                      <p>Sun: Closed</p>
+                      <p className="mt-2 text-vitality-sky">👉 Telehealth Appointments Available</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8">
+                <h3 className="text-2xl font-bold mb-4">🌟 Start Your Wellness Journey Today</h3>
+                <p className="mb-6">
+                  Ready to achieve lasting weight loss and optimal vitality? Schedule your consultation with Dr. Echeona today and discover why Vitality Wellness Clinic is Weston's trusted choice for medical wellness and longevity care.
+                </p>
+                <div className="flex flex-col gap-3">
+                  <Button size="lg" variant="secondary" asChild className="w-full">
+                    <Link to="/book">Schedule Consultation</Link>
+                  </Button>
+                  <Button size="lg" variant="outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
+                    <a href="tel:9548164002">Call (954) 816-4002</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
     </div>
   );
-};
-
-export default Index;
+}

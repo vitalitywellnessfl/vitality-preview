@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        serif: ['Playfair Display', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,15 +51,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        vitality: {
+          teal: "hsl(var(--vitality-teal))",
+          gold: "hsl(var(--vitality-gold))",
+          charcoal: "hsl(var(--vitality-charcoal))",
+          cream: "hsl(var(--vitality-cream))",
+          purple: "hsl(var(--vitality-purple))",
+          sky: "hsl(var(--vitality-sky))",
+          tan: "hsl(var(--vitality-tan))",
         },
       },
       borderRadius: {
