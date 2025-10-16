@@ -1,32 +1,42 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Quote, Star } from "lucide-react";
 
-const testimonials = [
+const allTestimonials = [
   {
     name: "Gonzalo",
     text: "I have always tried to lose weight... I found Vitality wellness and they helped me lose 40 pounds and for the first time in my life I am no longer a size XL but a medium. They followed…",
     rating: 5,
+    category: "weight-loss"
   },
   {
     name: "Shuki",
     text: "Both Lina and Dr. Xochi were always kind, caring, and made me feel very comfortable as I went through my weight loss journey. I've lost 14 pounds so far and I'm still going. 100% recommended!",
     rating: 5,
+    category: "weight-loss"
   },
   {
     name: "Yeny",
     text: "Lina and Dr. Xochi, Without a doubt I recommend you!! Best prices and service!! the IV hydration will make miracles in your skin. If you are in your late 40's like me.. is a must to do it!!!",
     rating: 5,
+    category: "iv-therapy"
   },
 ];
 
-export const Testimonials = () => {
+interface TestimonialsProps {
+  testimonials?: typeof allTestimonials;
+}
+
+export const Testimonials = ({ testimonials = allTestimonials }: TestimonialsProps) => {
   return (
     <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/30 via-white to-vitality-sky/10">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-            ⭐ What Our Patients Say
-          </h2>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Star className="h-8 w-8 text-vitality-gold fill-vitality-gold" />
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+              What Our Patients Say
+            </h2>
+          </div>
           <p className="text-lg text-muted-foreground">
             Real stories from real people who transformed their lives at Vitality Wellness Clinic
           </p>

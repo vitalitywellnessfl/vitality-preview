@@ -2,7 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone } from "lucide-react";
+import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone, Lightbulb, Dumbbell, Settings, Leaf, MessageCircle, Calendar, Zap } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonials } from "@/components/Testimonials";
 
@@ -158,9 +158,12 @@ export default function WeightLoss() {
                     <span className="text-muted-foreground">Working with insurance providers to optimize affordability</span>
                   </li>
                 </ul>
-                <p className="text-foreground font-medium">
-                  💡 Your health comes first — we'll find a treatment plan that fits your needs and budget.
-                </p>
+                <div className="flex items-center gap-2">
+                  <Lightbulb className="h-5 w-5 text-primary flex-shrink-0" />
+                  <p className="text-foreground font-medium">
+                    Your health comes first — we'll find a treatment plan that fits your needs and budget.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -171,7 +174,10 @@ export default function WeightLoss() {
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">💪 Protecting Muscle While Losing Fat</h2>
+                <div className="flex items-center gap-3 mb-4">
+                  <Dumbbell className="h-7 w-7 text-primary" />
+                  <h2 className="text-2xl font-bold text-foreground">Protecting Muscle While Losing Fat</h2>
+                </div>
                 <p className="text-muted-foreground mb-6">
                   Research shows that up to 39% of weight loss may come from muscle mass. That's why our program includes body composition monitoring and muscle-preserving strategies, such as:
                 </p>
@@ -193,9 +199,12 @@ export default function WeightLoss() {
                     <p className="text-muted-foreground">Targeted amino acid and creatine supplementation</p>
                   </div>
                 </div>
-                <p className="text-foreground font-medium">
-                  ⚙️ Lose fat — not muscle. We help you maintain strength, energy, and vitality throughout your journey.
-                </p>
+                <div className="flex items-center gap-2">
+                  <Settings className="h-5 w-5 text-primary flex-shrink-0" />
+                  <p className="text-foreground font-medium">
+                    Lose fat — not muscle. We help you maintain strength, energy, and vitality throughout your journey.
+                  </p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -206,7 +215,10 @@ export default function WeightLoss() {
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
-                <h2 className="text-2xl font-bold text-foreground mb-4">🌱 Managing Side Effects</h2>
+                <div className="flex items-center gap-3 mb-4">
+                  <Leaf className="h-7 w-7 text-primary" />
+                  <h2 className="text-2xl font-bold text-foreground">Managing Side Effects</h2>
+                </div>
                 <p className="text-muted-foreground mb-6">
                   Mild side effects such as nausea, bloating, or injection-site irritation are common but temporary. Our step-by-step medical supervision ensures your comfort and safety:
                 </p>
@@ -228,7 +240,10 @@ export default function WeightLoss() {
                     <span className="text-muted-foreground">24/7 Access to our clinical support team</span>
                   </li>
                 </ul>
-                <p className="text-foreground font-medium">💬 We're with you every step of the way.</p>
+                <div className="flex items-center gap-2">
+                  <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                  <p className="text-foreground font-medium">We're with you every step of the way.</p>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -237,7 +252,10 @@ export default function WeightLoss() {
         {/* CTA Section */}
         <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold text-foreground mb-4">📅 Start Your Weight Loss Journey Today</h2>
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Calendar className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl font-bold text-foreground">Start Your Weight Loss Journey Today</h2>
+            </div>
             <p className="text-lg text-muted-foreground mb-8">
               Your healthiest body begins here. Join hundreds of patients who have transformed their lives through GLP-1 medical weight loss therapy at Vitality Wellness Clinic.
             </p>
@@ -258,7 +276,10 @@ export default function WeightLoss() {
         {/* Quick Facts */}
         <section className="py-16 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">⚡ Quick Facts</h2>
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <Zap className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl font-bold text-foreground text-center">Quick Facts</h2>
+            </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               <Card>
                 <CardContent className="p-6">
@@ -301,7 +322,20 @@ export default function WeightLoss() {
         </section>
 
         {/* Testimonials Section */}
-        <Testimonials />
+        <Testimonials testimonials={[
+          {
+            name: "Gonzalo",
+            text: "I have always tried to lose weight... I found Vitality wellness and they helped me lose 40 pounds and for the first time in my life I am no longer a size XL but a medium. They followed…",
+            rating: 5,
+            category: "weight-loss"
+          },
+          {
+            name: "Shuki",
+            text: "Both Lina and Dr. Xochi were always kind, caring, and made me feel very comfortable as I went through my weight loss journey. I've lost 14 pounds so far and I'm still going. 100% recommended!",
+            rating: 5,
+            category: "weight-loss"
+          }
+        ]} />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-teal/5 to-vitality-sky/10">

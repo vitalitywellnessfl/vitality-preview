@@ -17,7 +17,10 @@ import {
   Droplet,
   Activity,
   Star,
-  Shield
+  Shield,
+  Leaf,
+  Brain,
+  ArrowRight
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Testimonials } from "@/components/Testimonials";
@@ -94,10 +97,13 @@ export default function Index() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20 py-20 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-6">
-                🌿 The Body You Deserve <span className="text-primary">Starts Here</span>
-              </h1>
+          <div className="mx-auto max-w-3xl text-center">
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <Leaf className="h-10 w-10 text-primary" />
+                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
+                  The Body You Deserve <span className="text-primary">Starts Here</span>
+                </h1>
+              </div>
               <p className="text-lg leading-8 text-muted-foreground mb-8">
                 Welcome to <strong>Vitality Wellness Clinic</strong>, your trusted destination for medical weight loss, IV therapy, hormone replacement, and holistic wellness solutions in Weston, Florida.
               </p>
@@ -135,10 +141,13 @@ export default function Index() {
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-                🩺 Why Choose Vitality Wellness Clinic?
-              </h2>
+          <div className="mx-auto max-w-2xl text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Stethoscope className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                  Why Choose Vitality Wellness Clinic?
+                </h2>
+              </div>
               <p className="text-lg text-muted-foreground">
                 Proudly serving Weston, FL and surrounding areas including Davie, Pembroke Pines, and Sunrise.
               </p>
@@ -165,10 +174,13 @@ export default function Index() {
         {/* Services Section */}
         <section className="py-16 bg-muted/30">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-                💉 Our Wellness Services
-              </h2>
+          <div className="mx-auto max-w-2xl text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Syringe className="h-8 w-8 text-primary" />
+                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                  Our Wellness Services
+                </h2>
+              </div>
             </div>
             
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -195,9 +207,12 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">
-                  🧠 Meet Dr. Xochil Echeona, DNP
-                </h2>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <Brain className="h-8 w-8 text-primary" />
+                  <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                    Meet Dr. Xochil Echeona, DNP
+                  </h2>
+                </div>
               </div>
               <Card className="border-2">
                 <CardContent className="p-8">
@@ -218,7 +233,10 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               <div>
-                <h2 className="text-3xl font-bold mb-6">📍 Visit Us in Weston, FL</h2>
+                <div className="flex items-center gap-3 mb-6">
+                  <MapPin className="h-8 w-8 text-vitality-teal" />
+                  <h2 className="text-3xl font-bold">Visit Us in Weston, FL</h2>
+                </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <MapPin className="h-6 w-6 text-vitality-teal flex-shrink-0 mt-1" />
@@ -239,14 +257,20 @@ export default function Index() {
                       <p>Mon–Fri: 9 AM – 6 PM</p>
                       <p>Sat: 9 AM – 2 PM</p>
                       <p>Sun: Closed</p>
-                      <p className="mt-2 text-vitality-sky">👉 Telehealth Appointments Available</p>
+                      <p className="mt-2 text-vitality-sky flex items-center gap-2">
+                        <ArrowRight className="h-5 w-5" />
+                        Telehealth Appointments Available
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8">
-                <h3 className="text-2xl font-bold mb-4">🌟 Start Your Wellness Journey Today</h3>
+                <div className="flex items-center gap-3 mb-4">
+                  <Star className="h-7 w-7 text-vitality-gold fill-vitality-gold" />
+                  <h3 className="text-2xl font-bold">Start Your Wellness Journey Today</h3>
+                </div>
                 <p className="mb-6">
                   Ready to achieve lasting weight loss and optimal vitality? Schedule your consultation with Dr. Echeona today and discover why Vitality Wellness Clinic is Weston's trusted choice for medical wellness and longevity care.
                 </p>

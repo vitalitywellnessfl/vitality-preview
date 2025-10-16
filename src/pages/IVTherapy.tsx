@@ -31,7 +31,14 @@ export default function IVTherapy() {
         </section>
 
         {/* Testimonials Section */}
-        <Testimonials />
+        <Testimonials testimonials={[
+          {
+            name: "Yeny",
+            text: "Lina and Dr. Xochi, Without a doubt I recommend you!! Best prices and service!! the IV hydration will make miracles in your skin. If you are in your late 40's like me.. is a must to do it!!!",
+            rating: 5,
+            category: "iv-therapy"
+          }
+        ]} />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-muted/30">
