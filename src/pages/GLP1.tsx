@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function WeightLoss() {
   return (
@@ -298,6 +299,9 @@ export default function WeightLoss() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-teal/5 to-vitality-sky/10">

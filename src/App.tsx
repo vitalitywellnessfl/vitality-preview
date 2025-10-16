@@ -13,7 +13,6 @@ import VitaminShots from "./pages/VitaminShots";
 import BodyContouring from "./pages/BodyContouring";
 import HormoneTherapy from "./pages/HormoneTherapy";
 import ErectileDysfunction from "./pages/ErectileDysfunction";
-import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Book from "./pages/Book";
 import NotFound from "./pages/NotFound";
@@ -37,7 +36,6 @@ const App = () => (
           <Route path="/body-contouring" element={<BodyContouring />} />
           <Route path="/hormone-therapy" element={<HormoneTherapy />} />
           <Route path="/erectile-dysfunction" element={<ErectileDysfunction />} />
-          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

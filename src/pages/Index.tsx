@@ -20,6 +20,7 @@ import {
   Shield
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Testimonials } from "@/components/Testimonials";
 
 const services = [
   {
@@ -208,6 +209,9 @@ export default function Index() {
             </div>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
 
         {/* Location & Contact */}
         <section className="py-16 bg-vitality-charcoal text-white">

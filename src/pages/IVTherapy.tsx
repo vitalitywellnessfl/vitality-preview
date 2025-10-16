@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function IVTherapy() {
   return (
@@ -28,6 +29,9 @@ export default function IVTherapy() {
             </Card>
           </div>
         </section>
+
+        {/* Testimonials Section */}
+        <Testimonials />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-muted/30">
