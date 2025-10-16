@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone } from "lucide-react";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function WeightLoss() {
   return (
@@ -295,6 +296,23 @@ export default function WeightLoss() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-teal/5 to-vitality-sky/10">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Start Your Weight Loss Journey?</h2>
+              <p className="text-lg text-muted-foreground">
+                Contact us today to schedule your consultation and learn more about GLP-1 therapy options.
+              </p>
+            </div>
+            <Card>
+              <CardContent className="p-8">
+                <ContactForm />
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>

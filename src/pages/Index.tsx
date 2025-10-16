@@ -251,6 +251,9 @@ export default function Index() {
                     <Link to="/book">Schedule Consultation</Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                  <Button size="lg" variant="outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                     <a href="tel:9548164002">Call (954) 816-4002</a>
                   </Button>
                 </div>

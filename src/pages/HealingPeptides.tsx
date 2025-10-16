@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { ContactForm } from "@/components/ContactForm";
 
 export default function HealingPeptides() {
   return (
@@ -23,6 +24,23 @@ export default function HealingPeptides() {
                     For more information, please <a href="/contact" className="text-primary hover:underline">contact us</a> or call <a href="tel:9548164002" className="text-primary hover:underline">(954) 816-4002</a>.
                   </p>
                 </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="py-16 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-4xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Interested in Peptide Therapy?</h2>
+              <p className="text-lg text-muted-foreground">
+                Contact us to learn more about healing peptides and schedule your consultation.
+              </p>
+            </div>
+            <Card>
+              <CardContent className="p-8">
+                <ContactForm />
               </CardContent>
             </Card>
           </div>
