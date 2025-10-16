@@ -58,7 +58,7 @@ export const Navbar = () => {
         <div className="hidden lg:flex lg:items-center lg:gap-x-8">
           <Link
             to="/"
-            className={`text-sm font-medium transition-colors hover:text-primary ${
+            className={`text-base font-medium transition-colors hover:text-primary ${
               location.pathname === "/" ? "text-primary" : "text-foreground"
             }`}
           >
@@ -69,7 +69,7 @@ export const Navbar = () => {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent">
-                  <span className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                  <span className="text-base font-medium text-foreground hover:text-primary transition-colors">
                     Services
                   </span>
                 </NavigationMenuTrigger>
@@ -97,7 +97,7 @@ export const Navbar = () => {
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
+              className={`text-base font-medium transition-colors hover:text-primary ${
                 location.pathname === item.href ? "text-primary" : "text-foreground"
               }`}
             >
@@ -108,10 +108,10 @@ export const Navbar = () => {
         
         <div className="hidden lg:flex lg:items-center lg:gap-3">
           <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-            <Instagram className="h-5 w-5" />
+            <Instagram className="h-6 w-6" />
           </a>
           <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-            <Facebook className="h-5 w-5" />
+            <Facebook className="h-6 w-6" />
           </a>
           <Button variant="outline" size="sm" asChild>
             <a href="tel:9548164002">
