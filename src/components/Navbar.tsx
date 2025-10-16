@@ -1,13 +1,25 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Instagram, Facebook } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.jpg";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
+  { name: "Testimonials", href: "/testimonials" },
+  { name: "Contact", href: "/contact" },
+];
+
+const servicesNav = [
   { name: "GLP-1's", href: "/glp1" },
   { name: "Healing Peptides", href: "/healing-peptides" },
   { name: "IV Therapy", href: "/iv-therapy" },
@@ -15,8 +27,6 @@ const navigation = [
   { name: "Body Contouring", href: "/body-contouring" },
   { name: "HRT", href: "/hormone-therapy" },
   { name: "Erectile Dysfunction", href: "/erectile-dysfunction" },
-  { name: "Testimonials", href: "/testimonials" },
-  { name: "Contact", href: "/contact" },
 ];
 
 export const Navbar = () => {
@@ -24,7 +34,7 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-lg shadow-black/5 transition-all duration-300">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-3">
@@ -43,7 +53,7 @@ export const Navbar = () => {
           </button>
         </div>
         
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="hidden lg:flex lg:items-center lg:gap-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -55,6 +65,34 @@ export const Navbar = () => {
               {item.name}
             </Link>
           ))}
+          
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-transparent hover:bg-transparent data-[state=open]:bg-transparent">
+                  <span className="text-sm font-medium text-foreground hover:text-primary transition-colors">
+                    Services
+                  </span>
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                    {servicesNav.map((service) => (
+                      <li key={service.name}>
+                        <NavigationMenuLink asChild>
+                          <Link
+                            to={service.href}
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                          >
+                            <div className="text-sm font-medium leading-none">{service.name}</div>
+                          </Link>
+                        </NavigationMenuLink>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </div>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-3 lg:items-center">
@@ -71,9 +109,9 @@ export const Navbar = () => {
             </a>
           </Button>
           <Button size="sm" asChild>
-            <a href="https://agelessrx.com/semaglutide-glp-1s/?utm_medium=paid-social&utm_source=facebook&utm_campaign=120227891751110575-cq:ldn-asc-july2025_ch:facebook_ct:ageless-custom-conversion_tx:asc_pr:energy-nad_c1:_c2:_jump%20-%20Copy&utm_term=120227891751090575-fb-Others&utm_content=120227891751270575-at:image_lg:x_hk:$25/month_pr:energy-ldn_th:internal-template_id:_lp:get.agelessrx.com/ldn-low-dose-naltrexone/ns_cu:_jump" target="_blank" rel="noopener noreferrer">
+            <Link to="/book">
               Book Consultation
-            </a>
+            </Link>
           </Button>
         </div>
       </nav>
@@ -111,6 +149,24 @@ export const Navbar = () => {
                       {item.name}
                     </Link>
                   ))}
+                  
+                  <div className="pt-2">
+                    <div className="-mx-3 px-3 py-2 text-base font-medium text-muted-foreground">
+                      Services
+                    </div>
+                    {servicesNav.map((item) => (
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className={`-mx-3 block rounded-lg px-6 py-2 text-sm font-medium leading-7 hover:bg-muted ${
+                          location.pathname === item.href ? "text-primary bg-muted" : "text-foreground"
+                        }`}
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
                 <div className="py-6 space-y-3">
                   <div className="flex gap-4 justify-center mb-4">
@@ -128,9 +184,9 @@ export const Navbar = () => {
                     </a>
                   </Button>
                   <Button className="w-full" asChild>
-                    <a href="https://agelessrx.com/semaglutide-glp-1s/?utm_medium=paid-social&utm_source=facebook&utm_campaign=120227891751110575-cq:ldn-asc-july2025_ch:facebook_ct:ageless-custom-conversion_tx:asc_pr:energy-nad_c1:_c2:_jump%20-%20Copy&utm_term=120227891751090575-fb-Others&utm_content=120227891751270575-at:image_lg:x_hk:$25/month_pr:energy-ldn_th:internal-template_id:_lp:get.agelessrx.com/ldn-low-dose-naltrexone/ns_cu:_jump" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
+                    <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>

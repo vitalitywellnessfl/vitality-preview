@@ -15,15 +15,18 @@ import {
   Sparkles,
   Pill,
   Droplet,
-  Activity
+  Activity,
+  Star,
+  Shield
 } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const services = [
   {
     icon: Syringe,
     title: "GLP-1 Medical Weight Loss",
     description: "Transform your body safely with FDA-approved GLP-1 medications like semaglutide and tirzepatide, prescribed under expert medical guidance for sustainable results.",
-    link: "/weight-loss"
+    link: "/glp1"
   },
   {
     icon: HeartPulse,
@@ -91,9 +94,25 @@ export default function Index() {
               <p className="text-lg leading-8 text-muted-foreground mb-8">
                 Welcome to <strong>Vitality Wellness Clinic</strong>, your trusted destination for medical weight loss, IV therapy, hormone replacement, and holistic wellness solutions in Weston, Florida.
               </p>
-              <p className="text-base leading-7 text-muted-foreground mb-10">
-                Led by <strong>Dr. Xochil Echeona, DNP</strong>, our minority-, woman-, and veteran-owned medical practice provides evidence-based, medically supervised treatments designed to help you achieve your healthiest, most confident self.
+              <p className="text-base leading-7 text-muted-foreground mb-6">
+                Led by <strong>Dr. Xochil Echeona, DNP</strong>, our medical practice provides evidence-based, medically supervised treatments designed to help you achieve your healthiest, most confident self.
               </p>
+              
+              <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
+                <Badge variant="secondary" className="bg-vitality-teal/10 text-vitality-teal border-vitality-teal/20 hover:bg-vitality-teal/20">
+                  <Award className="h-3 w-3 mr-1" />
+                  Minority-Owned
+                </Badge>
+                <Badge variant="secondary" className="bg-vitality-gold/10 text-vitality-gold border-vitality-gold/20 hover:bg-vitality-gold/20">
+                  <Users className="h-3 w-3 mr-1" />
+                  Woman-Owned
+                </Badge>
+                <Badge variant="secondary" className="bg-vitality-charcoal/10 text-vitality-charcoal border-vitality-charcoal/20 hover:bg-vitality-charcoal/20">
+                  <Shield className="h-3 w-3 mr-1" />
+                  Veteran-Owned
+                </Badge>
+              </div>
+              
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" asChild className="text-lg px-8">
                   <Link to="/book">Schedule Consultation</Link>
