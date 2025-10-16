@@ -6,11 +6,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
-import WeightLoss from "./pages/WeightLoss";
-import HormoneTherapy from "./pages/HormoneTherapy";
+import GLP1 from "./pages/GLP1";
+import HealingPeptides from "./pages/HealingPeptides";
 import IVTherapy from "./pages/IVTherapy";
+import VitaminShots from "./pages/VitaminShots";
+import BodyContouring from "./pages/BodyContouring";
+import HormoneTherapy from "./pages/HormoneTherapy";
+import ErectileDysfunction from "./pages/ErectileDysfunction";
 import Testimonials from "./pages/Testimonials";
-import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Book from "./pages/Book";
 import NotFound from "./pages/NotFound";
@@ -27,11 +30,14 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/weight-loss" element={<WeightLoss />} />
-          <Route path="/hormone-therapy" element={<HormoneTherapy />} />
+          <Route path="/glp1" element={<GLP1 />} />
+          <Route path="/healing-peptides" element={<HealingPeptides />} />
           <Route path="/iv-therapy" element={<IVTherapy />} />
+          <Route path="/vitamin-shots" element={<VitaminShots />} />
+          <Route path="/body-contouring" element={<BodyContouring />} />
+          <Route path="/hormone-therapy" element={<HormoneTherapy />} />
+          <Route path="/erectile-dysfunction" element={<ErectileDysfunction />} />
           <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

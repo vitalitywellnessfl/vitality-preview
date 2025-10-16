@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Clock, Mail } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 export const Footer = () => {
@@ -22,7 +22,7 @@ export const Footer = () => {
               <li><Link to="/about" className="text-sm text-gray-300 hover:text-white transition-colors">About Us</Link></li>
               <li><Link to="/services" className="text-sm text-gray-300 hover:text-white transition-colors">Our Services</Link></li>
               <li><Link to="/testimonials" className="text-sm text-gray-300 hover:text-white transition-colors">Testimonials</Link></li>
-              <li><Link to="/faq" className="text-sm text-gray-300 hover:text-white transition-colors">FAQ</Link></li>
+              <li><Link to="/contact" className="text-sm text-gray-300 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
 
@@ -30,10 +30,13 @@ export const Footer = () => {
           <div>
             <h3 className="text-sm font-semibold mb-4 text-vitality-gold">Services</h3>
             <ul className="space-y-2">
-              <li><Link to="/weight-loss" className="text-sm text-gray-300 hover:text-white transition-colors">Weight Loss</Link></li>
-              <li><Link to="/hormone-therapy" className="text-sm text-gray-300 hover:text-white transition-colors">Hormone Therapy</Link></li>
+              <li><Link to="/glp1" className="text-sm text-gray-300 hover:text-white transition-colors">GLP-1's</Link></li>
+              <li><Link to="/healing-peptides" className="text-sm text-gray-300 hover:text-white transition-colors">Healing Peptides</Link></li>
               <li><Link to="/iv-therapy" className="text-sm text-gray-300 hover:text-white transition-colors">IV Therapy</Link></li>
-              <li><Link to="/services" className="text-sm text-gray-300 hover:text-white transition-colors">View All</Link></li>
+              <li><Link to="/vitamin-shots" className="text-sm text-gray-300 hover:text-white transition-colors">Vitamin Shots</Link></li>
+              <li><Link to="/body-contouring" className="text-sm text-gray-300 hover:text-white transition-colors">Body Contouring</Link></li>
+              <li><Link to="/hormone-therapy" className="text-sm text-gray-300 hover:text-white transition-colors">HRT</Link></li>
+              <li><Link to="/erectile-dysfunction" className="text-sm text-gray-300 hover:text-white transition-colors">Erectile Dysfunction</Link></li>
             </ul>
           </div>
 
@@ -66,10 +69,18 @@ export const Footer = () => {
             <p className="text-sm text-gray-400">
               © {new Date().getFullYear()} Vitality Wellness Clinic. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link to="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-              <Link to="/hipaa" className="text-sm text-gray-400 hover:text-white transition-colors">HIPAA</Link>
-              <Link to="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+            <div className="flex gap-4 items-center">
+              <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <Facebook className="h-5 w-5" />
+              </a>
+              <div className="flex gap-6 ml-4">
+                <Link to="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
+                <Link to="/hipaa" className="text-sm text-gray-400 hover:text-white transition-colors">HIPAA</Link>
+                <Link to="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
+              </div>
             </div>
           </div>
         </div>

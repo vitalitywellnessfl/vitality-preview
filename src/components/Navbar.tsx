@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.jpg";
 
@@ -8,11 +8,14 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Services", href: "/services" },
-  { name: "Weight Loss", href: "/weight-loss" },
-  { name: "Hormone Therapy", href: "/hormone-therapy" },
+  { name: "GLP-1's", href: "/glp1" },
+  { name: "Healing Peptides", href: "/healing-peptides" },
   { name: "IV Therapy", href: "/iv-therapy" },
+  { name: "Vitamin Shots", href: "/vitamin-shots" },
+  { name: "Body Contouring", href: "/body-contouring" },
+  { name: "HRT", href: "/hormone-therapy" },
+  { name: "Erectile Dysfunction", href: "/erectile-dysfunction" },
   { name: "Testimonials", href: "/testimonials" },
-  { name: "FAQ", href: "/faq" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -54,7 +57,13 @@ export const Navbar = () => {
           ))}
         </div>
         
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-3">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-3 lg:items-center">
+          <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <Instagram className="h-5 w-5" />
+          </a>
+          <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <Facebook className="h-5 w-5" />
+          </a>
           <Button variant="outline" size="sm" asChild>
             <a href="tel:9548164002">
               <Phone className="h-4 w-4 mr-2" />
@@ -62,7 +71,9 @@ export const Navbar = () => {
             </a>
           </Button>
           <Button size="sm" asChild>
-            <Link to="/book">Book Consultation</Link>
+            <a href="https://agelessrx.com/semaglutide-glp-1s/?utm_medium=paid-social&utm_source=facebook&utm_campaign=120227891751110575-cq:ldn-asc-july2025_ch:facebook_ct:ageless-custom-conversion_tx:asc_pr:energy-nad_c1:_c2:_jump%20-%20Copy&utm_term=120227891751090575-fb-Others&utm_content=120227891751270575-at:image_lg:x_hk:$25/month_pr:energy-ldn_th:internal-template_id:_lp:get.agelessrx.com/ldn-low-dose-naltrexone/ns_cu:_jump" target="_blank" rel="noopener noreferrer">
+              Book Consultation
+            </a>
           </Button>
         </div>
       </nav>
@@ -102,6 +113,14 @@ export const Navbar = () => {
                   ))}
                 </div>
                 <div className="py-6 space-y-3">
+                  <div className="flex gap-4 justify-center mb-4">
+                    <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                      <Instagram className="h-6 w-6" />
+                    </a>
+                    <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                      <Facebook className="h-6 w-6" />
+                    </a>
+                  </div>
                   <Button className="w-full" variant="outline" asChild>
                     <a href="tel:9548164002">
                       <Phone className="h-4 w-4 mr-2" />
@@ -109,9 +128,9 @@ export const Navbar = () => {
                     </a>
                   </Button>
                   <Button className="w-full" asChild>
-                    <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
+                    <a href="https://agelessrx.com/semaglutide-glp-1s/?utm_medium=paid-social&utm_source=facebook&utm_campaign=120227891751110575-cq:ldn-asc-july2025_ch:facebook_ct:ageless-custom-conversion_tx:asc_pr:energy-nad_c1:_c2:_jump%20-%20Copy&utm_term=120227891751090575-fb-Others&utm_content=120227891751270575-at:image_lg:x_hk:$25/month_pr:energy-ldn_th:internal-template_id:_lp:get.agelessrx.com/ldn-low-dose-naltrexone/ns_cu:_jump" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>
