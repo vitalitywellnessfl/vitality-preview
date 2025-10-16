@@ -40,7 +40,7 @@ export const Navbar = () => {
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 p-4 lg:px-8" aria-label="Global">
         <div className="flex items-center">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-            <img className="h-20 w-auto" src={logo} alt="Vitality Wellness Clinic" />
+            <img className="h-28 w-auto" src={logo} alt="Vitality Wellness Clinic" />
           </Link>
         </div>
         

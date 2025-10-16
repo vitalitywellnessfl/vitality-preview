@@ -29,22 +29,10 @@ const services = [
     link: "/glp1"
   },
   {
-    icon: HeartPulse,
-    title: "Hormone Replacement Therapy (HRT)",
-    description: "Restore balance and vitality through bioidentical hormone therapy for men and women. Improve energy, mood, libido, and overall well-being.",
-    link: "/hormone-therapy"
-  },
-  {
-    icon: Sparkles,
-    title: "NAD+ Therapy",
-    description: "Boost cellular energy, support longevity, and enhance mental clarity with medical-grade NAD+ infusions.",
-    link: "/services"
-  },
-  {
     icon: Pill,
-    title: "Peptide Therapy",
-    description: "Personalized peptide treatment plans for weight loss, recovery, and performance optimization — customized to your health needs.",
-    link: "/services"
+    title: "Healing Peptides",
+    description: "Advanced peptide therapies designed to accelerate healing, enhance recovery, and optimize your body's natural regenerative processes.",
+    link: "/healing-peptides"
   },
   {
     icon: Droplet,
@@ -54,9 +42,27 @@ const services = [
   },
   {
     icon: Activity,
-    title: "IM Injections",
-    description: "Targeted intramuscular injections including B12, vitamin D, and lipotropic formulas to promote energy and metabolism.",
-    link: "/services"
+    title: "Vitamin Shots",
+    description: "Quick and effective vitamin injections to boost energy, support immunity, and enhance overall wellness with targeted nutrition.",
+    link: "/vitamin-shots"
+  },
+  {
+    icon: Sparkles,
+    title: "Body Contouring",
+    description: "Non-invasive body sculpting treatments to help you achieve your ideal physique and enhance your natural beauty.",
+    link: "/body-contouring"
+  },
+  {
+    icon: HeartPulse,
+    title: "Hormone Replacement Therapy",
+    description: "Restore balance and vitality through bioidentical hormone therapy for men and women. Improve energy, mood, libido, and overall well-being.",
+    link: "/hormone-therapy"
+  },
+  {
+    icon: Star,
+    title: "Erectile Dysfunction Treatment",
+    description: "Confidential, effective treatment options to restore confidence and improve intimate health with medical-grade solutions.",
+    link: "/erectile-dysfunction"
   }
 ];
 
