@@ -36,11 +36,11 @@ export const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white/70 backdrop-blur-md border-b border-white/20 shadow-lg shadow-black/5 transition-all duration-300">
+    <header className="sticky top-0 z-50 w-full bg-white border-b border-border shadow-md transition-all duration-300">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-            <img className="h-16 w-auto" src={logo} alt="Vitality Wellness Clinic" />
+            <img className="h-20 w-auto" src={logo} alt="Vitality Wellness Clinic" />
           </Link>
         </div>
         
@@ -106,24 +106,26 @@ export const Navbar = () => {
           ))}
         </div>
         
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-3 lg:items-center">
-          <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-            <Instagram className="h-5 w-5" />
-          </a>
-          <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-            <Facebook className="h-5 w-5" />
-          </a>
-          <Button variant="outline" size="sm" asChild>
-            <a href="tel:9548164002">
-              <Phone className="h-4 w-4 mr-2" />
-              (954) 816-4002
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center">
+          <div className="flex items-center gap-4">
+            <a href="https://www.instagram.com/vitalitywellnessfl" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <Instagram className="h-5 w-5" />
             </a>
-          </Button>
-          <Button size="sm" asChild>
-            <Link to="/book">
-              Book Consultation
-            </Link>
-          </Button>
+            <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+              <Facebook className="h-5 w-5" />
+            </a>
+            <Button variant="outline" size="sm" asChild>
+              <a href="tel:9548164002">
+                <Phone className="h-4 w-4 mr-2" />
+                (954) 816-4002
+              </a>
+            </Button>
+            <Button size="sm" asChild>
+              <Link to="/book">
+                Book Consultation
+              </Link>
+            </Button>
+          </div>
         </div>
       </nav>
 
