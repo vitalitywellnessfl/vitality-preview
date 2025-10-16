@@ -19,6 +19,8 @@ const navigation = [
   { name: "Contact", href: "/contact" },
 ];
 
+const servicesFirst = true; // Flag to render Services after Home
+
 const servicesNav = [
   { name: "GLP-1's", href: "/glp1" },
   { name: "Healing Peptides", href: "/healing-peptides" },
@@ -38,7 +40,7 @@ export const Navbar = () => {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link to="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-            <img className="h-12 w-auto" src={logo} alt="Vitality Wellness Clinic" />
+            <img className="h-16 w-auto" src={logo} alt="Vitality Wellness Clinic" />
           </Link>
         </div>
         
@@ -54,17 +56,14 @@ export const Navbar = () => {
         </div>
         
         <div className="hidden lg:flex lg:items-center lg:gap-x-8">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                location.pathname === item.href ? "text-primary" : "text-foreground"
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
+          <Link
+            to="/"
+            className={`text-sm font-medium transition-colors hover:text-primary ${
+              location.pathname === "/" ? "text-primary" : "text-foreground"
+            }`}
+          >
+            Home
+          </Link>
           
           <NavigationMenu>
             <NavigationMenuList>
@@ -93,6 +92,18 @@ export const Navbar = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
+          
+          {navigation.slice(1).map((item) => (
+            <Link
+              key={item.name}
+              to={item.href}
+              className={`text-sm font-medium transition-colors hover:text-primary ${
+                location.pathname === item.href ? "text-primary" : "text-foreground"
+              }`}
+            >
+              {item.name}
+            </Link>
+          ))}
         </div>
         
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-3 lg:items-center">
@@ -123,7 +134,7 @@ export const Navbar = () => {
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-border">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
-                <img className="h-10 w-auto" src={logo} alt="Vitality Wellness Clinic" />
+                <img className="h-12 w-auto" src={logo} alt="Vitality Wellness Clinic" />
               </Link>
               <button
                 type="button"
