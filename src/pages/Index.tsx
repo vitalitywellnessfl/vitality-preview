@@ -32,6 +32,7 @@ import contourHeroImage from "@/assets/contour-hero.jpg";
 import glp1HeroImage from "@/assets/glp1-hero.jpg";
 import peptideHeroImage from "@/assets/peptide-hero.jpg";
 import edHeroImage from "@/assets/ed-hero.jpg";
+import homepageGlp1Image from "@/assets/homepage-glp1.png";
 
 const services = [
   {
@@ -122,6 +123,13 @@ export default function Index() {
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl">
                   The Body You Deserve Starts <span className="font-calligraphy text-calligraphy text-primary">Here</span>
                 </h1>
+              </div>
+              <div className="mb-8 flex justify-center">
+                <img 
+                  src={homepageGlp1Image} 
+                  alt="Semaglutide and Tirzepatide GLP-1 weight loss medications" 
+                  className="rounded-lg shadow-lg max-w-2xl w-full h-auto"
+                />
               </div>
               <p className="text-lg leading-8 text-muted-foreground mb-8">
                 Welcome to <strong>Vitality Wellness Clinic</strong>, your trusted destination for medical weight loss, IV therapy, hormone replacement, and holistic wellness solutions in Weston, Florida.
