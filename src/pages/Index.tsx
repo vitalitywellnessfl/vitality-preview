@@ -121,8 +121,8 @@ export default function Index() {
                 <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-32 sm:h-48 lg:h-64 w-auto drop-shadow-2xl" />
               </div>
               <div className="flex items-center justify-center gap-3 mb-6">
-                <Leaf className="h-10 w-10 text-primary" />
-                <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl">
+                <Leaf className="hidden sm:block h-10 w-10 text-primary" />
+                <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl text-center">
                   The Body You Deserve Starts <span className="font-calligraphy text-calligraphy text-primary">Here</span>
                 </h1>
               </div>
