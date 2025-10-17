@@ -31,6 +31,7 @@ import vitaminHeroImage from "@/assets/vitamin-hero.jpg";
 import contourHeroImage from "@/assets/contour-hero.jpg";
 import glp1HeroImage from "@/assets/glp1-hero.jpg";
 import peptideHeroImage from "@/assets/peptide-hero.jpg";
+import edHeroImage from "@/assets/ed-hero.jpg";
 
 const services = [
   {
@@ -79,7 +80,8 @@ const services = [
     icon: Star,
     title: "Erectile Dysfunction Treatment",
     description: "Confidential, effective treatment options to restore confidence and improve intimate health with medical-grade solutions.",
-    link: "/erectile-dysfunction"
+    link: "/erectile-dysfunction",
+    image: edHeroImage
   }
 ];
 
