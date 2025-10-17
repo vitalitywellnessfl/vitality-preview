@@ -24,6 +24,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Testimonials } from "@/components/Testimonials";
+import vitalityLogo from "@/assets/vitality-logo.gif";
 
 const services = [
   {
@@ -98,6 +99,9 @@ export default function Index() {
         <section className="relative bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20 py-20 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
+              <div className="flex justify-center mb-6">
+                <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-24 w-auto" />
+              </div>
               <div className="flex items-center justify-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-primary" />
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl">
