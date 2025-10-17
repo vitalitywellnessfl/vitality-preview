@@ -121,4 +121,76 @@ All colors MUST be HSL.
   .text-shadow-sm {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
+
+  /* Mesh Gradients */
+  .mesh-gradient {
+    background: 
+      radial-gradient(at 27% 37%, hsl(var(--vitality-teal) / 0.15) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, hsl(var(--vitality-sky) / 0.12) 0px, transparent 50%),
+      radial-gradient(at 52% 99%, hsl(var(--vitality-gold) / 0.08) 0px, transparent 50%),
+      radial-gradient(at 10% 29%, hsl(var(--vitality-purple) / 0.1) 0px, transparent 50%),
+      radial-gradient(at 97% 96%, hsl(var(--vitality-tan) / 0.1) 0px, transparent 50%),
+      radial-gradient(at 33% 50%, hsl(var(--vitality-cream) / 0.08) 0px, transparent 50%),
+      radial-gradient(at 79% 53%, hsl(var(--vitality-teal) / 0.12) 0px, transparent 50%);
+    background-size: 200% 200%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  .mesh-gradient-hero {
+    background: 
+      radial-gradient(at 20% 30%, hsl(var(--vitality-teal) / 0.2) 0px, transparent 50%),
+      radial-gradient(at 90% 20%, hsl(var(--vitality-sky) / 0.18) 0px, transparent 50%),
+      radial-gradient(at 50% 95%, hsl(var(--vitality-gold) / 0.12) 0px, transparent 50%),
+      radial-gradient(at 15% 80%, hsl(var(--vitality-purple) / 0.15) 0px, transparent 50%);
+    background-size: 300% 300%;
+    animation: gradient-shift 20s ease infinite;
+  }
+
+  /* Glassmorphism */
+  .glass {
+    background: hsl(var(--card) / 0.7);
+    backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid hsl(var(--border) / 0.2);
+  }
+
+  .glass-strong {
+    background: hsl(var(--card) / 0.85);
+    backdrop-filter: blur(20px) saturate(200%);
+    border: 1px solid hsl(var(--border) / 0.3);
+    box-shadow: 
+      0 8px 32px 0 hsl(var(--foreground) / 0.05),
+      inset 0 1px 1px 0 hsl(var(--background) / 0.1);
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--vitality-teal)), hsl(var(--vitality-gold)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 3D Transform Utilities */
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Multi-layer Shadow */
+  .shadow-elevated {
+    box-shadow: 
+      0 1px 2px hsl(var(--foreground) / 0.05),
+      0 4px 8px hsl(var(--foreground) / 0.08),
+      0 8px 16px hsl(var(--foreground) / 0.08),
+      0 16px 32px hsl(var(--foreground) / 0.05);
+  }
+
+  .shadow-glow {
+    box-shadow: 
+      0 0 20px hsl(var(--primary) / 0.2),
+      0 0 40px hsl(var(--primary) / 0.1);
+  }
 }
