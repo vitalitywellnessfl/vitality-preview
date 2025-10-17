@@ -308,10 +308,6 @@ export default function WeightLoss() {
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">Injection Technique Training for smooth administration</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">24/7 Access to our clinical support team</span>
-                  </li>
                 </ul>
                 <div className="flex items-center gap-2">
                   <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
