@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import drEcheonaImage from "@/assets/dr-echeona.png";
 import { 
   Heart, 
   Users, 
@@ -195,22 +196,36 @@ export default function About() {
         </section>
 
         {/* Meet Dr. Echeona */}
-        <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10">
+        <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10 relative overflow-visible">
           <div className="mx-auto max-w-6xl">
-            {/* Main Header */}
-            <div className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Brain className="h-10 w-10 text-primary" />
-                <h2 className="text-4xl font-serif font-bold tracking-tight text-foreground sm:text-5xl">
-                  Meet Dr. Xochil Echeona
-                </h2>
+            {/* Main Header with Photo */}
+            <div className="mb-12 relative">
+              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+                {/* Photo on left */}
+                <div className="flex-shrink-0 relative z-10">
+                  <img 
+                    src={drEcheonaImage} 
+                    alt="Dr. Xochil Echeona" 
+                    className="w-64 h-auto lg:w-80 xl:w-96 object-contain drop-shadow-2xl"
+                  />
+                </div>
+                
+                {/* Text on right */}
+                <div className="flex-1 text-center lg:text-left lg:pt-8">
+                  <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
+                    <Brain className="h-10 w-10 text-primary" />
+                    <h2 className="text-4xl font-serif font-bold tracking-tight text-foreground sm:text-5xl">
+                      Meet Dr. Xochil Echeona
+                    </h2>
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium tracking-wide mb-3">
+                    DNP, APRN, FNP-BC, PMHNP-BC, GNP-BC
+                  </p>
+                  <p className="text-2xl font-script text-primary mb-6">
+                    Where Medicine, Mind, and Aesthetic Wellness Meet
+                  </p>
+                </div>
               </div>
-              <p className="text-sm text-muted-foreground font-medium tracking-wide mb-3">
-                DNP, APRN, FNP-BC, PMHNP-BC, GNP-BC
-              </p>
-              <p className="text-2xl font-script text-primary">
-                Where Medicine, Mind, and Aesthetic Wellness Meet
-              </p>
             </div>
 
             {/* Opening Narrative */}
