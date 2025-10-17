@@ -29,19 +29,23 @@ import hrtHeroImage from "@/assets/hrt-hero.jpg";
 import ivHeroImage from "@/assets/iv-hero.jpg";
 import vitaminHeroImage from "@/assets/vitamin-hero.jpg";
 import contourHeroImage from "@/assets/contour-hero.jpg";
+import glp1HeroImage from "@/assets/glp1-hero.jpg";
+import peptideHeroImage from "@/assets/peptide-hero.jpg";
 
 const services = [
   {
     icon: Syringe,
     title: "GLP-1 Medical Weight Loss",
     description: "Transform your body safely with FDA-approved GLP-1 medications like semaglutide and tirzepatide, prescribed under expert medical guidance for sustainable results.",
-    link: "/glp1"
+    link: "/glp1",
+    image: glp1HeroImage
   },
   {
     icon: Pill,
     title: "Healing Peptides",
     description: "Advanced peptide therapies designed to accelerate healing, enhance recovery, and optimize your body's natural regenerative processes.",
-    link: "/healing-peptides"
+    link: "/healing-peptides",
+    image: peptideHeroImage
   },
   {
     icon: Droplet,
