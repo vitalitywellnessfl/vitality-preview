@@ -26,6 +26,7 @@ import { Badge } from "@/components/ui/badge";
 import { Testimonials } from "@/components/Testimonials";
 import vitalityLogo from "@/assets/vitality-logo.gif";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
+import ivHeroImage from "@/assets/iv-hero.jpg";
 
 const services = [
   {
@@ -44,7 +45,8 @@ const services = [
     icon: Droplet,
     title: "IV Therapy",
     description: "Replenish and rejuvenate with IV vitamin therapy in our Weston clinic. Perfect for hydration, immune support, and post-travel recovery.",
-    link: "/iv-therapy"
+    link: "/iv-therapy",
+    image: ivHeroImage
   },
   {
     icon: Activity,
