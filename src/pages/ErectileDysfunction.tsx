@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Heart, 
   Users, 
@@ -131,32 +130,6 @@ export default function ErectileDysfunction() {
     }
   ];
 
-  const faqs = [
-    {
-      question: "Is ED normal in my 20s or 30s?",
-      answer: "Yes. Many younger men experience ED due to stress, performance anxiety, relationship pressures, or excessive porn consumption. You're not alone, and effective treatments are available."
-    },
-    {
-      question: "What's the difference between Viagra and Cialis?",
-      answer: "Viagra works for 4–6 hours and is taken as needed. Cialis lasts up to 36 hours and can also be taken daily for continuous effect, allowing for more spontaneous intimacy."
-    },
-    {
-      question: "Can porn use cause ED?",
-      answer: "Excessive porn use can contribute to porn-induced ED (PIED), where real-world sexual arousal becomes difficult. Reducing or eliminating porn often improves function, especially with complementary treatment and counseling support."
-    },
-    {
-      question: "Will I become dependent on ED medication?",
-      answer: "ED medications aren't chemically addictive. Our approach uses them as tools while addressing underlying causes through lifestyle changes, hormone optimization, and psychological support—often reducing the need for long-term medication use."
-    },
-    {
-      question: "Is treatment confidential?",
-      answer: "Absolutely. All consultations are private, and medications are delivered in discreet, unmarked packaging. Your privacy and dignity are our top priorities."
-    },
-    {
-      question: "How quickly will I see results?",
-      answer: "Oral medications typically work within 30-60 minutes. For comprehensive treatment plans addressing hormonal or lifestyle factors, you may notice improvements within 4-6 weeks."
-    }
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -339,36 +312,6 @@ export default function ErectileDysfunction() {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 lg:py-24 bg-background">
-          <div className="mx-auto max-w-4xl px-6 lg:px-8">
-            <AnimatedSection animation="fade-in" className="text-center mb-12">
-              <p className="font-script text-primary text-2xl mb-4">Common Questions</p>
-              <h2 className="text-3xl font-serif font-semibold text-foreground sm:text-4xl">
-                Frequently Asked Questions
-              </h2>
-            </AnimatedSection>
-
-            <AnimatedSection animation="fade-in" delay={200}>
-              <Card>
-                <CardContent className="p-8">
-                  <Accordion type="single" collapsible className="w-full">
-                    {faqs.map((faq, index) => (
-                      <AccordionItem key={index} value={`item-${index}`}>
-                        <AccordionTrigger className="text-left font-semibold">
-                          {faq.question}
-                        </AccordionTrigger>
-                        <AccordionContent className="text-muted-foreground leading-relaxed">
-                          {faq.answer}
-                        </AccordionContent>
-                      </AccordionItem>
-                    ))}
-                  </Accordion>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
-          </div>
-        </section>
 
         {/* Final CTA Section */}
         <section className="py-20 lg:py-28 bg-gradient-to-br from-muted/50 via-background to-muted/30">
