@@ -239,12 +239,12 @@ export default function Index() {
               
               {/* GLP-1 Promotional Card */}
               <Link to="/glp1" className="hover:scale-105 transition-transform lg:col-span-2">
-                <Card className="h-full hover:shadow-xl transition-shadow border-2 border-primary/50">
-                  <CardContent className="p-0 h-full">
+                <Card className="h-full hover:shadow-xl transition-shadow border-4 border-dashed border-primary/70 bg-gradient-to-br from-primary/5 to-secondary/5">
+                  <CardContent className="p-4 h-full flex items-center justify-center">
                     <img 
                       src={glp1DiscountImage} 
                       alt="GLP-1 Weight Loss Special Offer - Act Now" 
-                      className="w-full h-full object-cover rounded-lg"
+                      className="w-full h-auto object-contain rounded-lg"
                     />
                   </CardContent>
                 </Card>
