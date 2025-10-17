@@ -34,6 +34,7 @@ import peptideHeroImage from "@/assets/peptide-hero.jpg";
 import edHeroImage from "@/assets/ed-hero.jpg";
 import homepageGlp1Image from "@/assets/homepage-glp1.png";
 import glp1DiscountImage from "@/assets/glp1-discount.png";
+import drEcheonaHomepage from "@/assets/dr-echeona-homepage.png";
 
 const services = [
   {
@@ -256,7 +257,7 @@ export default function Index() {
         {/* About Dr. Echeona */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl">
+            <div className="mx-auto max-w-5xl">
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Brain className="h-8 w-8 text-primary" />
@@ -265,13 +266,28 @@ export default function Index() {
                   </h2>
                 </div>
               </div>
-              <Card className="border-2">
-                <CardContent className="p-8">
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="flex justify-center">
+                  <img 
+                    src={drEcheonaHomepage} 
+                    alt="Dr. Xochil Echeona, DNP - Family Nurse Practitioner" 
+                    className="rounded-lg shadow-xl w-full max-w-md"
+                  />
+                </div>
+                <Card className="border-2">
+                  <CardContent className="p-8">
+                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                      Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
+                    </p>
+                    <Button size="lg" asChild className="w-full sm:w-auto">
+                      <Link to="/about">
+                        Learn More About Dr. Echeona
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
