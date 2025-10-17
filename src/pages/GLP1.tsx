@@ -161,10 +161,6 @@ export default function WeightLoss() {
                     <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                     <span className="text-muted-foreground">Offering alternative medication options when needed</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Working with insurance providers to optimize affordability</span>
-                  </li>
                 </ul>
                 <div className="flex items-center gap-2">
                   <Lightbulb className="h-5 w-5 text-primary flex-shrink-0" />
@@ -316,7 +312,7 @@ export default function WeightLoss() {
               <Card>
                 <CardContent className="p-6">
                   <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Most insurance plans accepted</p>
+                  <p className="font-medium text-foreground">Transparent, affordable self-pay pricing</p>
                 </CardContent>
               </Card>
               <Card>
