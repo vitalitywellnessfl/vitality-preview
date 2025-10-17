@@ -2,10 +2,12 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone, Lightbulb, Dumbbell, Settings, Leaf, MessageCircle, Calendar, Zap } from "lucide-react";
+import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone, Lightbulb, Dumbbell, Settings, Leaf, MessageCircle, Calendar, Zap, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonials } from "@/components/Testimonials";
 import glp1MedicationsImage from "@/assets/glp1-medications.png";
+import tirzepatideImage from "@/assets/tirzepatide.png";
+import semaglutideImage from "@/assets/semaglutide.png";
 
 export default function WeightLoss() {
   return (
@@ -14,7 +16,7 @@ export default function WeightLoss() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+        <section className="py-20 bg-white">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Syringe className="h-8 w-8 text-primary" />
@@ -43,6 +45,73 @@ export default function WeightLoss() {
                   Call (954) 816-4002
                 </a>
               </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Product Cards - Choose Your Medication */}
+        <section className="py-16 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Choose Your GLP-1 Medication</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Affordable, transparent pricing for medical weight loss therapy
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Tirzepatide Card */}
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+                <div className="aspect-square w-full bg-white p-6 flex items-center justify-center">
+                  <img 
+                    src={tirzepatideImage} 
+                    alt="Tirzepatide medication" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
+                  <div className="mb-4">
+                    <span className="text-3xl font-bold text-primary">$175</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    Dual-action GLP-1 medication for enhanced weight loss results
+                  </p>
+                  <Button size="lg" className="w-full" asChild>
+                    <a href="/book">
+                      Book Consultation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Semaglutide Card */}
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+                <div className="aspect-square w-full bg-white p-6 flex items-center justify-center">
+                  <img 
+                    src={semaglutideImage} 
+                    alt="Semaglutide medication" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
+                  <div className="mb-4">
+                    <span className="text-3xl font-bold text-primary">$300</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    Proven GLP-1 medication for effective appetite control and weight loss
+                  </p>
+                  <Button size="lg" className="w-full" asChild>
+                    <a href="/book">
+                      Book Consultation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -106,7 +175,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Addressing Common Concerns */}
-        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/30 to-white">
+        <section className="py-16 px-6 lg:px-8 bg-muted/20">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
@@ -174,7 +243,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Protecting Muscle */}
-        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-sky/10 to-white">
+        <section className="py-16 px-6 lg:px-8 bg-muted/20">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
@@ -254,7 +323,7 @@ export default function WeightLoss() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+        <section className="py-16 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Calendar className="h-8 w-8 text-primary" />
@@ -342,7 +411,7 @@ export default function WeightLoss() {
         ]} />
 
         {/* Contact Form Section */}
-        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-teal/5 to-vitality-sky/10">
+        <section className="py-16 px-6 lg:px-8 bg-muted/20">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-8">
               <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Start Your Weight Loss Journey?</h2>

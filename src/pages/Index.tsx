@@ -267,16 +267,16 @@ export default function Index() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="flex justify-center">
+                <div className="flex justify-center order-2 md:order-1">
                   <img 
                     src={drEcheonaHomepage} 
                     alt="Dr. Xochil Echeona, DNP - Family Nurse Practitioner" 
-                    className="rounded-lg shadow-xl w-full max-w-md"
+                    className="rounded-lg shadow-xl w-full max-w-md object-cover"
                   />
                 </div>
-                <Card className="border-2">
-                  <CardContent className="p-8">
-                    <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                <Card className="border-2 order-1 md:order-2">
+                  <CardContent className="p-6 sm:p-8">
+                    <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                       Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
                     </p>
                     <Button size="lg" asChild className="w-full sm:w-auto">
