@@ -26,7 +26,7 @@ export default function Book() {
                       Online booking system coming soon. In the meantime, please call us to schedule your appointment.
                     </p>
                     
-                    <Button size="lg" asChild>
+                    <Button size="lg" variant="metallic" asChild>
                       <a href="tel:9548164002">Call (954) 816-4002</a>
                     </Button>
                   </div>

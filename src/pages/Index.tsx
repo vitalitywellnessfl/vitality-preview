@@ -96,16 +96,17 @@ export default function Index() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20 py-20 lg:py-32">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-              <div className="flex justify-center mb-6">
-                <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-24 w-auto" />
+        <section className="relative bg-gradient-to-br from-slate-50 via-gray-100 to-slate-100 py-20 lg:py-32">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/60 via-transparent to-transparent"></div>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
+          <div className="mx-auto max-w-4xl text-center">
+              <div className="flex justify-center mb-8">
+                <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-32 sm:h-48 lg:h-64 w-auto drop-shadow-2xl" />
               </div>
               <div className="flex items-center justify-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-primary" />
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl">
-                  The Body You Deserve <span className="text-script-accent">Starts Here</span>
+                  The Body You Deserve Starts <span className="font-calligraphy text-calligraphy text-primary">Here</span>
                 </h1>
               </div>
               <p className="text-lg leading-8 text-muted-foreground mb-8">
@@ -116,25 +117,25 @@ export default function Index() {
               </p>
               
               <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-                <Badge variant="secondary" className="bg-vitality-teal/10 text-vitality-teal border-vitality-teal/20 hover:bg-vitality-teal/20">
-                  <Award className="h-3 w-3 mr-1" />
-                  Minority-Owned
-                </Badge>
-                <Badge variant="secondary" className="bg-vitality-gold/10 text-vitality-gold border-vitality-gold/20 hover:bg-vitality-gold/20">
+                <Badge className="bg-white text-vitality-gold border-2 border-vitality-gold font-semibold">
                   <Users className="h-3 w-3 mr-1" />
                   Woman-Owned
                 </Badge>
-                <Badge variant="secondary" className="bg-vitality-charcoal/10 text-vitality-charcoal border-vitality-charcoal/20 hover:bg-vitality-charcoal/20">
+                <Badge className="bg-white text-vitality-teal border-2 border-vitality-teal font-semibold">
+                  <Award className="h-3 w-3 mr-1" />
+                  Minority-Owned
+                </Badge>
+                <Badge className="bg-white text-vitality-charcoal border-2 border-vitality-charcoal font-semibold">
                   <Shield className="h-3 w-3 mr-1" />
                   Veteran-Owned
                 </Badge>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" asChild className="text-lg px-8">
+                <Button size="lg" variant="metallic" asChild className="text-lg px-8">
                   <Link to="/book">Schedule Consultation</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild className="text-lg px-8">
+                <Button size="lg" variant="metallic-outline" asChild className="text-lg px-8">
                   <a href="tel:9548164002">Call (954) 816-4002</a>
                 </Button>
               </div>
@@ -281,13 +282,13 @@ export default function Index() {
                   Ready to achieve lasting weight loss and optimal vitality? Schedule your consultation with Dr. Echeona today and discover why Vitality Wellness Clinic is Weston's trusted choice for medical wellness and longevity care.
                 </p>
                 <div className="flex flex-col gap-3">
-                  <Button size="lg" variant="secondary" asChild className="w-full">
+                  <Button size="lg" variant="metallic" asChild className="w-full">
                     <Link to="/book">Schedule Consultation</Link>
                   </Button>
-                  <Button size="lg" variant="outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
+                  <Button size="lg" variant="metallic-outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                     <Link to="/contact">Contact Us</Link>
                   </Button>
-                  <Button size="lg" variant="outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
+                  <Button size="lg" variant="metallic-outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                     <a href="tel:9548164002">Call (954) 816-4002</a>
                   </Button>
                 </div>

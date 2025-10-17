@@ -19,6 +19,7 @@ export default {
         caps: ['Cinzel', 'serif'],                 // All-caps labels/eyebrows
         sans: ['Raleway', 'sans-serif'],           // Body text, buttons
         script: ['Britany', 'cursive'],            // Accent phrases
+        calligraphy: ['Tangerine', 'cursive'],     // Single word accents
       },
       colors: {
         border: "hsl(var(--border))",
@@ -61,6 +62,7 @@ export default {
           'grey-light': 'hsl(var(--vitality-grey-light))',
           grey: 'hsl(var(--vitality-grey))',
           sky: 'hsl(var(--vitality-sky))',
+          gold: 'hsl(var(--vitality-gold))',
         },
       },
       borderRadius: {
