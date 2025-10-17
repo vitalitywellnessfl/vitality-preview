@@ -200,18 +200,18 @@ export default function About() {
           <div className="mx-auto max-w-6xl">
             {/* Main Header with Photo */}
             <div className="mb-12 relative">
-              <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12">
+              <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
                 {/* Photo on left */}
                 <div className="flex-shrink-0 relative z-10">
                   <img 
                     src={drEcheonaImage} 
                     alt="Dr. Xochil Echeona" 
-                    className="w-64 h-auto lg:w-80 xl:w-96 object-contain drop-shadow-2xl"
+                    className="h-[400px] lg:h-[550px] xl:h-[650px] w-auto object-contain drop-shadow-2xl"
                   />
                 </div>
                 
                 {/* Text on right */}
-                <div className="flex-1 text-center lg:text-left lg:pt-8">
+                <div className="flex-1 text-center lg:text-left">
                   <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
                     <Brain className="h-10 w-10 text-primary" />
                     <h2 className="text-4xl font-serif font-bold tracking-tight text-foreground sm:text-5xl">
