@@ -20,6 +20,7 @@ import {
   Phone,
   Users
 } from "lucide-react";
+import hrtHeroImage from "@/assets/hrt-hero.jpg";
 
 export default function HormoneTherapy() {
   const benefits = [
@@ -165,11 +166,10 @@ export default function HormoneTherapy() {
               <AnimatedSection animation="scale-in" delay={200}>
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
                   <img 
-                    src="/placeholder.svg" 
+                    src={hrtHeroImage} 
                     alt="Bioidentical hormone replacement therapy at Vitality Wellness Clinic"
                     className="w-full h-full object-cover"
                   />
-                  {/* TODO: Replace with professional image of hormone therapy consultation, lab testing, or wellness/vitality imagery */}
                 </div>
               </AnimatedSection>
             </div>
