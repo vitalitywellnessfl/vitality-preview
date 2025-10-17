@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         display: ['Sora', 'sans-serif'],
+        script: ['Britany', 'cursive'],
       },
       colors: {
         border: "hsl(var(--border))",

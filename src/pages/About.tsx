@@ -217,8 +217,8 @@ export default function About() {
                   </p>
                   
                   <div className="pt-6 border-t mt-8">
-                    <p className="text-foreground font-semibold italic">
-                      "My mission is to help you not just feel better, but to truly thrive. Together, we'll create a wellness plan that fits your life, your goals, and your vision for your healthiest self."
+                    <p className="text-script text-foreground text-xl leading-relaxed">
+                      "My mission is to help you not just feel better, but to <span className="text-primary">truly thrive</span>. Together, we'll create a wellness plan that fits your life, your goals, and your vision for your healthiest self."
                     </p>
                     <p className="text-muted-foreground mt-2">— Dr. Xochil Echeona, DNP, FNP-BC</p>
                   </div>

@@ -284,6 +284,7 @@ const WeightLossProgram = () => {
         <section className="relative py-20 px-4 bg-white">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
+              <p className="text-script text-secondary text-sm mb-2">Medical Excellence</p>
               <AnimatedSection>
                 <div className="inline-flex items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-secondary/10 animate-float">
@@ -329,6 +330,7 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-5xl">
             <AnimatedSection>
               <div className="text-center mb-12">
+                <p className="text-script text-primary text-sm mb-2">Transformation Stories</p>
                 <div className="inline-flex items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
                     <Heart className="h-8 w-8 text-primary" />
