@@ -113,7 +113,7 @@ export default function About() {
         </section>
 
         {/* Meet Dr. Echeona */}
-        <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10 relative overflow-visible">
+        <section id="dr-echeona" className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10 relative overflow-visible">
           <div className="mx-auto max-w-6xl">
             {/* Main Header with Photo */}
             <div className="mb-12 relative">

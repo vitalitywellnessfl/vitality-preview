@@ -280,7 +280,7 @@ export default function Index() {
                       Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
                     </p>
                     <Button size="lg" asChild className="w-full sm:w-auto">
-                      <Link to="/about">
+                      <Link to="/about#dr-echeona">
                         Learn More About Dr. Echeona
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
