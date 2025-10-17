@@ -100,7 +100,7 @@ const WeightLossProgram = () => {
                 <AnimatedSection delay={300}>
                   <div className="space-y-4 text-base mb-10">
                     <p className="text-muted-foreground">
-                      For many people, weight loss is not about vanity. It is about being able to walk upstairs without pain, feeling comfortable in your own clothes again, and making peace with food after years of struggle.
+                      For many people, weight loss is not about vanity. Imagine being able to walk upstairs without pain, feeling comfortable in your own clothes again, and making peace with food after years of struggle.
                     </p>
                     <p className="font-medium text-foreground">
                       This is not a quick fix. It is a calm, steady return to feeling like yourself again.
@@ -124,12 +124,15 @@ const WeightLossProgram = () => {
                 </AnimatedSection>
               </div>
 
-              {/* Right: Image Placeholder */}
+              {/* Right: Hero Image */}
               <AnimatedSection delay={200} className="hidden lg:block">
-                <div className="relative aspect-[4/5] rounded-2xl bg-gradient-to-br from-vitality-teal/20 to-vitality-coral/10 border border-border shadow-elevated overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <Heart className="h-24 w-24 text-primary/20" />
-                  </div>
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated border border-border">
+                  <img 
+                    src="/placeholder.svg" 
+                    alt="Person looking hopeful and confident on their wellness journey"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-vitality-charcoal/20 to-transparent" />
                 </div>
               </AnimatedSection>
             </div>
@@ -143,8 +146,12 @@ const WeightLossProgram = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
               <AnimatedSection>
                 <div className="flex justify-center lg:justify-end">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-coral/20 to-vitality-teal/20 flex items-center justify-center animate-float">
-                    <Brain className="h-16 w-16 text-primary" />
+                  <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-elevated">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="Medical illustration of metabolic health and hormonal balance"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </AnimatedSection>
@@ -174,8 +181,12 @@ const WeightLossProgram = () => {
               </AnimatedSection>
               <AnimatedSection className="lg:order-2 order-1">
                 <div className="flex justify-center lg:justify-start">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-teal/20 to-vitality-sky/20 flex items-center justify-center animate-float">
-                    <Stethoscope className="h-16 w-16 text-secondary" />
+                  <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-elevated">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="Healthcare provider consulting with patient in modern clinic"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </AnimatedSection>
@@ -185,8 +196,12 @@ const WeightLossProgram = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <AnimatedSection>
                 <div className="flex justify-center lg:justify-end">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-sky/20 to-vitality-teal/20 flex items-center justify-center animate-float">
-                    <Shield className="h-16 w-16 text-accent" />
+                  <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-elevated">
+                    <img 
+                      src="/placeholder.svg" 
+                      alt="Patient tracking progress on health journey with supportive care team"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
               </AnimatedSection>
