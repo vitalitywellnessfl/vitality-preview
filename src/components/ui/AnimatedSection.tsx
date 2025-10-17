@@ -15,7 +15,19 @@ export const AnimatedSection = ({
   animation = "fade-in-up" 
 }: AnimatedSectionProps) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.matchMedia("(max-width: 768px)").matches);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,6 +55,11 @@ export const AnimatedSection = ({
       }
     };
   }, [delay]);
+
+  // On mobile, skip animations entirely
+  if (isMobile) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <div
