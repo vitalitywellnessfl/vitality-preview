@@ -27,6 +27,7 @@ import { Testimonials } from "@/components/Testimonials";
 import vitalityLogo from "@/assets/vitality-logo.gif";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
 import ivHeroImage from "@/assets/iv-hero.jpg";
+import vitaminHeroImage from "@/assets/vitamin-hero.jpg";
 
 const services = [
   {
@@ -52,7 +53,8 @@ const services = [
     icon: Activity,
     title: "Vitamin Shots",
     description: "Quick and effective vitamin injections to boost energy, support immunity, and enhance overall wellness with targeted nutrition.",
-    link: "/vitamin-shots"
+    link: "/vitamin-shots",
+    image: vitaminHeroImage
   },
   {
     icon: Sparkles,
