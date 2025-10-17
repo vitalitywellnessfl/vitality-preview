@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, Heart, Brain, Scale, CheckCircle2, Stethoscope, TrendingUp, Shield, Sparkles, Calendar, Users, ClipboardCheck, Trophy, Target, Zap } from "lucide-react";
+import { ArrowRight, Heart, Brain, Scale, CheckCircle2, Stethoscope, TrendingUp, Shield, Sparkles, Calendar, ClipboardCheck, Zap } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { BlobBackground } from "@/components/ui/BlobBackground";
@@ -60,11 +60,6 @@ const WeightLossProgram = () => {
     }
   ];
 
-  const stats = [
-    { icon: Users, value: "500+", label: "Patients Transformed" },
-    { icon: Trophy, value: "85%", label: "Success Rate" },
-    { icon: Target, value: "15-20%", label: "Avg. Weight Loss" }
-  ];
 
   return (
     <>
@@ -220,30 +215,6 @@ const WeightLossProgram = () => {
                   </MagneticButton>
                 </div>
               </AnimatedSection>
-            </div>
-          </div>
-        </section>
-
-        {/* Success Stats Section */}
-        <section className="relative py-16 px-4 bg-muted">
-          <div className="container mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => {
-                const Icon = stat.icon;
-                return (
-                  <AnimatedSection key={index} delay={index * 100} animation="scale-in">
-                    <Card className="text-center border hover:border-primary hover:shadow-elevated transition-all duration-300 bg-card">
-                      <CardContent className="p-8">
-                        <div className="mx-auto mb-4 w-fit p-4 rounded-full bg-primary/10 animate-float">
-                          <Icon className="h-8 w-8 text-primary" />
-                        </div>
-                        <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                        <div className="text-muted-foreground text-sm">{stat.label}</div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-                );
-              })}
             </div>
           </div>
         </section>
