@@ -64,6 +64,15 @@ export const Navbar = () => {
             Home
           </Link>
           
+          <Link
+            to="/weight-loss-program"
+            className={`text-base font-medium transition-colors hover:text-primary ${
+              location.pathname === "/weight-loss-program" ? "text-primary" : "text-foreground"
+            }`}
+          >
+            Weight Loss Program
+          </Link>
+          
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -159,6 +168,16 @@ export const Navbar = () => {
                       {item.name}
                     </Link>
                   ))}
+                  
+                  <Link
+                    to="/weight-loss-program"
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-muted ${
+                      location.pathname === "/weight-loss-program" ? "text-primary bg-muted" : "text-foreground"
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Weight Loss Program
+                  </Link>
                   
                   <div className="pt-2">
                     <div className="-mx-3 px-3 py-2 text-base font-medium text-muted-foreground">
