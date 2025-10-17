@@ -238,7 +238,7 @@ export default function Index() {
               ))}
               
               {/* GLP-1 Promotional Card */}
-              <Link to="/glp1" className="hover:scale-105 transition-transform">
+              <Link to="/glp1" className="hover:scale-105 transition-transform lg:col-span-2">
                 <Card className="h-full hover:shadow-xl transition-shadow border-2 border-primary/50">
                   <CardContent className="p-0 h-full">
                     <img 
