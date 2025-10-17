@@ -33,6 +33,7 @@ import glp1HeroImage from "@/assets/glp1-hero.jpg";
 import peptideHeroImage from "@/assets/peptide-hero.jpg";
 import edHeroImage from "@/assets/ed-hero.jpg";
 import homepageGlp1Image from "@/assets/homepage-glp1.png";
+import glp1DiscountImage from "@/assets/glp1-discount.png";
 
 const services = [
   {
@@ -235,6 +236,19 @@ export default function Index() {
                   </CardContent>
                 </Card>
               ))}
+              
+              {/* GLP-1 Promotional Card */}
+              <Link to="/glp1" className="hover:scale-105 transition-transform">
+                <Card className="h-full hover:shadow-xl transition-shadow border-2 border-primary/50">
+                  <CardContent className="p-0 h-full">
+                    <img 
+                      src={glp1DiscountImage} 
+                      alt="GLP-1 Weight Loss Special Offer - Act Now" 
+                      className="w-full h-full object-cover rounded-lg"
+                    />
+                  </CardContent>
+                </Card>
+              </Link>
             </div>
           </div>
         </section>
