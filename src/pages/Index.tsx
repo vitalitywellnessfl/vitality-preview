@@ -28,6 +28,7 @@ import vitalityLogo from "@/assets/vitality-logo.gif";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
 import ivHeroImage from "@/assets/iv-hero.jpg";
 import vitaminHeroImage from "@/assets/vitamin-hero.jpg";
+import contourHeroImage from "@/assets/contour-hero.jpg";
 
 const services = [
   {
@@ -60,7 +61,8 @@ const services = [
     icon: Sparkles,
     title: "Body Contouring",
     description: "Non-invasive body sculpting treatments to help you achieve your ideal physique and enhance your natural beauty.",
-    link: "/body-contouring"
+    link: "/body-contouring",
+    image: contourHeroImage
   },
   {
     icon: HeartPulse,
