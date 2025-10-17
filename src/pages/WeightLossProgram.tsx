@@ -2,11 +2,13 @@ import { Badge } from "@/components/ui/badge";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Link } from "react-router-dom";
-import { ArrowRight, Heart, Brain, Scale, CheckCircle2, Stethoscope, TrendingUp, Shield, Sparkles } from "lucide-react";
+import { ArrowRight, Heart, Brain, Scale, CheckCircle2, Stethoscope, TrendingUp, Shield, Sparkles, Calendar, Users, ClipboardCheck, Trophy, Target, Zap } from "lucide-react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { BlobBackground } from "@/components/ui/BlobBackground";
 import { MagneticButton } from "@/components/ui/MagneticButton";
+import { ProgressJourney } from "@/components/ui/ProgressJourney";
+import { Card, CardContent } from "@/components/ui/card";
 
 const WeightLossProgram = () => {
   const benefits = [
@@ -30,14 +32,51 @@ const WeightLossProgram = () => {
     { text: "For the first time in thirteen years, I am at a normal weight.", icon: Scale, delay: 300 }
   ];
 
+  const journeySteps = [
+    {
+      title: "Initial Consultation",
+      description: "Meet with our clinician to discuss your health history, goals, and create your personalized plan.",
+      completed: true
+    },
+    {
+      title: "Medical Evaluation",
+      description: "Comprehensive lab testing and health assessment to ensure safe, effective treatment.",
+      completed: true
+    },
+    {
+      title: "Treatment Begins",
+      description: "Start your GLP-1 medication with ongoing guidance on nutrition, lifestyle, and wellness.",
+      completed: true
+    },
+    {
+      title: "Progress Tracking",
+      description: "Regular check-ins and adjustments to optimize your results and support your journey.",
+      completed: false
+    },
+    {
+      title: "Sustainable Success",
+      description: "Achieve lasting results with continued support and maintenance strategies.",
+      completed: false
+    }
+  ];
+
+  const stats = [
+    { icon: Users, value: "500+", label: "Patients Transformed" },
+    { icon: Trophy, value: "85%", label: "Success Rate" },
+    { icon: Target, value: "15-20%", label: "Avg. Weight Loss" }
+  ];
+
   return (
     <>
       <Navbar />
       
       <main className="min-h-screen overflow-hidden">
-        {/* Hero Section with Blob Background */}
-        <section className="relative pt-32 pb-20 px-4">
-          <BlobBackground variant="hero" />
+        {/* Hero Section with Clean Gradient */}
+        <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+          <div className="absolute inset-0 overflow-hidden -z-10">
+            <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl opacity-20 bg-gradient-to-r from-vitality-teal to-vitality-sky -top-48 -left-48 animate-blob" />
+            <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-15 bg-gradient-to-r from-vitality-gold to-vitality-tan top-40 -right-32 animate-blob-slow" />
+          </div>
           <div className="container mx-auto max-w-4xl text-center relative z-10">
             <AnimatedSection animation="fade-in">
               <Badge variant="secondary" className="mb-6 shadow-glow">
@@ -83,7 +122,7 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Why It Works Section */}
-        <section className="relative py-20 px-4">
+        <section className="relative py-20 px-4 bg-white">
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <GlassmorphicCard variant="strong" className="overflow-hidden">
@@ -119,8 +158,64 @@ const WeightLossProgram = () => {
           </div>
         </section>
 
-        {/* Understanding Medications Section with Mesh Gradient */}
-        <section className="relative py-20 px-4 mesh-gradient">
+        {/* Success Stats Section */}
+        <section className="relative py-16 px-4 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10">
+          <div className="container mx-auto max-w-5xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <AnimatedSection key={index} delay={index * 100} animation="scale-in">
+                    <Card className="text-center border-2 hover:border-primary hover:shadow-elevated transition-all duration-300">
+                      <CardContent className="p-8">
+                        <div className="mx-auto mb-4 w-fit p-4 rounded-full bg-primary/10 animate-float">
+                          <Icon className="h-8 w-8 text-primary" />
+                        </div>
+                        <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
+                        <div className="text-muted-foreground">{stat.label}</div>
+                      </CardContent>
+                    </Card>
+                  </AnimatedSection>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Your Journey Section */}
+        <section className="relative py-20 px-4 bg-white">
+          <div className="container mx-auto max-w-4xl">
+            <AnimatedSection>
+              <div className="text-center mb-12">
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <div className="p-3 rounded-full bg-primary/10 animate-float">
+                    <Calendar className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold">Your Personalized Journey</h2>
+                </div>
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  Every step is designed with your success in mind. Here's what to expect on your transformation journey.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <div className="max-w-2xl mx-auto">
+              <ProgressJourney steps={journeySteps} />
+            </div>
+
+            <AnimatedSection delay={500}>
+              <div className="mt-12 text-center">
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/5 rounded-full">
+                  <Zap className="h-5 w-5 text-primary animate-pulse" />
+                  <span className="font-medium">Start your journey today</span>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Understanding Medications Section */}
+        <section className="relative py-20 px-4 bg-muted/30">
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-8">
@@ -167,9 +262,8 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Real Results Section */}
-        <section className="relative py-20 px-4">
-          <BlobBackground />
-          <div className="container mx-auto max-w-4xl relative z-10">
+        <section className="relative py-20 px-4 bg-white">
+          <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-8">
                 <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
@@ -224,7 +318,7 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Membership Benefits Section */}
-        <section className="relative py-20 px-4 mesh-gradient-hero">
+        <section className="relative py-20 px-4 bg-gradient-to-b from-vitality-teal/5 to-white">
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="flex items-center gap-3 mb-8">
@@ -277,29 +371,32 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Final CTA Section */}
-        <section className="relative py-24 px-4">
-          <BlobBackground variant="hero" />
+        <section className="relative py-24 px-4 bg-vitality-charcoal text-white overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-20 bg-vitality-teal -bottom-32 -left-32 animate-blob" />
+            <div className="absolute w-[400px] h-[400px] rounded-full blur-3xl opacity-15 bg-vitality-gold -top-20 -right-20 animate-blob-slow" />
+          </div>
           <div className="container mx-auto max-w-3xl text-center relative z-10">
             <AnimatedSection>
               <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="p-4 rounded-full bg-primary/10 animate-glow-pulse">
-                  <Scale className="h-10 w-10 text-primary" />
+                <div className="p-4 rounded-full bg-vitality-teal/20 animate-glow-pulse">
+                  <Scale className="h-10 w-10 text-vitality-teal" />
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold">
-                  A Return to <span className="gradient-text">Feeling Like Yourself</span>
+                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                  A Return to <span className="text-vitality-teal">Feeling Like Yourself</span>
                 </h2>
               </div>
             </AnimatedSection>
             
             <AnimatedSection delay={100}>
-              <div className="space-y-6 text-lg text-muted-foreground mb-10">
-                <p className="text-xl font-medium text-foreground">
+              <div className="space-y-6 text-lg mb-10">
+                <p className="text-xl font-medium text-white">
                   Our patients often say, "I feel like myself again."
                 </p>
-                <p>
+                <p className="text-vitality-cream/90">
                   That single sentence captures everything we believe in.
                 </p>
-                <p>
+                <p className="text-vitality-cream/90">
                   At Vitality Wellness Clinic, we combine science with kindness to help you build lasting confidence in your body and peace with food. This is not about becoming someone new. It is about returning to the version of yourself that feels strong, steady, and free.
                 </p>
               </div>
@@ -312,7 +409,7 @@ const WeightLossProgram = () => {
                     Book Your Consultation <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </MagneticButton>
-                <MagneticButton asChild variant="outline" size="lg" className="text-lg">
+                <MagneticButton asChild variant="outline" size="lg" className="text-lg bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                   <Link to="/contact">
                     Ask a Question
                   </Link>
