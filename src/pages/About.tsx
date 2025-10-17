@@ -14,7 +14,15 @@ import {
   Brain,
   CheckCircle2,
   Phone,
-  Calendar
+  Calendar,
+  Zap,
+  Leaf,
+  Syringe,
+  Activity,
+  Wind,
+  Flame,
+  Droplet,
+  Smile
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -82,20 +90,20 @@ export default function About() {
               </Badge>
             </div>
             
-            <Card>
-              <CardContent className="p-8 lg:p-12">
-                <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
-                  <p>
-                    At <strong className="text-foreground">Vitality Wellness FL</strong>, we're dedicated to helping you achieve your healthiest, happiest self through compassionate, science-backed care in a warm and empowering environment. We believe in treating every individual with the respect, dignity, and personalized attention they deserve.
+            <Card className="overflow-hidden border-2">
+              <CardContent className="p-8 lg:p-12 bg-gradient-to-br from-white to-vitality-sky/5">
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p className="text-muted-foreground">
+                    At <strong className="text-foreground">Vitality Wellness FL</strong>, transformation begins the moment you walk through our doors. We are dedicated to helping you reclaim your vitality through integrative medicine that honors the whole person: body, mind, and spirit.
                   </p>
-                  <p>
-                    Founded out of a passion for accessible, results-driven health solutions, we specialize in transformative wellness services including medical weight loss with GLP-1 therapy, rejuvenating IV therapy, targeted vitamin and wellness shots, hormone optimization, and advanced treatments designed to enhance energy, restore vitality, and help you glow from the inside out.
+                  <p className="text-muted-foreground">
+                    Founded on the belief that wellness should be accessible, personalized, and rooted in science, we offer comprehensive services from GLP-1 medical weight loss and bioidentical hormone therapy to regenerative aesthetics and IV wellness treatments. Every plan is designed around your unique goals, lifestyle, and health story.
                   </p>
-                  <p>
-                    Whether you're seeking a boost in energy, support in achieving your wellness goals, support for intimate health, or simply a moment of rejuvenation, our team is committed to crafting tailored treatment plans that deliver meaningful, lasting impact on your quality of life.
+                  <p className="text-muted-foreground">
+                    Whether you are seeking renewed energy, hormonal balance, confident aesthetics, or support in your wellness journey, our team provides compassionate, evidence-based care tailored to deliver real, lasting results.
                   </p>
-                  <p className="font-semibold text-foreground">
-                    From your first consultation to each renewed step forward, Vitality Wellness FL is by your side—empowering you to feel better, look brighter, and live life at your fullest potential.
+                  <p className="text-xl font-semibold text-foreground">
+                    Your health story doesn't have to be about symptoms. It can be about renewal.
                   </p>
                 </div>
               </CardContent>
@@ -187,40 +195,178 @@ export default function About() {
         </section>
 
         {/* Meet Dr. Echeona */}
-        <section className="py-16 px-6 lg:px-8 bg-white">
-          <div className="mx-auto max-w-4xl">
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <Brain className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl text-center">
-                Meet Dr. Xochil Echeona, DNP
-              </h2>
+        <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10">
+          <div className="mx-auto max-w-6xl">
+            {/* Main Header */}
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Brain className="h-10 w-10 text-primary" />
+                <h2 className="text-4xl font-serif font-bold tracking-tight text-foreground sm:text-5xl">
+                  Meet Dr. Xochil Echeona
+                </h2>
+              </div>
+              <p className="text-sm text-muted-foreground font-medium tracking-wide mb-3">
+                DNP, APRN, FNP-BC, PMHNP-BC, GNP-BC
+              </p>
+              <p className="text-2xl font-script text-primary">
+                Where Medicine, Mind, and Aesthetic Wellness Meet
+              </p>
             </div>
-            
-            <Card className="border-2">
-              <CardContent className="p-8 lg:p-12">
-                <div className="space-y-6">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Stethoscope className="h-6 w-6 text-primary" />
-                    <h3 className="text-xl font-semibold text-foreground">Board-Certified Family Nurse Practitioner</h3>
+
+            {/* Opening Narrative */}
+            <Card className="border-2 mb-8 overflow-hidden">
+              <CardContent className="p-8 lg:p-12 bg-gradient-to-br from-white to-vitality-teal/5">
+                <div className="space-y-6 text-lg leading-relaxed">
+                  <p className="text-xl font-semibold text-foreground">
+                    The story of your health doesn't have to be about symptoms. It can be about renewal.
+                  </p>
+                  <p className="text-muted-foreground">
+                    At her integrative medicine clinic, Dr. Xochil Echeona blends science and holistic care to help patients rediscover balance inside and out. She is a functional medicine nurse practitioner with over 15 years of experience guiding individuals toward better energy, confidence, and longevity.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Every treatment begins with listening: to your goals, your habits, your stress, your hormones. Then, together, you and Dr. Echeona build a plan that reconnects you to feeling your best, whether through bioidentical hormone replacement therapy (HRT), medical weight loss peptides, or regenerative aesthetic treatments that enhance natural beauty rather than replace it.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Two Column Layout for Specialties */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              {/* Functional & Holistic Wellness */}
+              <Card className="border-2 overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 bg-gradient-to-br from-vitality-teal/5 to-white">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 rounded-full bg-vitality-teal/10">
+                      <Leaf className="h-7 w-7 text-vitality-teal" />
+                    </div>
+                    <h3 className="text-2xl font-semibold text-foreground">Functional & Holistic Wellness</h3>
                   </div>
                   
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Dr. Xochil Echeona is a <strong className="text-foreground">Doctor of Nursing Practice (DNP)</strong> and board-certified <strong className="text-foreground">Family Nurse Practitioner</strong> specializing in preventive health, metabolic wellness, hormone optimization, and medical weight management.
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    True wellness is not one-size-fits-all. In her holistic wellness and hormone therapy programs, Dr. Echeona integrates evidence-based medicine with homeopathic and functional approaches.
                   </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    With a passion for empowering patients through education and evidence-based medicine, Dr. Echeona brings compassionate, personalized care to every consultation. She believes that lasting wellness comes from understanding the root causes of health challenges and addressing them holistically.
-                  </p>
-                  
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Dr. Echeona is committed to staying at the forefront of medical advancements, ensuring her patients have access to the latest, most effective treatments available. Her approach combines clinical expertise with genuine care for each patient's individual journey toward optimal health.
-                  </p>
-                  
-                  <div className="pt-6 border-t mt-8">
-                    <p className="text-script text-foreground text-xl leading-relaxed">
-                      "My mission is to help you not just feel better, but to <span className="text-primary">truly thrive</span>. Together, we'll create a wellness plan that fits your life, your goals, and your vision for your healthiest self."
+
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <Activity className="h-5 w-5 text-vitality-teal flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Bioidentical Hormone Replacement Therapy (HRT)</p>
+                        <p className="text-sm text-muted-foreground">for men and women</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Zap className="h-5 w-5 text-vitality-teal flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">GLP-1 and peptide-based weight loss programs</p>
+                        <p className="text-sm text-muted-foreground">tailored to your metabolism</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Droplet className="h-5 w-5 text-vitality-teal flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">IV therapy and vitamin shots</p>
+                        <p className="text-sm text-muted-foreground">for energy, immunity, and recovery</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Brain className="h-5 w-5 text-vitality-teal flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Mind-body stress management</p>
+                        <p className="text-sm text-muted-foreground">and psychiatric nurse practitioner care</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-vitality-teal/20">
+                    <p className="text-sm font-semibold text-foreground">
+                      The goal: restore balance, stabilize mood, and renew vitality without losing sight of the person behind the symptoms.
                     </p>
-                    <p className="text-muted-foreground mt-2">— Dr. Xochil Echeona, DNP, FNP-BC</p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Aesthetic & Regenerative Medicine */}
+              <Card className="border-2 overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-8 bg-gradient-to-br from-vitality-gold/5 to-white">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 rounded-full bg-vitality-gold/10">
+                      <Sparkles className="h-7 w-7 text-vitality-gold" />
+                    </div>
+                    <h3 className="text-2xl font-semibold text-foreground">Aesthetic & Regenerative Medicine</h3>
+                  </div>
+                  
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    Your skin tells a story too, of time, health, and self-care. Through aesthetic medicine and facial contouring, Dr. Echeona helps patients refresh their appearance while supporting deeper wellness.
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="flex items-start gap-3">
+                      <Syringe className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Neurotoxin and dermal filler injections</p>
+                        <p className="text-sm text-muted-foreground">for natural, youthful balance</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Smile className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Facial harmonization and contouring</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Wind className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Sclerotherapy</p>
+                        <p className="text-sm text-muted-foreground">for visible veins and vascular concerns</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Flame className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Body contouring and skin tightening solutions</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <Activity className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="font-semibold text-foreground">Erectile dysfunction treatments</p>
+                        <p className="text-sm text-muted-foreground">centered on regenerative health</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 pt-6 border-t border-vitality-gold/20">
+                    <p className="text-sm font-semibold text-foreground">
+                      Each treatment is performed with artistry and clinical precision because beauty should feel as good as it looks.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* A New Kind of Care Experience */}
+            <Card className="border-2 overflow-hidden">
+              <CardContent className="p-8 lg:p-12 bg-gradient-to-br from-primary/5 via-white to-vitality-sky/5">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 rounded-full bg-primary/10">
+                    <Stethoscope className="h-7 w-7 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-semibold text-foreground">A New Kind of Care Experience</h3>
+                </div>
+                
+                <div className="space-y-5 text-lg leading-relaxed">
+                  <p className="text-muted-foreground">
+                    Dr. Echeona's background spans cardiology, internal medicine, and family health, giving her a 360-degree understanding of the human body. Her clinic offers more than treatment; it offers transformation through integrative medicine that supports physical, emotional, and aesthetic wellbeing.
+                  </p>
+                  
+                  <p className="text-xl font-semibold text-foreground">
+                    Every visit is an opportunity to feel understood, respected, and restored.
+                  </p>
+                  
+                  <div className="pt-6 mt-6 border-t">
+                    <Button size="lg" asChild className="w-full sm:w-auto">
+                      <Link to="/book">Begin Your Wellness Journey</Link>
+                    </Button>
                   </div>
                 </div>
               </CardContent>
@@ -268,26 +414,26 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-6 lg:px-8 bg-vitality-charcoal text-white">
+        <section className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-charcoal via-vitality-charcoal to-vitality-teal/20">
           <div className="mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Calendar className="h-10 w-10 text-vitality-teal" />
-              <h2 className="text-3xl font-serif font-semibold sm:text-4xl">
-                Ready to Start Your Wellness Journey?
+              <Calendar className="h-12 w-12 text-vitality-teal" />
+              <h2 className="text-4xl font-serif font-bold sm:text-5xl text-white">
+                Begin Your Wellness Journey
               </h2>
             </div>
             
-            <p className="text-lg mb-8 text-white/90">
-              Schedule your consultation with Dr. Echeona today and take the first step toward becoming your healthiest, most vibrant self.
+            <p className="text-xl mb-10 text-white/90 max-w-2xl mx-auto leading-relaxed">
+              Schedule your consultation with Dr. Echeona today and discover what it means to feel understood, restored, and truly alive.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" asChild>
+              <Button size="lg" className="bg-vitality-teal hover:bg-vitality-teal/90 text-white text-lg px-8 py-6" asChild>
                 <Link to="/book">Schedule Consultation</Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
+              <Button size="lg" variant="outline" asChild className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-vitality-charcoal text-lg px-8 py-6">
                 <a href="tel:9548164002">
-                  <Phone className="mr-2 h-4 w-4" />
+                  <Phone className="mr-2 h-5 w-5" />
                   Call (954) 816-4002
                 </a>
               </Button>
