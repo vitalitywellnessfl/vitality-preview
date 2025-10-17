@@ -8,42 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Brand Colors - Vitality Wellness Clinic */
-    --vitality-teal: 182 33% 57%;        /* #70B4B5 */
-    --vitality-gold: 40 23% 54%;         /* #A39070 */
-    --vitality-charcoal: 210 18% 26%;    /* #36454f */
-    --vitality-cream: 40 29% 91%;        /* #ede8dd */
-    --vitality-purple: 300 4% 79%;       /* #cbc7ca */
-    --vitality-sky: 199 57% 77%;         /* #a3c9e1 */
-    --vitality-tan: 30 32% 73%;          /* #d4b89f */
+    /* Brand Colors - Vitality Wellness Clinic (2026 Refresh) */
+    --vitality-coral: 12 100% 67%;       /* #FF7A59 - Primary CTA */
+    --vitality-teal: 172 38% 62%;        /* #6DD3C7 - Modern teal accent */
+    --vitality-charcoal: 215 25% 20%;    /* #1A2B48 - Dark text */
+    --vitality-grey-light: 216 25% 97%; /* #F4F7FC - Light background */
+    --vitality-grey: 216 20% 95%;        /* #F0F3F7 - Muted sections */
+    --vitality-sky: 199 57% 77%;         /* #a3c9e1 - Sky accent */
     
-    --background: 40 29% 91%;            /* cream */
-    --foreground: 210 18% 26%;           /* charcoal */
+    --background: 0 0% 100%;             /* Pure white */
+    --foreground: 215 25% 20%;           /* Modern dark blue */
 
-    --card: 0 0% 100%;
-    --card-foreground: 210 18% 26%;
+    --card: 0 0% 100%;                   /* White cards */
+    --card-foreground: 215 25% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 18% 26%;
+    --popover-foreground: 215 25% 20%;
 
-    --primary: 182 33% 57%;              /* teal */
+    --primary: 12 100% 67%;              /* Coral CTA */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 23% 54%;             /* gold */
+    --secondary: 172 38% 62%;            /* Modern teal */
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 40 29% 91%;
-    --muted-foreground: 210 18% 45%;
+    --muted: 216 20% 95%;                /* Light grey */
+    --muted-foreground: 215 15% 40%;
 
-    --accent: 199 57% 77%;               /* sky blue */
-    --accent-foreground: 210 18% 26%;
+    --accent: 172 38% 62%;               /* Teal accent */
+    --accent-foreground: 215 25% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 40 15% 85%;
-    --input: 40 15% 85%;
-    --ring: 182 33% 57%;
+    --border: 216 20% 90%;
+    --input: 216 20% 90%;
+    --ring: 12 100% 67%;
 
     --radius: 0.75rem;
 
@@ -65,33 +64,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 210 18% 15%;
-    --foreground: 40 29% 91%;
+    --background: 215 25% 15%;
+    --foreground: 216 25% 97%;
 
-    --card: 210 18% 20%;
-    --card-foreground: 40 29% 91%;
+    --card: 215 25% 18%;
+    --card-foreground: 216 25% 97%;
 
-    --popover: 210 18% 20%;
-    --popover-foreground: 40 29% 91%;
+    --popover: 215 25% 18%;
+    --popover-foreground: 216 25% 97%;
 
-    --primary: 182 33% 57%;
+    --primary: 12 100% 67%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 40 23% 54%;
+    --secondary: 172 38% 62%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 18% 25%;
-    --muted-foreground: 40 29% 70%;
+    --muted: 215 20% 25%;
+    --muted-foreground: 216 20% 70%;
 
-    --accent: 199 57% 77%;
-    --accent-foreground: 210 18% 15%;
+    --accent: 172 38% 62%;
+    --accent-foreground: 215 25% 15%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 40 29% 91%;
+    --destructive-foreground: 216 25% 97%;
 
-    --border: 210 18% 30%;
-    --input: 210 18% 30%;
-    --ring: 182 33% 57%;
+    --border: 215 20% 30%;
+    --input: 215 20% 30%;
+    --ring: 12 100% 67%;
   }
 }
 
@@ -102,69 +101,64 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground font-sans;
+    font-size: 18px;
+    line-height: 1.7;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-display font-semibold;
   }
 }
 
 @layer utilities {
   .gradient-vitality {
-    background: linear-gradient(135deg, hsl(var(--vitality-teal)) 0%, hsl(var(--vitality-sky)) 100%);
+    background: linear-gradient(135deg, hsl(var(--vitality-coral)) 0%, hsl(var(--vitality-teal)) 100%);
   }
   
-  .gradient-gold {
-    background: linear-gradient(135deg, hsl(var(--vitality-gold)) 0%, hsl(var(--vitality-tan)) 100%);
+  .gradient-accent {
+    background: linear-gradient(135deg, hsl(var(--vitality-teal)) 0%, hsl(var(--vitality-sky)) 100%);
   }
 
   .text-shadow-sm {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
-  /* Mesh Gradients */
+  /* Subtle Mesh Gradients */
   .mesh-gradient {
     background: 
-      radial-gradient(at 27% 37%, hsl(var(--vitality-teal) / 0.15) 0px, transparent 50%),
-      radial-gradient(at 97% 21%, hsl(var(--vitality-sky) / 0.12) 0px, transparent 50%),
-      radial-gradient(at 52% 99%, hsl(var(--vitality-gold) / 0.08) 0px, transparent 50%),
-      radial-gradient(at 10% 29%, hsl(var(--vitality-purple) / 0.1) 0px, transparent 50%),
-      radial-gradient(at 97% 96%, hsl(var(--vitality-tan) / 0.1) 0px, transparent 50%),
-      radial-gradient(at 33% 50%, hsl(var(--vitality-cream) / 0.08) 0px, transparent 50%),
-      radial-gradient(at 79% 53%, hsl(var(--vitality-teal) / 0.12) 0px, transparent 50%);
+      radial-gradient(at 27% 37%, hsl(var(--vitality-teal) / 0.06) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, hsl(var(--vitality-sky) / 0.05) 0px, transparent 50%),
+      radial-gradient(at 52% 99%, hsl(var(--vitality-coral) / 0.04) 0px, transparent 50%);
     background-size: 200% 200%;
     animation: gradient-shift 15s ease infinite;
   }
 
   .mesh-gradient-hero {
     background: 
-      radial-gradient(at 20% 30%, hsl(var(--vitality-teal) / 0.2) 0px, transparent 50%),
-      radial-gradient(at 90% 20%, hsl(var(--vitality-sky) / 0.18) 0px, transparent 50%),
-      radial-gradient(at 50% 95%, hsl(var(--vitality-gold) / 0.12) 0px, transparent 50%),
-      radial-gradient(at 15% 80%, hsl(var(--vitality-purple) / 0.15) 0px, transparent 50%);
+      radial-gradient(at 20% 30%, hsl(var(--vitality-teal) / 0.08) 0px, transparent 50%),
+      radial-gradient(at 90% 20%, hsl(var(--vitality-coral) / 0.06) 0px, transparent 50%);
     background-size: 300% 300%;
     animation: gradient-shift 20s ease infinite;
   }
 
-  /* Glassmorphism */
+  /* Clean Modern Cards (simplified glassmorphism) */
   .glass {
-    background: hsl(var(--card) / 0.7);
-    backdrop-filter: blur(12px) saturate(180%);
-    border: 1px solid hsl(var(--border) / 0.2);
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 2px 8px hsl(var(--foreground) / 0.04), 0 4px 16px hsl(var(--foreground) / 0.08);
   }
 
   .glass-strong {
-    background: hsl(var(--card) / 0.85);
-    backdrop-filter: blur(20px) saturate(200%);
-    border: 1px solid hsl(var(--border) / 0.3);
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
     box-shadow: 
-      0 8px 32px 0 hsl(var(--foreground) / 0.05),
-      inset 0 1px 1px 0 hsl(var(--background) / 0.1);
+      0 4px 16px hsl(var(--foreground) / 0.08),
+      0 8px 24px hsl(var(--foreground) / 0.06);
   }
 
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--vitality-teal)), hsl(var(--vitality-gold)));
+    background: linear-gradient(135deg, hsl(var(--vitality-coral)), hsl(var(--vitality-teal)));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -190,7 +184,7 @@ All colors MUST be HSL.
 
   .shadow-glow {
     box-shadow: 
-      0 0 20px hsl(var(--primary) / 0.2),
-      0 0 40px hsl(var(--primary) / 0.1);
+      0 0 20px hsl(var(--primary) / 0.3),
+      0 0 40px hsl(var(--primary) / 0.15);
   }
 }

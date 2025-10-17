@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
+        display: ['Sora', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -52,13 +52,12 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         vitality: {
-          teal: "hsl(var(--vitality-teal))",
-          gold: "hsl(var(--vitality-gold))",
-          charcoal: "hsl(var(--vitality-charcoal))",
-          cream: "hsl(var(--vitality-cream))",
-          purple: "hsl(var(--vitality-purple))",
-          sky: "hsl(var(--vitality-sky))",
-          tan: "hsl(var(--vitality-tan))",
+          coral: 'hsl(var(--vitality-coral))',
+          teal: 'hsl(var(--vitality-teal))',
+          charcoal: 'hsl(var(--vitality-charcoal))',
+          'grey-light': 'hsl(var(--vitality-grey-light))',
+          grey: 'hsl(var(--vitality-grey))',
+          sky: 'hsl(var(--vitality-sky))',
         },
       },
       borderRadius: {

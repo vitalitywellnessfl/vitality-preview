@@ -36,8 +36,9 @@ export const MagneticButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
       <Button
         ref={buttonRef}
         className={cn(
-          "transition-all duration-300 ease-out shadow-glow",
-          "hover:scale-105 hover:shadow-elevated",
+          "transition-all duration-300 ease-out",
+          "hover:-translate-y-0.5 hover:shadow-glow",
+          "active:translate-y-0",
           className
         )}
         style={{

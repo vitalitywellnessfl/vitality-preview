@@ -8,8 +8,8 @@ const GlassmorphicCard = React.forwardRef<
   <div
     ref={ref}
     className={cn(
-      "rounded-lg transition-all duration-300",
-      "hover:shadow-elevated hover:scale-[1.02]",
+      "rounded-xl transition-all duration-300",
+      "hover:shadow-elevated hover:-translate-y-1",
       variant === "default" && "glass",
       variant === "strong" && "glass-strong",
       className

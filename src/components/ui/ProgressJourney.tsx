@@ -22,22 +22,22 @@ export const ProgressJourney = ({ steps }: ProgressJourneyProps) => {
             <div className="flex flex-col items-center">
               <div
                 className={cn(
-                  "p-2 rounded-full transition-all duration-500",
+                  "p-3 rounded-full transition-all duration-500 border-2",
                   step.completed
-                    ? "bg-primary animate-scale-in shadow-glow"
-                    : "bg-muted"
+                    ? "bg-primary border-primary shadow-glow animate-scale-in"
+                    : "bg-background border-border"
                 )}
               >
                 {step.completed ? (
-                  <CheckCircle2 className="h-6 w-6 text-white" />
+                  <CheckCircle2 className="h-7 w-7 text-primary-foreground" />
                 ) : (
-                  <Circle className="h-6 w-6 text-muted-foreground" />
+                  <Circle className="h-7 w-7 text-muted-foreground" />
                 )}
               </div>
               {index < steps.length - 1 && (
                 <div
                   className={cn(
-                    "w-0.5 h-full min-h-[60px] transition-colors duration-500",
+                    "w-1 h-full min-h-[60px] transition-colors duration-500 rounded-full",
                     step.completed ? "bg-primary" : "bg-border"
                   )}
                 />
@@ -45,9 +45,9 @@ export const ProgressJourney = ({ steps }: ProgressJourneyProps) => {
             </div>
 
             {/* Content */}
-            <div className="flex-1 pb-8">
+            <div className="flex-1 pb-8 bg-muted/30 rounded-lg p-6 border border-border">
               <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-              <p className="text-muted-foreground">{step.description}</p>
+              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           </div>
         </AnimatedSection>

@@ -71,108 +71,159 @@ const WeightLossProgram = () => {
       <Navbar />
       
       <main className="min-h-screen overflow-hidden">
-        {/* Hero Section with Clean Gradient */}
-        <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
-          <div className="absolute inset-0 overflow-hidden -z-10">
-            <div className="absolute w-[600px] h-[600px] rounded-full blur-3xl opacity-20 bg-gradient-to-r from-vitality-teal to-vitality-sky -top-48 -left-48 animate-blob" />
-            <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-15 bg-gradient-to-r from-vitality-gold to-vitality-tan top-40 -right-32 animate-blob-slow" />
-          </div>
-          <div className="container mx-auto max-w-4xl text-center relative z-10">
-            <AnimatedSection animation="fade-in">
-              <Badge variant="secondary" className="mb-6 shadow-glow">
-                Medical Weight Loss
-              </Badge>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={100}>
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
-                Your Personalized Path to{" "}
-                <span className="gradient-text">Weight Loss</span>
-              </h1>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={200}>
-              <p className="text-xl md:text-2xl text-muted-foreground mb-8 font-light">
-                Because Real Change Deserves Real Care
-              </p>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={300}>
-              <div className="max-w-2xl mx-auto space-y-6 text-lg text-muted-foreground mb-10">
-                <p>
-                  For many people, weight loss is not about vanity. It is about being able to walk upstairs without pain, feeling comfortable in your own clothes again, and making peace with food after years of struggle.
-                </p>
-                <p>
-                  At Vitality Wellness Clinic, we help patients achieve meaningful and lasting results through clinically guided care and advanced treatments such as Semaglutide and Tirzepatide. These medications, combined with personalized nutrition and lifestyle guidance, help quiet the constant "food noise" and bring your body and mind back into balance.
-                </p>
-                <p className="font-medium text-foreground">
-                  This is not a quick fix. It is a calm, steady return to feeling like yourself again.
-                </p>
+        {/* Hero Section - Asymmetric Layout */}
+        <section className="relative pt-32 pb-20 px-4 bg-gradient-to-br from-vitality-grey-light via-white to-vitality-teal/5">
+          <BlobBackground variant="hero" />
+          <div className="container mx-auto max-w-6xl relative z-10">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Left: Content */}
+              <div className="text-left">
+                <AnimatedSection animation="fade-in">
+                  <Badge className="mb-6">
+                    Medical Weight Loss
+                  </Badge>
+                </AnimatedSection>
+                
+                <AnimatedSection delay={100}>
+                  <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
+                    Your Personalized Path to{" "}
+                    <span className="gradient-text">Lasting Wellness</span>
+                  </h1>
+                </AnimatedSection>
+                
+                <AnimatedSection delay={200}>
+                  <p className="text-xl text-muted-foreground mb-8">
+                    Because Real Change Deserves Real Care
+                  </p>
+                </AnimatedSection>
+                
+                <AnimatedSection delay={300}>
+                  <div className="space-y-4 text-base mb-10">
+                    <p className="text-muted-foreground">
+                      For many people, weight loss is not about vanity. It is about being able to walk upstairs without pain, feeling comfortable in your own clothes again, and making peace with food after years of struggle.
+                    </p>
+                    <p className="font-medium text-foreground">
+                      This is not a quick fix. It is a calm, steady return to feeling like yourself again.
+                    </p>
+                  </div>
+                </AnimatedSection>
+                
+                <AnimatedSection delay={400}>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <MagneticButton asChild size="lg" className="text-base">
+                      <Link to="/book">
+                        Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
+                      </Link>
+                    </MagneticButton>
+                    <MagneticButton asChild size="lg" variant="outline" className="text-base">
+                      <Link to="/glp1">
+                        Learn More
+                      </Link>
+                    </MagneticButton>
+                  </div>
+                </AnimatedSection>
               </div>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={400}>
-              <MagneticButton asChild size="lg" className="text-lg">
-                <Link to="/book">
-                  Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </MagneticButton>
-            </AnimatedSection>
+
+              {/* Right: Image Placeholder */}
+              <AnimatedSection delay={200} className="hidden lg:block">
+                <div className="relative aspect-[4/5] rounded-2xl bg-gradient-to-br from-vitality-teal/20 to-vitality-coral/10 border border-border shadow-elevated overflow-hidden">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <Heart className="h-24 w-24 text-primary/20" />
+                  </div>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
 
-        {/* Why It Works Section */}
+        {/* Why It Works Section - Zig-zag Layout */}
         <section className="relative py-20 px-4 bg-white">
-          <div className="container mx-auto max-w-4xl">
-            <AnimatedSection>
-              <GlassmorphicCard variant="strong" className="overflow-hidden">
-                <GlassmorphicCardContent className="p-8 md:p-12">
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
-                      <Brain className="h-8 w-8 text-primary" />
-                    </div>
-                    <h2 className="text-3xl md:text-4xl font-bold">
-                      Why Our Medical Weight Loss Program Works
-                    </h2>
+          <div className="container mx-auto max-w-6xl">
+            {/* Row 1: Icon Left, Text Right */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+              <AnimatedSection>
+                <div className="flex justify-center lg:justify-end">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-coral/20 to-vitality-teal/20 flex items-center justify-center animate-float">
+                    <Brain className="h-16 w-16 text-primary" />
                   </div>
-                  <div className="space-y-6 text-lg text-muted-foreground">
-                    <p>
-                      If you have tried every diet, app, or workout trend and still feel stuck, you are not alone. The problem is not willpower.{" "}
-                      <span className="font-semibold text-foreground gradient-text">It is biology.</span>
-                    </p>
-                    <p>
-                      Our program targets the hormonal and metabolic patterns that make losing weight so difficult. Under the care of a licensed clinician, you will receive a plan designed for your unique health history, lifestyle, and goals.
-                    </p>
-                    <p>
-                      We track your progress carefully, make adjustments as your body responds, and help you stay supported at every step.
-                    </p>
+                </div>
+              </AnimatedSection>
+              <AnimatedSection delay={100}>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Biology, Not Willpower
+                  </h2>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    If you have tried every diet, app, or workout trend and still feel stuck, you are not alone. The problem is not willpower—<span className="font-semibold gradient-text">it is biology</span>. Our program targets the hormonal and metabolic patterns that make losing weight so difficult.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+
+            {/* Row 2: Text Left, Icon Right */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+              <AnimatedSection delay={100} className="lg:order-1 order-2">
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Clinically Guided Plan
+                  </h2>
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    Under the care of a licensed clinician, you will receive a plan designed for your unique health history, lifestyle, and goals. Every step is personalized to ensure safe and effective results.
+                  </p>
+                </div>
+              </AnimatedSection>
+              <AnimatedSection className="lg:order-2 order-1">
+                <div className="flex justify-center lg:justify-start">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-teal/20 to-vitality-sky/20 flex items-center justify-center animate-float">
+                    <Stethoscope className="h-16 w-16 text-secondary" />
                   </div>
-                  <MagneticButton asChild variant="secondary" size="lg" className="mt-8">
+                </div>
+              </AnimatedSection>
+            </div>
+
+            {/* Row 3: Icon Left, Text Right */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <AnimatedSection>
+                <div className="flex justify-center lg:justify-end">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-vitality-sky/20 to-vitality-teal/20 flex items-center justify-center animate-float">
+                    <Shield className="h-16 w-16 text-accent" />
+                  </div>
+                </div>
+              </AnimatedSection>
+              <AnimatedSection delay={100}>
+                <div>
+                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                    Continuous Support
+                  </h2>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                    We track your progress carefully, make adjustments as your body responds, and help you stay supported at every step. You're never alone on this journey.
+                  </p>
+                  <MagneticButton asChild size="lg">
                     <Link to="/book">
                       Find Out If You're a Candidate <ArrowRight className="ml-2 h-5 w-5" />
                     </Link>
                   </MagneticButton>
-                </GlassmorphicCardContent>
-              </GlassmorphicCard>
-            </AnimatedSection>
+                </div>
+              </AnimatedSection>
+            </div>
           </div>
         </section>
 
         {/* Success Stats Section */}
-        <section className="relative py-16 px-4 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10">
+        <section className="relative py-16 px-4 bg-muted">
           <div className="container mx-auto max-w-5xl">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {stats.map((stat, index) => {
                 const Icon = stat.icon;
                 return (
                   <AnimatedSection key={index} delay={index * 100} animation="scale-in">
-                    <Card className="text-center border-2 hover:border-primary hover:shadow-elevated transition-all duration-300">
+                    <Card className="text-center border hover:border-primary hover:shadow-elevated transition-all duration-300 bg-card">
                       <CardContent className="p-8">
                         <div className="mx-auto mb-4 w-fit p-4 rounded-full bg-primary/10 animate-float">
                           <Icon className="h-8 w-8 text-primary" />
                         </div>
                         <div className="text-4xl font-bold gradient-text mb-2">{stat.value}</div>
-                        <div className="text-muted-foreground">{stat.label}</div>
+                        <div className="text-muted-foreground text-sm">{stat.label}</div>
                       </CardContent>
                     </Card>
                   </AnimatedSection>
@@ -215,46 +266,43 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Understanding Medications Section */}
-        <section className="relative py-20 px-4 bg-muted/30">
-          <div className="container mx-auto max-w-4xl">
-            <AnimatedSection>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-3 rounded-full bg-primary/10 animate-float">
-                  <Stethoscope className="h-8 w-8 text-primary" />
+        <section className="relative py-20 px-4 bg-white">
+          <div className="container mx-auto max-w-5xl">
+            <div className="text-center mb-12">
+              <AnimatedSection>
+                <div className="inline-flex items-center gap-3 mb-4">
+                  <div className="p-3 rounded-full bg-secondary/10 animate-float">
+                    <Stethoscope className="h-8 w-8 text-secondary" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold">
+                    Quiet the "Food Noise." Reconnect with Your Body.
+                  </h2>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold">
-                  Understanding Semaglutide and Tirzepatide
-                </h2>
-              </div>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={100}>
-              <div className="space-y-6 text-lg text-muted-foreground mb-10">
-                <p>
-                  These GLP-1 based medications have reshaped how people experience weight loss. They help regulate appetite, reduce cravings, and stabilize blood sugar, allowing your natural hunger signals to return.
+              </AnimatedSection>
+              
+              <AnimatedSection delay={100}>
+                <p className="text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                  GLP-1 based medications like Semaglutide and Tirzepatide have reshaped how people experience weight loss. They help regulate appetite, reduce cravings, and stabilize blood sugar, allowing your natural hunger signals to return.
                 </p>
-                <p className="font-medium text-foreground">
-                  Many patients describe a quiet but life-changing shift:
-                </p>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            </div>
             
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {patientQuotes.map((item, index) => (
                 <AnimatedSection key={index} delay={item.delay} animation="scale-in">
-                  <GlassmorphicCard className="h-full group hover:scale-105 transition-all duration-300 preserve-3d">
-                    <GlassmorphicCardContent className="p-6 flex items-center justify-center min-h-[140px]">
-                      <p className="text-lg italic text-foreground text-center">
+                  <Card className="h-full hover:-translate-y-2 transition-all duration-300 border-l-4 border-l-primary">
+                    <CardContent className="p-6 flex items-center justify-center min-h-[140px]">
+                      <p className="text-base italic text-foreground text-center leading-relaxed">
                         "{item.quote}"
                       </p>
-                    </GlassmorphicCardContent>
-                  </GlassmorphicCard>
+                    </CardContent>
+                  </Card>
                 </AnimatedSection>
               ))}
             </div>
 
             <AnimatedSection delay={300}>
-              <p className="text-lg text-muted-foreground text-center">
+              <p className="text-sm text-muted-foreground text-center max-w-2xl mx-auto">
                 These treatments are prescribed only after a full clinical evaluation to ensure they are safe, appropriate, and effective for your individual needs.
               </p>
             </AnimatedSection>
@@ -262,21 +310,20 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Real Results Section */}
-        <section className="relative py-20 px-4 bg-white">
-          <div className="container mx-auto max-w-4xl">
+        <section className="relative py-20 px-4 bg-muted">
+          <div className="container mx-auto max-w-5xl">
             <AnimatedSection>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
-                  <Heart className="h-8 w-8 text-primary" />
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-3 mb-4">
+                  <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
+                    <Heart className="h-8 w-8 text-primary" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold">Real Results, Real Relief</h2>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold">Real Results, Real Relief</h2>
+                <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+                  Weight loss is only part of the story. Our patients share deeply human victories that go far beyond the scale.
+                </p>
               </div>
-            </AnimatedSection>
-            
-            <AnimatedSection delay={100}>
-              <p className="text-lg text-muted-foreground mb-10">
-                Weight loss is only part of the story. Our patients share deeply human victories that go far beyond the scale.
-              </p>
             </AnimatedSection>
             
             <div className="grid md:grid-cols-2 gap-6 mb-10">
@@ -284,23 +331,23 @@ const WeightLossProgram = () => {
                 const Icon = victory.icon;
                 return (
                   <AnimatedSection key={index} delay={victory.delay}>
-                    <GlassmorphicCard variant="strong" className="h-full group hover:shadow-glow transition-all duration-500">
-                      <GlassmorphicCardContent className="p-6 flex items-start gap-4">
-                        <div className="p-2 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300">
+                    <Card className="h-full hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 bg-card">
+                      <CardContent className="p-6 flex items-start gap-4">
+                        <div className="p-3 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300">
                           <Icon className="h-6 w-6 text-primary" />
                         </div>
-                        <p className="text-lg font-medium text-foreground">
+                        <p className="text-base font-medium text-foreground leading-relaxed">
                           {victory.text}
                         </p>
-                      </GlassmorphicCardContent>
-                    </GlassmorphicCard>
+                      </CardContent>
+                    </Card>
                   </AnimatedSection>
                 );
               })}
             </div>
 
             <AnimatedSection delay={400}>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-sm text-muted-foreground text-center mb-8 max-w-2xl mx-auto">
                 These non-scale victories mark the quiet return of confidence, energy, and dignity. They are reminders that progress is not only physical but emotional too.
               </p>
             </AnimatedSection>
@@ -318,41 +365,40 @@ const WeightLossProgram = () => {
         </section>
 
         {/* Membership Benefits Section */}
-        <section className="relative py-20 px-4 bg-gradient-to-b from-vitality-teal/5 to-white">
+        <section className="relative py-20 px-4 bg-white">
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
-              <div className="flex items-center gap-3 mb-8">
-                <div className="p-3 rounded-full bg-primary/10 animate-float">
-                  <Shield className="h-8 w-8 text-primary" />
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-3 mb-4">
+                  <div className="p-3 rounded-full bg-accent/10 animate-float">
+                    <Shield className="h-8 w-8 text-accent" />
+                  </div>
+                  <h2 className="text-3xl md:text-4xl font-bold">Your Membership Includes</h2>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold">Your Membership Includes</h2>
+                <p className="text-base text-muted-foreground max-w-2xl mx-auto">
+                  When you join Vitality Wellness Clinic, you receive complete care designed around your needs.
+                </p>
               </div>
             </AnimatedSection>
             
-            <AnimatedSection delay={100}>
-              <p className="text-lg text-muted-foreground mb-10">
-                When you join Vitality Wellness Clinic, you receive complete care designed around your needs.
-              </p>
-            </AnimatedSection>
-            
             <AnimatedSection delay={200}>
-              <GlassmorphicCard variant="strong">
-                <GlassmorphicCardContent className="p-8 md:p-12">
+              <Card className="border shadow-elevated">
+                <CardContent className="p-8 md:p-12">
                   <div className="space-y-6">
                     {benefits.map((benefit, index) => (
                       <AnimatedSection key={index} delay={50 * index} animation="fade-in">
                         <div className="flex items-start gap-4 group">
-                          <div className="p-1.5 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300">
-                            <CheckCircle2 className="h-6 w-6 text-primary" />
+                          <div className="p-2 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300 mt-1">
+                            <CheckCircle2 className="h-5 w-5 text-primary" />
                           </div>
-                          <p className="text-lg text-foreground">{benefit}</p>
+                          <p className="text-base text-foreground leading-relaxed">{benefit}</p>
                         </div>
                       </AnimatedSection>
                     ))}
                   </div>
                   
-                  <div className="mt-10 p-6 glass rounded-lg border border-primary/20">
-                    <p className="text-lg font-medium text-foreground text-center">
+                  <div className="mt-10 p-6 rounded-xl border-2 border-primary/20 bg-primary/5">
+                    <p className="text-base font-medium text-foreground text-center leading-relaxed">
                       No copays. No confusion. Only compassionate, evidence-based care focused on helping you feel your best.
                     </p>
                   </div>
@@ -364,18 +410,15 @@ const WeightLossProgram = () => {
                       </Link>
                     </MagneticButton>
                   </div>
-                </GlassmorphicCardContent>
-              </GlassmorphicCard>
+                </CardContent>
+              </Card>
             </AnimatedSection>
           </div>
         </section>
 
         {/* Final CTA Section */}
         <section className="relative py-24 px-4 bg-vitality-charcoal text-white overflow-hidden">
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute w-[500px] h-[500px] rounded-full blur-3xl opacity-20 bg-vitality-teal -bottom-32 -left-32 animate-blob" />
-            <div className="absolute w-[400px] h-[400px] rounded-full blur-3xl opacity-15 bg-vitality-gold -top-20 -right-20 animate-blob-slow" />
-          </div>
+          <BlobBackground />
           <div className="container mx-auto max-w-3xl text-center relative z-10">
             <AnimatedSection>
               <div className="flex items-center justify-center gap-3 mb-6">
@@ -389,32 +432,25 @@ const WeightLossProgram = () => {
             </AnimatedSection>
             
             <AnimatedSection delay={100}>
-              <div className="space-y-6 text-lg mb-10">
+              <div className="space-y-6 text-base mb-10">
                 <p className="text-xl font-medium text-white">
                   Our patients often say, "I feel like myself again."
                 </p>
-                <p className="text-vitality-cream/90">
+                <p className="text-white/90">
                   That single sentence captures everything we believe in.
                 </p>
-                <p className="text-vitality-cream/90">
+                <p className="text-white/80 leading-relaxed">
                   At Vitality Wellness Clinic, we combine science with kindness to help you build lasting confidence in your body and peace with food. This is not about becoming someone new. It is about returning to the version of yourself that feels strong, steady, and free.
                 </p>
               </div>
             </AnimatedSection>
             
             <AnimatedSection delay={200}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <MagneticButton asChild size="lg" className="text-lg">
-                  <Link to="/book">
-                    Book Your Consultation <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </MagneticButton>
-                <MagneticButton asChild variant="outline" size="lg" className="text-lg bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
-                  <Link to="/contact">
-                    Ask a Question
-                  </Link>
-                </MagneticButton>
-              </div>
+              <MagneticButton asChild size="lg" className="bg-white text-vitality-charcoal hover:bg-white/90">
+                <Link to="/book">
+                  Book Your Consultation <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </MagneticButton>
             </AnimatedSection>
           </div>
         </section>
