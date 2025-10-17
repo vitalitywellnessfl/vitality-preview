@@ -25,6 +25,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Testimonials } from "@/components/Testimonials";
 import vitalityLogo from "@/assets/vitality-logo.gif";
+import hrtHeroImage from "@/assets/hrt-hero.jpg";
 
 const services = [
   {
@@ -61,7 +62,8 @@ const services = [
     icon: HeartPulse,
     title: "Hormone Replacement Therapy",
     description: "Restore balance and vitality through bioidentical hormone therapy for men and women. Improve energy, mood, libido, and overall well-being.",
-    link: "/hormone-therapy"
+    link: "/hormone-therapy",
+    image: hrtHeroImage
   },
   {
     icon: Star,
@@ -193,6 +195,15 @@ export default function Index() {
               {services.map((service, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
+                    {service.image && (
+                      <div className="mb-4">
+                        <img 
+                          src={service.image} 
+                          alt={service.title}
+                          className="w-full h-32 object-cover rounded-lg"
+                        />
+                      </div>
+                    )}
                     <div className="mb-4 rounded-lg bg-secondary/10 p-3 inline-block">
                       <service.icon className="h-6 w-6 text-secondary" />
                     </div>
