@@ -100,7 +100,7 @@ export default function Index() {
           <div className="mx-auto max-w-3xl text-center">
               <div className="flex items-center justify-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-primary" />
-                <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl">
+                <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl">
                   The Body You Deserve <span className="text-script-accent">Starts Here</span>
                 </h1>
               </div>
@@ -141,11 +141,11 @@ export default function Index() {
         {/* Why Choose Us */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-12">
+            <div className="mx-auto max-w-2xl text-center mb-12">
               <p className="text-script text-secondary text-sm mb-2">Your Partner in Wellness</p>
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Stethoscope className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Why Choose Vitality Wellness Clinic?
                 </h2>
               </div>
@@ -175,10 +175,10 @@ export default function Index() {
         {/* Services Section */}
         <section className="py-16 bg-muted/30">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center mb-12">
+            <div className="mx-auto max-w-2xl text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Syringe className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Our Wellness Services
                 </h2>
               </div>
@@ -210,7 +210,7 @@ export default function Index() {
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Brain className="h-8 w-8 text-primary" />
-                  <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                  <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                     Meet Dr. Xochil Echeona, DNP
                   </h2>
                 </div>
@@ -236,7 +236,7 @@ export default function Index() {
               <div>
                 <div className="flex items-center gap-3 mb-6">
                   <MapPin className="h-8 w-8 text-vitality-teal" />
-                  <h2 className="text-3xl font-bold">Visit Us in Weston, FL</h2>
+                  <h2 className="text-3xl font-serif font-semibold">Visit Us in Weston, FL</h2>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -271,7 +271,7 @@ export default function Index() {
                 <p className="text-script text-vitality-teal text-sm mb-3">Begin Your Journey</p>
                 <div className="flex items-center gap-3 mb-4">
                   <Star className="h-7 w-7 text-vitality-gold fill-vitality-gold" />
-                  <h3 className="text-2xl font-bold">Start Your Wellness Journey Today</h3>
+                  <h3 className="text-2xl font-serif font-semibold">Start Your Wellness Journey Today</h3>
                 </div>
                 <p className="mb-6">
                   Ready to achieve lasting weight loss and optimal vitality? Schedule your consultation with Dr. Echeona today and discover why Vitality Wellness Clinic is Weston's trusted choice for medical wellness and longevity care.

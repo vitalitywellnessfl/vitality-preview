@@ -62,7 +62,7 @@ export default function About() {
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Heart className="h-10 w-10 text-primary" />
-              <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl text-center">
+              <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl text-center">
                 About Vitality Wellness Clinic
               </h1>
             </div>
@@ -109,7 +109,7 @@ export default function About() {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Sparkles className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Our Core Values
                 </h2>
               </div>
@@ -144,7 +144,7 @@ export default function About() {
                 <div className="flex items-start gap-4 mb-6">
                   <Award className="h-10 w-10 text-primary flex-shrink-0 mt-1" />
                   <div>
-                    <h2 className="text-3xl font-bold text-foreground mb-4">What Makes Us Different</h2>
+                    <h2 className="text-3xl font-serif font-semibold text-foreground mb-4">What Makes Us Different</h2>
                     <p className="text-lg text-muted-foreground mb-6">
                       As a proud Minority-, Woman-, and Veteran-owned wellness clinic, we bring unique perspectives and unwavering dedication to serving our community.
                     </p>
@@ -191,7 +191,7 @@ export default function About() {
           <div className="mx-auto max-w-4xl">
             <div className="flex items-center justify-center gap-3 mb-8">
               <Brain className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl text-center">
+              <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl text-center">
                 Meet Dr. Xochil Echeona, DNP
               </h2>
             </div>
@@ -234,7 +234,7 @@ export default function About() {
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Sparkles className="h-8 w-8 text-primary" />
-                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Comprehensive Wellness Services
                 </h2>
               </div>
@@ -272,7 +272,7 @@ export default function About() {
           <div className="mx-auto max-w-4xl text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Calendar className="h-10 w-10 text-vitality-teal" />
-              <h2 className="text-3xl font-bold sm:text-4xl">
+              <h2 className="text-3xl font-serif font-semibold sm:text-4xl">
                 Ready to Start Your Wellness Journey?
               </h2>
             </div>

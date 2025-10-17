@@ -114,8 +114,16 @@ All colors MUST be HSL.
     line-height: 1.7;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-display font-semibold;
+  h1 {
+    @apply font-display font-bold;
+  }
+
+  h2, h3 {
+    @apply font-serif font-semibold;
+  }
+
+  h4, h5, h6 {
+    @apply font-sans font-semibold;
   }
 }
 

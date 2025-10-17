@@ -14,9 +14,11 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        display: ['Sora', 'sans-serif'],
-        script: ['Britany', 'cursive'],
+        display: ['Playfair Display', 'serif'],    // Main headlines (H1)
+        serif: ['Lora', 'serif'],                  // Subheadings (H2, H3)
+        caps: ['Cinzel', 'serif'],                 // All-caps labels/eyebrows
+        sans: ['Raleway', 'sans-serif'],           // Body text, buttons
+        script: ['Britany', 'cursive'],            // Accent phrases
       },
       colors: {
         border: "hsl(var(--border))",

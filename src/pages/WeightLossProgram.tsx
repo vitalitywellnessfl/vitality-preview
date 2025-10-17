@@ -85,7 +85,7 @@ const WeightLossProgram = () => {
                 </AnimatedSection>
                 
                 <AnimatedSection delay={100}>
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6 text-foreground leading-tight">
+                  <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 text-foreground leading-tight">
                     Your Personalized Path to{" "}
                     <span className="gradient-text">Lasting Wellness</span>
                   </h1>
@@ -157,7 +157,7 @@ const WeightLossProgram = () => {
               </AnimatedSection>
               <AnimatedSection delay={100}>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
                     Biology, Not Willpower
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
@@ -171,7 +171,7 @@ const WeightLossProgram = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
               <AnimatedSection delay={100} className="lg:order-1 order-2">
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
                     Clinically Guided Plan
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
@@ -207,7 +207,7 @@ const WeightLossProgram = () => {
               </AnimatedSection>
               <AnimatedSection delay={100}>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
                     Continuous Support
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed mb-6">
@@ -290,7 +290,7 @@ const WeightLossProgram = () => {
                   <div className="p-3 rounded-full bg-secondary/10 animate-float">
                     <Stethoscope className="h-8 w-8 text-secondary" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold">
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold">
                     Quiet the "Food Noise." Reconnect with Your Body.
                   </h2>
                 </div>
@@ -335,7 +335,7 @@ const WeightLossProgram = () => {
                   <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
                     <Heart className="h-8 w-8 text-primary" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold">Real Results, Real Relief</h2>
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold">Real Results, Real Relief</h2>
                 </div>
                 <p className="text-base text-muted-foreground max-w-2xl mx-auto">
                   Weight loss is only part of the story. Our patients share deeply human victories that go far beyond the scale.
