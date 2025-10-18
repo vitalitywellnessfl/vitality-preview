@@ -326,8 +326,8 @@ export default function About() {
                 <Card key={index} className="border-2 hover:border-primary transition-colors">
                   <CardContent className="p-6">
                     <div className="flex flex-col items-center text-center">
-                      <div className="mb-4 rounded-full bg-primary/10 p-4">
-                        <value.icon className="h-8 w-8 text-primary" />
+                      <div className="mb-4 rounded-full bg-[#A39070]/10 p-4">
+                        <value.icon className="h-8 w-8 text-[#A39070]" />
                       </div>
                       <h3 className="text-xl font-semibold mb-3 text-foreground">{value.title}</h3>
                       <p className="text-muted-foreground">{value.description}</p>
