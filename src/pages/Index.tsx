@@ -267,12 +267,21 @@ export default function Index() {
                 </div>
               </div>
               <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="flex justify-center order-2 md:order-1">
+                <div className="flex flex-col items-center order-2 md:order-1 gap-4">
                   <img 
                     src={drEcheonaHomepage} 
                     alt="Dr. Xochil Echeona, DNP - Family Nurse Practitioner" 
                     className="rounded-lg shadow-xl w-full max-w-md object-cover"
                   />
+                  <Button 
+                    size="lg" 
+                    className="bg-[#70B4B5] hover:bg-[#5da3a4] text-white w-full max-w-md"
+                    asChild
+                  >
+                    <Link to="/book">
+                      Schedule a Virtual Consultation
+                    </Link>
+                  </Button>
                 </div>
                 <Card className="border-2 order-1 md:order-2">
                   <CardContent className="p-6 sm:p-8">
