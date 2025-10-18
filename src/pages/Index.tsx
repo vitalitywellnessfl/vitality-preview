@@ -120,8 +120,8 @@ export default function Index() {
               <div className="flex justify-center mb-8">
                 <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-32 sm:h-48 lg:h-64 w-auto drop-shadow-2xl" />
               </div>
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <Leaf className="hidden sm:block h-10 w-10 text-primary" />
+              <div className="flex flex-col items-center gap-3 mb-6">
+                <Leaf className="h-10 w-10 text-primary" />
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl text-center">
                   The Body You Deserve Starts <span className="font-calligraphy text-calligraphy text-primary">Here</span>
                 </h1>
@@ -141,7 +141,7 @@ export default function Index() {
               </p>
               
               <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-                <Badge className="bg-white text-vitality-gold border-2 border-vitality-gold font-semibold">
+                <Badge className="bg-white text-[#A39070] border-2 border-[#A39070] font-semibold">
                   <Users className="h-3 w-3 mr-1" />
                   Woman-Owned
                 </Badge>
@@ -171,9 +171,9 @@ export default function Index() {
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-12">
-              <p className="text-script text-secondary text-sm mb-2">Your Partner in Wellness</p>
+              <p className="text-script text-[#A39070] text-sm mb-2">Your Partner in Wellness</p>
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Stethoscope className="h-8 w-8 text-primary" />
+                <Stethoscope className="h-8 w-8 text-[#70B4B5]" />
                 <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Why Choose Vitality Wellness Clinic?
                 </h2>
@@ -206,7 +206,7 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Syringe className="h-8 w-8 text-primary" />
+                <Syringe className="h-8 w-8 text-[#70B4B5]" />
                 <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Our Wellness Services
                 </h2>
@@ -260,7 +260,7 @@ export default function Index() {
             <div className="mx-auto max-w-5xl">
               <div className="text-center mb-8">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <Brain className="h-8 w-8 text-primary" />
+                  <Brain className="h-8 w-8 text-[#70B4B5]" />
                   <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                     Meet Dr. Xochil Echeona, DNP
                   </h2>
@@ -321,8 +321,8 @@ export default function Index() {
                   <div className="flex items-start gap-3">
                     <Clock className="h-6 w-6 text-vitality-teal flex-shrink-0 mt-1" />
                     <div>
-                      <p>Mon–Fri: 9 AM – 6 PM</p>
-                      <p>Sat: 9 AM – 2 PM</p>
+                        <p>Mon-Fri: 9 AM - 6 PM</p>
+                        <p>Sat: 9 AM - 2 PM</p>
                       <p>Sun: Closed</p>
                       <p className="mt-2 text-vitality-sky flex items-center gap-2">
                         <ArrowRight className="h-5 w-5" />

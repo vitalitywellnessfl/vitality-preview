@@ -440,7 +440,7 @@ export default function BodyContouring() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "CoolSculpting transformed my abdomen without surgery. The results were gradual and natural-looking. I finally feel confident in fitted clothes again!"
                     </p>
-                    <p className="font-semibold">— Rachel, 41</p>
+                    <p className="font-semibold">- Rachel, 41</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -451,7 +451,7 @@ export default function BodyContouring() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "The RF skin tightening tightened my post-baby skin on my arms and stomach. No downtime, just progressive improvement over months. Worth every penny."
                     </p>
-                    <p className="font-semibold">— Amanda, 36</p>
+                    <p className="font-semibold">- Amanda, 36</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -462,7 +462,7 @@ export default function BodyContouring() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "Ultrasonic cavitation smoothed my cellulite better than any cream ever could. The immediate inch loss was real. I'm a believer in non-surgical options now!"
                     </p>
-                    <p className="font-semibold">— Lisa, 47</p>
+                    <p className="font-semibold">- Lisa, 47</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>

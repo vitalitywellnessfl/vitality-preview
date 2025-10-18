@@ -15,7 +15,7 @@ const WeightLossProgram = () => {
     "Personalized nutrition, fitness, and stress management guidance",
     "Comprehensive lab testing and ongoing health tracking",
     "Medication management and clinical supervision",
-    "One-on-one consultations with your dedicated clinician",
+    "One-on-one consultations with your dedicated doctor",
     "Simple, transparent pricing with no hidden fees"
   ];
 
@@ -35,7 +35,7 @@ const WeightLossProgram = () => {
   const journeySteps = [
     {
       title: "Initial Consultation",
-      description: "Meet with our clinician to discuss your health history, goals, and create your personalized plan.",
+      description: "Meet with the doctor to discuss your health history, goals, and create your personalized plan.",
       completed: true
     },
     {
@@ -170,7 +170,7 @@ const WeightLossProgram = () => {
                     Clinically Guided Plan
                   </h2>
                   <p className="text-base text-muted-foreground leading-relaxed">
-                    Under the care of a licensed clinician, you will receive a plan designed for your unique health history, lifestyle, and goals. Every step is personalized to ensure safe and effective results.
+                    Under the care of the doctor, you will receive a plan designed for your unique health history, lifestyle, and goals. Every step is personalized to ensure safe and effective results.
                   </p>
                 </div>
               </AnimatedSection>

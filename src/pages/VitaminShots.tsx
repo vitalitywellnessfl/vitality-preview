@@ -405,7 +405,7 @@ export default function VitaminShots() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "The B12 shots transformed my energy levels. I was always tired as a vegetarian, but now I feel like myself again. Quick, easy, and effective."
                     </p>
-                    <p className="font-semibold">— Jennifer, 38</p>
+                    <p className="font-semibold">- Jennifer, 38</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -416,7 +416,7 @@ export default function VitaminShots() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "I get the Lipotropic shot weekly as part of my weight loss journey. Combined with diet and exercise, I'm seeing real results. Love the convenience!"
                     </p>
-                    <p className="font-semibold">— David, 45</p>
+                    <p className="font-semibold">- David, 45</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -427,7 +427,7 @@ export default function VitaminShots() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "The amino acid complex is perfect for my training schedule. I recover faster and my endurance has improved significantly. My secret weapon!"
                     </p>
-                    <p className="font-semibold">— Maria, 29</p>
+                    <p className="font-semibold">- Maria, 29</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>

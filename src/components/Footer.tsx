@@ -54,8 +54,8 @@ export const Footer = () => {
               <li className="flex items-start gap-2">
                 <Clock className="h-5 w-5 text-vitality-teal flex-shrink-0 mt-0.5" />
                 <div className="text-sm text-gray-300">
-                  <p>Mon-Fri: 9 AM – 6 PM</p>
-                  <p>Sat: 9 AM – 2 PM</p>
+                  <p>Mon-Fri: 9 AM - 6 PM</p>
+                  <p>Sat: 9 AM - 2 PM</p>
                   <p>Sun: Closed</p>
                 </div>
               </li>

@@ -411,7 +411,7 @@ export default function HormoneTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "Bioidentical HRT changed my life. The hot flashes are gone, I sleep through the night, and I feel like myself again. Menopause doesn't have to be miserable!"
                     </p>
-                    <p className="font-semibold">— Patricia, 52</p>
+                    <p className="font-semibold">- Patricia, 52</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -422,7 +422,7 @@ export default function HormoneTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "Testosterone therapy gave me my energy back. I'm building muscle again, my mood is stable, and my confidence is through the roof. Worth every penny."
                     </p>
-                    <p className="font-semibold">— James, 47</p>
+                    <p className="font-semibold">- James, 47</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -433,7 +433,7 @@ export default function HormoneTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "I wish I'd started HRT sooner. The brain fog lifted, my sleep improved, and I finally feel balanced emotionally. This is what optimal feels like."
                     </p>
-                    <p className="font-semibold">— Michelle, 49</p>
+                    <p className="font-semibold">- Michelle, 49</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>

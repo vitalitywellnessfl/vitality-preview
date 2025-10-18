@@ -122,7 +122,7 @@ export default function WeightLoss() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">What Are GLP-1 Medications?</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                GLP-1 receptor agonists are a breakthrough in medical weight management. These medications mimic your body's natural hormones that regulate blood sugar, appetite, and metabolism — helping you achieve lasting weight loss without extreme diets or surgery.
+                GLP-1 receptor agonists are a breakthrough in medical weight management. These medications mimic your body's natural hormones that regulate blood sugar, appetite, and metabolism, helping you achieve lasting weight loss without extreme diets or surgery.
               </p>
             </div>
 
@@ -162,7 +162,7 @@ export default function WeightLoss() {
                 <div className="mt-8 pt-6 border-t space-y-2">
                   <p className="flex items-center gap-2 text-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span className="font-medium">Average weight loss: 15–20% of total body weight (clinical studies)</span>
+                    <span className="font-medium">Average weight loss: 15-20% of total body weight (clinical studies)</span>
                   </p>
                   <p className="flex items-center gap-2 text-foreground">
                     <CheckCircle2 className="h-5 w-5 text-primary" />
@@ -189,10 +189,10 @@ export default function WeightLoss() {
                 <div className="space-y-4 text-muted-foreground">
                   <p className="font-semibold text-foreground">Absolutely not.</p>
                   <p>
-                    Obesity is a complex medical condition influenced by hormones, genetics, and environment — not just willpower. GLP-1 medications treat the biological barriers that make long-term weight management difficult.
+                    Obesity is a complex medical condition influenced by hormones, genetics, and environment, not just willpower. GLP-1 medications treat the biological barriers that make long-term weight management difficult.
                   </p>
                   <p>
-                    Patients still make lifestyle changes — but now, your body has the biological support to sustain them.
+                    Patients still make lifestyle changes, but now, your body has the biological support to sustain them.
                   </p>
                   <p className="italic">
                     Just like we use insulin for diabetes or medication for high blood pressure, GLP-1 therapy supports your health from the inside out.
@@ -234,7 +234,7 @@ export default function WeightLoss() {
                 <div className="flex items-center gap-2">
                   <Lightbulb className="h-5 w-5 text-primary flex-shrink-0" />
                   <p className="text-foreground font-medium">
-                    Your health comes first — we'll find a treatment plan that fits your needs and budget.
+                    Your health comes first. We'll find a treatment plan that fits your needs and budget.
                   </p>
                 </div>
               </CardContent>
@@ -275,7 +275,7 @@ export default function WeightLoss() {
                 <div className="flex items-center gap-2">
                   <Settings className="h-5 w-5 text-primary flex-shrink-0" />
                   <p className="text-foreground font-medium">
-                    Lose fat — not muscle. We help you maintain strength, energy, and vitality throughout your journey.
+                    Lose fat, not muscle. We help you maintain strength, energy, and vitality throughout your journey.
                   </p>
                 </div>
               </CardContent>
@@ -371,7 +371,7 @@ export default function WeightLoss() {
               <Card>
                 <CardContent className="p-6">
                   <TrendingDown className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Average 15–20% total body weight reduction</p>
+                  <p className="font-medium text-foreground">Average 15-20% total body weight reduction</p>
                 </CardContent>
               </Card>
               <Card>

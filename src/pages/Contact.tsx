@@ -50,8 +50,8 @@ export default function Contact() {
                       <div>
                         <h3 className="font-semibold text-lg mb-1">Hours</h3>
                         <div className="text-muted-foreground space-y-1">
-                          <p>Mon–Fri: 9 AM – 6 PM</p>
-                          <p>Sat: 9 AM – 2 PM</p>
+                          <p>Mon-Fri: 9 AM - 6 PM</p>
+                          <p>Sat: 9 AM - 2 PM</p>
                           <p>Sun: Closed</p>
                           <p className="mt-3 text-primary font-medium">👉 Telehealth Appointments Available</p>
                         </div>

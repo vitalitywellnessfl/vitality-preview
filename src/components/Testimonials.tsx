@@ -61,7 +61,7 @@ export const Testimonials = ({ testimonials = allTestimonials }: TestimonialsPro
                 
                 <div className="pt-4 border-t">
                   <p className="font-semibold text-foreground text-lg">
-                    — {testimonial.name}
+                    - {testimonial.name}
                   </p>
                 </div>
               </CardContent>

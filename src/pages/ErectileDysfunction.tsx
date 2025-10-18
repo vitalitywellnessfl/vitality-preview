@@ -150,7 +150,7 @@ export default function ErectileDysfunction() {
                     Rediscover Confidence and Vitality with Personalized Sexual Health Care
                   </h1>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    At Vitality Wellness Clinic, we understand that erectile dysfunction (ED) isn't just a physical challenge—it affects confidence, relationships, and the way you experience life. That's why our care isn't one-size-fits-all. We blend science-backed treatments with compassionate, discreet support to help you regain control and confidence.
+                    At Vitality Wellness Clinic, we understand that erectile dysfunction (ED) isn't just a physical challenge. It affects confidence, relationships, and the way you experience life. That's why our care isn't one-size-fits-all. We blend science-backed treatments with compassionate, discreet support to help you regain control and confidence.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button variant="metallic" size="lg" asChild>
@@ -190,7 +190,7 @@ export default function ErectileDysfunction() {
                 You're Not Alone
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                ED affects men of all ages. Whether it's stress, performance anxiety, hormonal changes, or lifestyle factors, ED is often more complex than it seems. At Vitality Wellness, we look at the whole picture—your body, mind, and relationships—to deliver lasting results.
+                ED affects men of all ages. Whether it's stress, performance anxiety, hormonal changes, or lifestyle factors, ED is often more complex than it seems. At Vitality Wellness, we look at the whole picture: your body, mind, and relationships to deliver lasting results.
               </p>
             </AnimatedSection>
 
@@ -274,7 +274,7 @@ export default function ErectileDysfunction() {
                 How It Works
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Our discreet, doctor-led process meets you where you are—physically, mentally, and emotionally.
+                Our discreet, doctor-led process meets you where you are: physically, mentally, and emotionally.
               </p>
             </AnimatedSection>
 
@@ -303,7 +303,7 @@ export default function ErectileDysfunction() {
                       <p className="text-muted-foreground leading-relaxed italic">
                         "{testimonial.quote}"
                       </p>
-                      <p className="font-semibold text-foreground">— {testimonial.name}</p>
+                      <p className="font-semibold text-foreground">- {testimonial.name}</p>
                     </GlassmorphicCardContent>
                   </GlassmorphicCard>
                 </AnimatedSection>
@@ -322,7 +322,7 @@ export default function ErectileDysfunction() {
                 Take the First Step Toward Confidence
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-                Thousands of men have reclaimed their sexual health and confidence with Vitality Wellness. Our discreet, doctor-led care meets you where you are—physically, mentally, and emotionally.
+                Thousands of men have reclaimed their sexual health and confidence with Vitality Wellness. Our discreet, doctor-led care meets you where you are: physically, mentally, and emotionally.
               </p>
               <Button variant="metallic" size="lg" asChild>
                 <a href="/book">

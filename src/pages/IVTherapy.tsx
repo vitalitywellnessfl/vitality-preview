@@ -455,7 +455,7 @@ export default function IVTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "Lina and Dr. Xochi, Without a doubt I recommend you!! Best prices and service!! the IV hydration will make miracles in your skin. If you are in your late 40's like me.. is a must to do it!!!"
                     </p>
-                    <p className="font-semibold">— Yeny</p>
+                    <p className="font-semibold">- Yeny</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -471,7 +471,7 @@ export default function IVTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "As an athlete, recovery is everything. The Athlete Performance IV has become part of my routine. I bounce back faster and feel stronger. Game changer."
                     </p>
-                    <p className="font-semibold">— Marcus, 34</p>
+                    <p className="font-semibold">- Marcus, 34</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -487,7 +487,7 @@ export default function IVTherapy() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "The Inner Radiance drip transformed my skin. Friends ask what I'm doing differently—my secret weapon is Vitality Wellness IV therapy. The glow is real!"
                     </p>
-                    <p className="font-semibold">— Sofia, 42</p>
+                    <p className="font-semibold">- Sofia, 42</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>

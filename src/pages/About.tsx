@@ -70,7 +70,7 @@ export default function About() {
         <section className="py-20 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="flex items-center justify-center gap-3 mb-6">
-              <Heart className="h-10 w-10 text-primary" />
+              <Heart className="h-10 w-10 text-[#70B4B5]" />
               <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl text-center">
                 About Vitality Wellness Clinic
               </h1>
@@ -81,7 +81,7 @@ export default function About() {
                 <Award className="h-3 w-3 mr-1" />
                 Minority-Owned
               </Badge>
-              <Badge variant="secondary" className="bg-vitality-gold/10 text-vitality-gold border-vitality-gold/20 hover:bg-vitality-gold/20">
+              <Badge variant="secondary" className="bg-[#A39070]/10 text-[#A39070] border-[#A39070]/20 hover:bg-[#A39070]/20">
                 <Users className="h-3 w-3 mr-1" />
                 Woman-Owned
               </Badge>
@@ -130,7 +130,7 @@ export default function About() {
                 {/* Text on right */}
                 <div className="flex-1 text-center lg:text-left">
                   <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                    <Brain className="h-10 w-10 text-primary" />
+                    <Brain className="h-10 w-10 text-[#70B4B5]" />
                     <h2 className="text-4xl font-serif font-bold tracking-tight text-foreground sm:text-5xl">
                       Meet Dr. Xochil Echeona
                     </h2>
@@ -311,7 +311,7 @@ export default function About() {
           <div className="mx-auto max-w-7xl">
             <div className="text-center mb-12">
               <div className="flex items-center justify-center gap-3 mb-4">
-                <Sparkles className="h-8 w-8 text-primary" />
+                <Sparkles className="h-8 w-8 text-[#70B4B5]" />
                 <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
                   Our Core Values
                 </h2>

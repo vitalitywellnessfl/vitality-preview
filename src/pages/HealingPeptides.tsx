@@ -408,7 +408,7 @@ export default function HealingPeptides() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "BPC-157 healed my chronic shoulder injury that plagued me for years. Physical therapy helped, but peptides took my recovery to the next level. I'm pain-free now."
                     </p>
-                    <p className="font-semibold">— Derek, 35</p>
+                    <p className="font-semibold">- Derek, 35</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -419,7 +419,7 @@ export default function HealingPeptides() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "Semax transformed my mental clarity. As a busy entrepreneur, I need to be sharp all day. This peptide gives me an edge without jitters or crashes."
                     </p>
-                    <p className="font-semibold">— Sarah, 42</p>
+                    <p className="font-semibold">- Sarah, 42</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
@@ -430,7 +430,7 @@ export default function HealingPeptides() {
                     <p className="text-muted-foreground leading-relaxed mb-4 italic">
                       "TB-500 accelerated my post-surgery recovery dramatically. My surgeon was impressed with how quickly I healed. Peptides are the real deal."
                     </p>
-                    <p className="font-semibold">— Michael, 48</p>
+                    <p className="font-semibold">- Michael, 48</p>
                   </GlassmorphicCardContent>
                 </GlassmorphicCard>
               </AnimatedSection>
