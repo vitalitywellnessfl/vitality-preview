@@ -139,27 +139,27 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-6xl">
             {/* Row 1: Icon Left, Text Right */}
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
-              <AnimatedSection>
-                <div className="flex justify-center lg:justify-end">
-                  <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-elevated">
-                    <img 
-                      src="/placeholder.svg" 
-                      alt="Medical illustration of metabolic health and hormonal balance"
-                      className="w-full h-full object-cover"
-                    />
+                <AnimatedSection>
+                  <div className="flex justify-center lg:justify-end">
+                    <div className="w-64 h-64 rounded-2xl overflow-hidden shadow-elevated">
+                      <img 
+                        src="/placeholder.svg" 
+                        alt="Medical illustration of metabolic health and hormonal balance"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
                   </div>
-                </div>
-              </AnimatedSection>
-              <AnimatedSection delay={100}>
-                <div>
-                  <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
-                    Biology, Not Willpower
-                  </h2>
-                  <p className="text-base text-muted-foreground leading-relaxed">
-                    If you have tried every diet, app, or workout trend and still feel stuck, you are not alone. The problem is not willpower—<span className="font-semibold gradient-text">it is biology</span>. Our program targets the hormonal and metabolic patterns that make losing weight so difficult.
-                  </p>
-                </div>
-              </AnimatedSection>
+                </AnimatedSection>
+                <AnimatedSection delay={100}>
+                  <div>
+                    <h2 className="text-3xl md:text-4xl font-serif font-semibold mb-4">
+                      Biology, Not Willpower
+                    </h2>
+                    <p className="text-base text-muted-foreground leading-relaxed">
+                      If you have tried every diet, app, or workout trend and still feel stuck, you are not alone. The problem is not willpower—<span className="font-semibold text-vitality-cream">it is biology</span>. Our program targets the hormonal and metabolic patterns that make losing weight so difficult.
+                    </p>
+                  </div>
+                </AnimatedSection>
             </div>
 
             {/* Row 2: Text Left, Icon Right */}
@@ -225,8 +225,8 @@ const WeightLossProgram = () => {
             <AnimatedSection>
               <div className="text-center mb-12">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-primary/10 animate-float">
-                    <Calendar className="h-8 w-8 text-primary" />
+                  <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
+                    <Calendar className="h-8 w-8 text-vitality-cream" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold">Your Personalized Journey</h2>
                 </div>
@@ -242,8 +242,8 @@ const WeightLossProgram = () => {
 
             <AnimatedSection delay={500}>
               <div className="mt-12 text-center">
-                <div className="inline-flex items-center gap-2 px-6 py-3 bg-primary/5 rounded-full">
-                  <Zap className="h-5 w-5 text-primary animate-pulse" />
+                <div className="inline-flex items-center gap-2 px-6 py-3 bg-vitality-cream/5 rounded-full">
+                  <Zap className="h-5 w-5 text-vitality-cream animate-pulse" />
                   <span className="font-medium">Start your journey today</span>
                 </div>
               </div>
@@ -255,11 +255,11 @@ const WeightLossProgram = () => {
         <section className="relative py-20 px-4 bg-white">
           <div className="container mx-auto max-w-5xl">
             <div className="text-center mb-12">
-              <p className="text-script text-secondary text-sm mb-2">Medical Excellence</p>
+              <p className="text-script text-vitality-cream text-sm mb-2">Medical Excellence</p>
               <AnimatedSection>
                 <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-secondary/10 animate-float">
-                    <Stethoscope className="h-8 w-8 text-secondary" />
+                  <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
+                    <Stethoscope className="h-8 w-8 text-vitality-cream" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-serif font-semibold">
                     Quiet the "Food Noise." Reconnect with Your Body.
@@ -277,7 +277,7 @@ const WeightLossProgram = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               {patientQuotes.map((item, index) => (
                 <AnimatedSection key={index} delay={item.delay} animation="scale-in">
-                  <Card className="h-full hover:-translate-y-2 transition-all duration-300 border-l-4 border-l-primary">
+                  <Card className="h-full hover:-translate-y-2 transition-all duration-300 border-l-4 border-l-vitality-cream">
                     <CardContent className="p-6 flex items-center justify-center min-h-[140px]">
                       <p className="text-base italic text-foreground text-center leading-relaxed">
                         "{item.quote}"
@@ -301,10 +301,10 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-5xl">
             <AnimatedSection>
               <div className="text-center mb-12">
-                <p className="text-script text-primary text-sm mb-2">Transformation Stories</p>
+                <p className="text-script text-vitality-cream text-sm mb-2">Transformation Stories</p>
                 <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-primary/10 animate-glow-pulse">
-                    <Heart className="h-8 w-8 text-primary" />
+                  <div className="p-3 rounded-full bg-vitality-cream/10 animate-glow-pulse">
+                    <Heart className="h-8 w-8 text-vitality-cream" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-serif font-semibold">Real Results, Real Relief</h2>
                 </div>
@@ -321,8 +321,8 @@ const WeightLossProgram = () => {
                   <AnimatedSection key={index} delay={victory.delay}>
                     <Card className="h-full hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 bg-card">
                       <CardContent className="p-6 flex items-start gap-4">
-                        <div className="p-3 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300">
-                          <Icon className="h-6 w-6 text-primary" />
+                        <div className="p-3 rounded-full bg-vitality-cream/10 group-hover:scale-110 transition-transform duration-300">
+                          <Icon className="h-6 w-6 text-vitality-cream" />
                         </div>
                         <p className="text-base font-medium text-foreground leading-relaxed">
                           {victory.text}
@@ -358,8 +358,8 @@ const WeightLossProgram = () => {
             <AnimatedSection>
               <div className="text-center mb-12">
                 <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-full bg-accent/10 animate-float">
-                    <Shield className="h-8 w-8 text-accent" />
+                  <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
+                    <Shield className="h-8 w-8 text-vitality-cream" />
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold">Your Membership Includes</h2>
                 </div>
@@ -376,8 +376,8 @@ const WeightLossProgram = () => {
                     {benefits.map((benefit, index) => (
                       <AnimatedSection key={index} delay={50 * index} animation="fade-in">
                         <div className="flex items-start gap-4 group">
-                          <div className="p-2 rounded-full bg-primary/10 group-hover:scale-110 transition-transform duration-300 mt-1">
-                            <CheckCircle2 className="h-5 w-5 text-primary" />
+                          <div className="p-2 rounded-full bg-vitality-cream/10 group-hover:scale-110 transition-transform duration-300 mt-1">
+                            <CheckCircle2 className="h-5 w-5 text-vitality-cream" />
                           </div>
                           <p className="text-base text-foreground leading-relaxed">{benefit}</p>
                         </div>
@@ -385,7 +385,7 @@ const WeightLossProgram = () => {
                     ))}
                   </div>
                   
-                  <div className="mt-10 p-6 rounded-xl border-2 border-primary/20 bg-primary/5">
+                  <div className="mt-10 p-6 rounded-xl border-2 border-vitality-cream/20 bg-vitality-cream/5">
                     <p className="text-base font-medium text-foreground text-center leading-relaxed">
                       No copays. No confusion. Only compassionate, evidence-based care focused on helping you feel your best.
                     </p>
@@ -410,11 +410,11 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-3xl text-center relative z-10">
             <AnimatedSection>
               <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="p-4 rounded-full bg-vitality-teal/20 animate-glow-pulse">
-                  <Scale className="h-10 w-10 text-vitality-teal" />
+                <div className="p-4 rounded-full bg-vitality-cream/20 animate-glow-pulse">
+                  <Scale className="h-10 w-10 text-vitality-cream" />
                 </div>
                 <h2 className="text-4xl md:text-5xl font-bold text-white">
-                  A Return to <span className="text-vitality-teal">Feeling Like Yourself</span>
+                  A Return to <span className="text-vitality-cream">Feeling Like Yourself</span>
                 </h2>
               </div>
             </AnimatedSection>
