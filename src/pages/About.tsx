@@ -156,7 +156,7 @@ export default function About() {
                     At her integrative medicine clinic, Dr. Xochil Echeona blends science and holistic care to help patients rediscover balance inside and out. She is a functional medicine nurse practitioner with over 15 years of experience guiding individuals toward better energy, confidence, and longevity.
                   </p>
                   <p className="text-muted-foreground">
-                    Every treatment begins with listening: to your goals, your habits, your stress, your hormones. Then, together, you and Dr. Echeona build a plan that reconnects you to feeling your best, whether through bioidentical hormone replacement therapy (HRT), medical weight loss peptides, or regenerative aesthetic treatments that enhance natural beauty rather than replace it.
+                    Every treatment begins with listening: to your goals, your habits, your stress, your hormones. Then, together, you and Dr. Echeona build a plan that reconnects you to feeling your best, whether through GLP1's, bioidentical hormone replacement therapy (HRT), medical weight loss peptides, or regenerative aesthetic treatments that enhance natural beauty rather than replace it.
                   </p>
                 </div>
               </CardContent>
