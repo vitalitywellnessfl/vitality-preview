@@ -262,7 +262,7 @@ export default function Index() {
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Brain className="h-8 w-8 text-[#70B4B5]" />
                   <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
-                    Meet Dr. Xochil Echeona, DNP
+                    Meet Dr. Xochil Echeona, DNP, APRN, FNP-BC, PMHNP-BC, GNP-BC
                   </h2>
                 </div>
               </div>
