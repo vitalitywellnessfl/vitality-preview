@@ -10,7 +10,7 @@ export default function Contact() {
       <Navbar />
       
       <main className="flex-1">
-        <section className="py-20 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+        <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-4">

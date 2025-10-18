@@ -224,7 +224,7 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="text-center mb-12">
-                <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="flex flex-col items-center lg:flex-row lg:items-center justify-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
                     <Calendar className="h-8 w-8 text-vitality-cream" />
                   </div>
@@ -257,11 +257,11 @@ const WeightLossProgram = () => {
             <div className="text-center mb-12">
               <p className="text-script text-vitality-cream text-sm mb-2">Medical Excellence</p>
               <AnimatedSection>
-                <div className="inline-flex items-center gap-3 mb-4">
+                <div className="inline-flex flex-col items-center lg:flex-row lg:items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
                     <Stethoscope className="h-8 w-8 text-vitality-cream" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-serif font-semibold">
+                  <h2 className="text-3xl md:text-4xl font-serif font-semibold text-center lg:text-left">
                     Quiet the "Food Noise." Reconnect with Your Body.
                   </h2>
                 </div>
@@ -302,7 +302,7 @@ const WeightLossProgram = () => {
             <AnimatedSection>
               <div className="text-center mb-12">
                 <p className="text-script text-vitality-cream text-sm mb-2">Transformation Stories</p>
-                <div className="inline-flex items-center gap-3 mb-4">
+                <div className="inline-flex flex-col items-center lg:flex-row lg:items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-vitality-cream/10 animate-glow-pulse">
                     <Heart className="h-8 w-8 text-vitality-cream" />
                   </div>
@@ -357,7 +357,7 @@ const WeightLossProgram = () => {
           <div className="container mx-auto max-w-4xl">
             <AnimatedSection>
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-3 mb-4">
+                <div className="inline-flex flex-col items-center lg:flex-row lg:items-center gap-3 mb-4">
                   <div className="p-3 rounded-full bg-vitality-cream/10 animate-float">
                     <Shield className="h-8 w-8 text-vitality-cream" />
                   </div>
@@ -409,11 +409,11 @@ const WeightLossProgram = () => {
           <BlobBackground />
           <div className="container mx-auto max-w-3xl text-center relative z-10">
             <AnimatedSection>
-              <div className="flex items-center justify-center gap-3 mb-6">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center justify-center gap-3 mb-6">
                 <div className="p-4 rounded-full bg-vitality-cream/20 animate-glow-pulse">
                   <Scale className="h-10 w-10 text-vitality-cream" />
                 </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-white">
+                <h2 className="text-4xl md:text-5xl font-bold text-white text-center lg:text-left">
                   A Return to <span className="text-vitality-cream">Feeling Like Yourself</span>
                 </h2>
               </div>

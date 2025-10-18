@@ -72,7 +72,7 @@ export default function Services() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+        <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center mb-16">
               <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">

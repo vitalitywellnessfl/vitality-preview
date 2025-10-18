@@ -67,7 +67,7 @@ export default function About() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-vitality-cream via-white to-vitality-sky/20">
+        <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
           <div className="mx-auto max-w-4xl px-6 lg:px-8">
             <div className="flex items-center justify-center gap-3 mb-6">
               <Heart className="h-10 w-10 text-[#70B4B5]" />
@@ -113,7 +113,7 @@ export default function About() {
         </section>
 
         {/* Meet Dr. Echeona */}
-        <section id="dr-echeona" className="py-20 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/40 via-white to-vitality-sky/10 relative overflow-visible">
+        <section id="dr-echeona" className="py-20 px-6 lg:px-8 bg-white relative overflow-visible">
           <div className="mx-auto max-w-6xl">
             {/* Main Header with Photo */}
             <div className="mb-12 relative">
@@ -340,7 +340,7 @@ export default function About() {
         </section>
 
         {/* What Makes Us Different */}
-        <section className="py-16 px-6 lg:px-8 bg-gradient-to-br from-vitality-cream/30 to-white">
+        <section className="py-16 px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-4xl">
             <Card className="border-2">
               <CardContent className="p-8 lg:p-12">
