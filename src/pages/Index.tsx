@@ -34,7 +34,7 @@ import peptideHeroImage from "@/assets/peptide-hero.jpg";
 import edHeroImage from "@/assets/ed-hero.jpg";
 import homepageGlp1Image from "@/assets/homepage-glp1.png";
 import glp1DiscountImage from "@/assets/glp1-discount.png";
-import drEcheonaHomepage from "@/assets/dr-echeona-homepage.png";
+import drEcheonaHomepage from "@/assets/dr-echeona-new.png";
 
 const services = [
   {
@@ -277,7 +277,7 @@ export default function Index() {
                 <Card className="border-2 order-1 md:order-2">
                   <CardContent className="p-6 sm:p-8">
                     <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
-                      Dr. Echeona is a <strong>Family Nurse Practitioner</strong> specializing in preventive health, hormone balance, and medical weight loss. She is passionate about empowering patients to take control of their wellness through science-based care and compassionate guidance.
+                      Dr. Echeona is a Doctorally prepared, triple board-certified Nurse Practitioner specializing in Geriatric, Family, and Psychiatric Medicine. With over 15 years of experience in healthcare and clinical practice across diverse medical settings, including cardiology, internal medicine, and family practice. Her mission is to empower patients to feel and look their best (inside and out) through compassionate guidance.
                     </p>
                     <Button size="lg" asChild className="w-full sm:w-auto">
                       <Link to="/about#dr-echeona">
