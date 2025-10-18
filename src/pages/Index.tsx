@@ -134,10 +134,10 @@ export default function Index() {
                 />
               </div>
               <p className="text-lg leading-8 text-muted-foreground mb-8">
-                Welcome to <strong>Vitality Wellness Clinic</strong>, your trusted destination for medical weight loss, IV therapy, hormone replacement, and holistic wellness solutions in Weston, Florida.
+                Vitality Wellness Clinic in Weston, FL provides science-backed treatments for lasting weight loss, hormone balance, and total body wellness.
               </p>
               <p className="text-base leading-7 text-muted-foreground mb-6">
-                Led by <strong>Dr. Xochil Echeona, DNP</strong>, our medical practice provides evidence-based, medically supervised treatments designed to help you achieve your healthiest, most confident self.
+                Our medical team, led by <strong>Dr. Xochil Echeona, DNP</strong>, offers FDA-approved GLP-1 medications like semaglutide and tirzepatide, personalized hormone replacement therapy for men and women, advanced IV therapy, body contouring, peptide treatments, vitamin injections, and erectile dysfunction care, all designed to help you look, feel, and perform at your best.
               </p>
               
               <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
