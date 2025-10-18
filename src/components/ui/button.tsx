@@ -18,6 +18,7 @@ const buttonVariants = cva(
         metallic: "gradient-metallic text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-100",
         "metallic-silver": "gradient-metallic-silver text-slate-900 font-semibold shadow-lg hover:shadow-xl hover:scale-105 active:scale-100",
         "metallic-outline": "border-2 border-slate-300 bg-white/80 backdrop-blur-sm text-slate-700 font-semibold hover:bg-slate-50 hover:border-slate-400 hover:shadow-lg",
+        cream: "bg-vitality-cream text-white font-semibold shadow-lg hover:bg-vitality-cream/90 hover:shadow-xl hover:scale-105 active:scale-100",
       },
       size: {
         default: "h-10 px-4 py-2",

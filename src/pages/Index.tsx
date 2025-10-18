@@ -162,6 +162,9 @@ export default function Index() {
                 <Button size="lg" variant="metallic-outline" asChild className="text-lg px-8">
                   <a href="tel:9548164002">Call (954) 816-4002</a>
                 </Button>
+                <Button size="lg" variant="cream" asChild className="text-lg px-8">
+                  <Link to="/weight-loss-program">Join our Weight Loss Program</Link>
+                </Button>
               </div>
             </div>
           </div>

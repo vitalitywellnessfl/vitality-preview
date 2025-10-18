@@ -63,6 +63,7 @@ export default {
           grey: 'hsl(var(--vitality-grey))',
           sky: 'hsl(var(--vitality-sky))',
           gold: 'hsl(var(--vitality-gold))',
+          cream: 'hsl(var(--vitality-cream))',
         },
       },
       borderRadius: {

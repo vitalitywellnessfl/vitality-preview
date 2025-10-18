@@ -25,6 +25,7 @@ All colors MUST be HSL.
     --vitality-grey: 216 20% 95%;        /* #F0F3F7 - Muted sections */
     --vitality-sky: 199 57% 77%;         /* #a3c9e1 - Sky accent */
     --vitality-gold: 43 96% 56%;         /* #F4C430 - Gold accent */
+    --vitality-cream: 38 19% 54%;        /* #A39070 - Warm cream accent */
     
     --background: 0 0% 100%;             /* Pure white */
     --foreground: 215 25% 20%;           /* Modern dark blue */
