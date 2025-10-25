@@ -64,6 +64,15 @@ export const Navbar = () => {
             Home
           </Link>
           
+          <Link
+            to="/about"
+            className={`text-base font-medium transition-colors hover:text-primary ${
+              location.pathname === "/about" ? "text-primary" : "text-foreground"
+            }`}
+          >
+            About
+          </Link>
+          
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
@@ -91,18 +100,6 @@ export const Navbar = () => {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          
-          {navigation.slice(1).map((item) => (
-            <Link
-              key={item.name}
-              to={item.href}
-              className={`text-base font-medium transition-colors hover:text-primary ${
-                location.pathname === item.href ? "text-primary" : "text-foreground"
-              }`}
-            >
-              {item.name}
-            </Link>
-          ))}
         </div>
         
         <div className="hidden lg:flex lg:items-center lg:gap-3">
