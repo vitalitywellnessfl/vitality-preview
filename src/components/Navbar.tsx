@@ -23,11 +23,12 @@ const servicesFirst = true; // Flag to render Services after Home
 const servicesNav = [
   { name: "GLP-1's", href: "/glp1" },
   { name: "Healing Peptides", href: "/healing-peptides" },
+  { name: "NAD+", href: "/nad-plus" },
+  { name: "Glutathione", href: "/glutathione" },
   { name: "IV Therapy", href: "/iv-therapy" },
   { name: "Vitamin Shots", href: "/vitamin-shots" },
   { name: "Body Contouring", href: "/body-contouring" },
   { name: "HRT", href: "/hormone-therapy" },
-  { name: "Erectile Dysfunction", href: "/erectile-dysfunction" },
 ];
 
 export const Navbar = () => {

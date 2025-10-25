@@ -10,11 +10,12 @@ import Services from "./pages/Services";
 import WeightLossProgram from "./pages/WeightLossProgram";
 import GLP1 from "./pages/GLP1";
 import HealingPeptides from "./pages/HealingPeptides";
+import NADPlus from "./pages/NADPlus";
+import Glutathione from "./pages/Glutathione";
 import IVTherapy from "./pages/IVTherapy";
 import VitaminShots from "./pages/VitaminShots";
 import BodyContouring from "./pages/BodyContouring";
 import HormoneTherapy from "./pages/HormoneTherapy";
-import ErectileDysfunction from "./pages/ErectileDysfunction";
 import Contact from "./pages/Contact";
 import Book from "./pages/Book";
 import NotFound from "./pages/NotFound";
@@ -35,11 +36,12 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/glp1" element={<GLP1 />} />
           <Route path="/healing-peptides" element={<HealingPeptides />} />
+          <Route path="/nad-plus" element={<NADPlus />} />
+          <Route path="/glutathione" element={<Glutathione />} />
           <Route path="/iv-therapy" element={<IVTherapy />} />
           <Route path="/vitamin-shots" element={<VitaminShots />} />
           <Route path="/body-contouring" element={<BodyContouring />} />
           <Route path="/hormone-therapy" element={<HormoneTherapy />} />
-          <Route path="/erectile-dysfunction" element={<ErectileDysfunction />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/book" element={<Book />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

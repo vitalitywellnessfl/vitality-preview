@@ -31,11 +31,12 @@ export const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/glp1" className="text-sm text-gray-300 hover:text-white transition-colors">GLP-1's</Link></li>
               <li><Link to="/healing-peptides" className="text-sm text-gray-300 hover:text-white transition-colors">Healing Peptides</Link></li>
+              <li><Link to="/nad-plus" className="text-sm text-gray-300 hover:text-white transition-colors">NAD+</Link></li>
+              <li><Link to="/glutathione" className="text-sm text-gray-300 hover:text-white transition-colors">Glutathione</Link></li>
               <li><Link to="/iv-therapy" className="text-sm text-gray-300 hover:text-white transition-colors">IV Therapy</Link></li>
               <li><Link to="/vitamin-shots" className="text-sm text-gray-300 hover:text-white transition-colors">Vitamin Shots</Link></li>
               <li><Link to="/body-contouring" className="text-sm text-gray-300 hover:text-white transition-colors">Body Contouring</Link></li>
               <li><Link to="/hormone-therapy" className="text-sm text-gray-300 hover:text-white transition-colors">HRT</Link></li>
-              <li><Link to="/erectile-dysfunction" className="text-sm text-gray-300 hover:text-white transition-colors">Erectile Dysfunction</Link></li>
             </ul>
           </div>
 

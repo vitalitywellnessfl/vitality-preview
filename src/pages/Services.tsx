@@ -55,13 +55,6 @@ const services = [
     description: "Restore balance and vitality through bioidentical hormone therapy for optimal health and well-being.",
     link: "/hormone-therapy",
     color: "vitality-teal"
-  },
-  {
-    icon: HeartPulse,
-    title: "Erectile Dysfunction",
-    description: "Discreet, effective treatments to restore confidence and improve intimate health.",
-    link: "/erectile-dysfunction",
-    color: "vitality-gold"
   }
 ];
 

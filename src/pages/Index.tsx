@@ -78,13 +78,6 @@ const services = [
     description: "Restore balance and vitality through bioidentical hormone therapy for men and women. Improve energy, mood, libido, and overall well-being.",
     link: "/hormone-therapy",
     image: hrtHeroImage
-  },
-  {
-    icon: Star,
-    title: "Erectile Dysfunction Treatment",
-    description: "Confidential, effective treatment options to restore confidence and improve intimate health with medical-grade solutions.",
-    link: "/erectile-dysfunction",
-    image: edHeroImage
   }
 ];
 
