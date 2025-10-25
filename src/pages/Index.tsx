@@ -157,7 +157,7 @@ export default function Index() {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" variant="metallic" asChild className="text-lg px-8">
-                  <Link to="/book">Schedule Consultation</Link>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
                 </Button>
                 <Button size="lg" variant="metallic-outline" asChild className="text-lg px-8">
                   <a href="tel:9548164002">Call (954) 816-4002</a>
@@ -281,9 +281,9 @@ export default function Index() {
                     className="bg-[#70B4B5] hover:bg-[#5da3a4] text-white w-full max-w-md"
                     asChild
                   >
-                    <Link to="/book">
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                       Schedule a Virtual Consultation
-                    </Link>
+                    </a>
                   </Button>
                 </div>
                 <Card className="border-2 order-1 md:order-2">
@@ -356,10 +356,10 @@ export default function Index() {
                 </p>
                 <div className="flex flex-col gap-3">
                   <Button size="lg" variant="metallic" asChild className="w-full">
-                    <Link to="/book">Schedule Consultation</Link>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
                   </Button>
                   <Button size="lg" variant="metallic-outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
-                    <Link to="/contact">Contact Us</Link>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Contact Us</a>
                   </Button>
                   <Button size="lg" variant="metallic-outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                     <a href="tel:9548164002">Call (954) 816-4002</a>

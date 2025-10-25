@@ -106,9 +106,9 @@ const WeightLossProgram = () => {
                 <AnimatedSection delay={400}>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <MagneticButton asChild size="lg" className="text-base">
-                      <Link to="/book">
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                         Start Your Journey <ArrowRight className="ml-2 h-5 w-5" />
-                      </Link>
+                      </a>
                     </MagneticButton>
                     <MagneticButton asChild size="lg" variant="outline" className="text-base">
                       <Link to="/glp1">
@@ -209,9 +209,9 @@ const WeightLossProgram = () => {
                     We track your progress carefully, make adjustments as your body responds, and help you stay supported at every step. You're never alone on this journey.
                   </p>
                   <MagneticButton asChild size="lg">
-                    <Link to="/book">
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                       Find Out If You're a Candidate <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                    </a>
                   </MagneticButton>
                 </div>
               </AnimatedSection>
@@ -435,9 +435,9 @@ const WeightLossProgram = () => {
             
             <AnimatedSection delay={200}>
               <MagneticButton asChild size="lg" className="bg-white text-vitality-charcoal hover:bg-white/90">
-                <Link to="/book">
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                   Book Your Consultation <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                </a>
               </MagneticButton>
             </AnimatedSection>
           </div>

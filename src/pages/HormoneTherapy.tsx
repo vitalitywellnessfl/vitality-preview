@@ -154,7 +154,7 @@ export default function HormoneTherapy() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="metallic" size="lg" asChild>
-                    <a href="/book">Book Consultation</a>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Consultation</a>
                   </Button>
                   <Button variant="metallic-outline" size="lg" asChild>
                     <a href="#treatments">View Options</a>
@@ -262,7 +262,7 @@ export default function HormoneTherapy() {
                             </div>
                             {index === treatments.length - 1 && (
                               <Button variant="metallic" size="lg" className="w-full sm:w-auto" asChild>
-                                <a href="/book">Start Your Journey</a>
+                                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Start Your Journey</a>
                               </Button>
                             )}
                           </CardContent>
@@ -324,7 +324,7 @@ export default function HormoneTherapy() {
                       Schedule a consultation to discuss your symptoms and determine if hormone optimization is appropriate for your wellness journey.
                     </p>
                     <Button variant="metallic" size="lg" asChild>
-                      <a href="/book">Schedule Your Consultation</a>
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Consultation</a>
                     </Button>
                   </div>
                 </CardContent>
@@ -386,7 +386,7 @@ export default function HormoneTherapy() {
                   </div>
 
                   <Button variant="metallic" size="lg" className="w-full" asChild>
-                    <a href="/book">Start HRT Consultation</a>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Start HRT Consultation</a>
                   </Button>
                 </GlassmorphicCardContent>
               </GlassmorphicCard>
@@ -453,7 +453,7 @@ export default function HormoneTherapy() {
                 Don't let hormone imbalance control your life. Discover how bioidentical hormone therapy can restore your energy, mood, and overall wellness. Your transformation begins with a simple consultation.
               </p>
               <Button variant="metallic" size="lg" className="mb-6" asChild>
-                <a href="/book">Schedule Consultation</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
               </Button>
               <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                 <Phone className="h-4 w-4" />

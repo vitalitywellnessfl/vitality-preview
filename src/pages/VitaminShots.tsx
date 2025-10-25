@@ -200,7 +200,7 @@ export default function VitaminShots() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="metallic" size="lg" asChild>
-                    <a href="/book">Book Your Shot</a>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Your Shot</a>
                   </Button>
                   <Button variant="metallic-outline" size="lg" asChild>
                     <a href="#shots">Explore Options</a>
@@ -311,7 +311,7 @@ export default function VitaminShots() {
                             </div>
                             {index === shots.length - 1 && (
                               <Button variant="metallic" size="lg" className="w-full sm:w-auto" asChild>
-                                <a href="/book">Get Your Boost</a>
+                                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Get Your Boost</a>
                               </Button>
                             )}
                           </CardContent>
@@ -372,7 +372,7 @@ export default function VitaminShots() {
                         className="w-full"
                         asChild
                       >
-                        <a href="/book">{option.cta}</a>
+                        <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">{option.cta}</a>
                       </Button>
                     </GlassmorphicCardContent>
                   </GlassmorphicCard>
@@ -447,7 +447,7 @@ export default function VitaminShots() {
                 Walk-ins welcome for vitamin shots. No appointment needed—just stop by during business hours and leave feeling revitalized.
               </p>
               <Button variant="metallic" size="lg" className="mb-6" asChild>
-                <a href="/book">Schedule Your Shot</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Shot</a>
               </Button>
               <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                 <Phone className="h-4 w-4" />

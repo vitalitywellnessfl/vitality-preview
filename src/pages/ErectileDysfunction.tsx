@@ -154,7 +154,7 @@ export default function ErectileDysfunction() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
                     <Button variant="metallic" size="lg" asChild>
-                      <a href="/book">
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                         Start Your Consultation
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </a>
@@ -251,7 +251,7 @@ export default function ErectileDysfunction() {
                       </p>
                       {treatment.showCTA && (
                         <Button variant="metallic" className="mt-4" asChild>
-                          <a href="/book">
+                          <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                             Schedule Your Evaluation
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </a>
@@ -325,7 +325,7 @@ export default function ErectileDysfunction() {
                 Thousands of men have reclaimed their sexual health and confidence with Vitality Wellness. Our discreet, doctor-led care meets you where you are: physically, mentally, and emotionally.
               </p>
               <Button variant="metallic" size="lg" asChild>
-                <a href="/book">
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                   Start Your Confidential Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>

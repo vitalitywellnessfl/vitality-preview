@@ -131,9 +131,9 @@ export const Navbar = () => {
             </a>
           </Button>
           <Button size="sm" asChild className="bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white">
-            <Link to="/book">
+            <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
               Book Consultation
-            </Link>
+            </a>
           </Button>
         </div>
       </nav>
@@ -219,9 +219,9 @@ export const Navbar = () => {
                     </a>
                   </Button>
                   <Button className="w-full bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white" asChild>
-                    <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>

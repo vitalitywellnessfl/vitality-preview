@@ -37,7 +37,7 @@ export default function WeightLoss() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
-                <a href="/book">Book Your Consultation Today</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Your Consultation Today</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="tel:9548164002">
@@ -78,7 +78,7 @@ export default function WeightLoss() {
                     Dual-action GLP-1 medication for enhanced weight loss results
                   </p>
                   <Button size="lg" className="w-full" asChild>
-                    <a href="/book">
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                       Book Consultation
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
@@ -105,7 +105,7 @@ export default function WeightLoss() {
                     Proven GLP-1 medication for effective appetite control and weight loss
                   </p>
                   <Button size="lg" className="w-full" asChild>
-                    <a href="/book">
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                       Book Consultation
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </a>
@@ -330,7 +330,7 @@ export default function WeightLoss() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" asChild>
-                <a href="/book">Schedule Your Consultation</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Consultation</a>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="tel:9548164002">

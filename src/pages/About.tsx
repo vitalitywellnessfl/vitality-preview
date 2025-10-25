@@ -297,7 +297,7 @@ export default function About() {
                   
                   <div className="pt-6 mt-6 border-t">
                     <Button size="lg" asChild className="w-full sm:w-auto">
-                      <Link to="/book">Begin Your Wellness Journey</Link>
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Begin Your Wellness Journey</a>
                     </Button>
                   </div>
                 </div>
@@ -444,7 +444,7 @@ export default function About() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-vitality-teal hover:bg-vitality-teal/90 text-white text-lg px-8 py-6" asChild>
-                <Link to="/book">Schedule Consultation</Link>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
               </Button>
               <Button size="lg" variant="outline" asChild className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-vitality-charcoal text-lg px-8 py-6">
                 <a href="tel:9548164002">

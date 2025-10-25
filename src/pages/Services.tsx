@@ -119,7 +119,7 @@ export default function Services() {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <Button size="lg" asChild>
-                      <Link to="/book">Book Consultation</Link>
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Consultation</a>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
                       <a href="tel:9548164002">Call (954) 816-4002</a>
