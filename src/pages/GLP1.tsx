@@ -60,16 +60,69 @@ export default function WeightLoss() {
               <span className="text-sm text-muted-foreground">• No hidden fees</span>
               <span className="text-sm text-muted-foreground">• No subscriptions</span>
             </div>
-            
-            <div className="flex flex-wrap items-center justify-center gap-6 mt-8">
-              <div className="px-8 py-4 border-2 border-primary rounded-lg bg-white">
-                <h3 className="font-bold text-lg text-foreground mb-1">Tirzepatide</h3>
-                <p className="text-2xl font-bold text-primary">$300<span className="text-sm text-muted-foreground">/month</span></p>
-              </div>
-              <div className="px-8 py-4 border-2 border-primary rounded-lg bg-white">
-                <h3 className="font-bold text-lg text-foreground mb-1">Semaglutide</h3>
-                <p className="text-2xl font-bold text-primary">$175<span className="text-sm text-muted-foreground">/month</span></p>
-              </div>
+          </div>
+        </section>
+
+        {/* Product Cards - Choose Your Medication */}
+        <section className="py-16 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Choose Your GLP-1 Medication</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+              {/* Tirzepatide Card */}
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+                <div className="w-full bg-white p-6 flex items-center justify-center h-64">
+                  <img 
+                    src={tirzepatideImage} 
+                    alt="Tirzepatide medication" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
+                  <div className="mb-4">
+                    <span className="text-3xl font-bold text-primary">$300</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    Dual-action GLP-1 medication for enhanced weight loss results
+                  </p>
+                  <Button size="lg" className="w-full" asChild>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                      Book Consultation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Semaglutide Card */}
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
+                <div className="w-full bg-white p-6 flex items-center justify-center h-64">
+                  <img 
+                    src={semaglutideImage} 
+                    alt="Semaglutide medication" 
+                    className="max-w-full max-h-full object-contain"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
+                  <div className="mb-4">
+                    <span className="text-3xl font-bold text-primary">$175</span>
+                    <span className="text-muted-foreground">/month</span>
+                  </div>
+                  <p className="text-muted-foreground mb-6">
+                    Proven GLP-1 medication for effective appetite control and weight loss
+                  </p>
+                  <Button size="lg" className="w-full" asChild>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                      Book Consultation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
