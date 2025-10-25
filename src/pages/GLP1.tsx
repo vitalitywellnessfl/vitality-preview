@@ -71,7 +71,7 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">$175</span>
+                    <span className="text-3xl font-bold text-primary">$300</span>
                     <span className="text-muted-foreground">/month</span>
                   </div>
                   <p className="text-muted-foreground mb-6">
@@ -98,7 +98,7 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">$300</span>
+                    <span className="text-3xl font-bold text-primary">$175</span>
                     <span className="text-muted-foreground">/month</span>
                   </div>
                   <p className="text-muted-foreground mb-6">
