@@ -127,7 +127,7 @@ export const Navbar = () => {
               (954) 816-4002
             </a>
           </Button>
-          <Button size="sm" asChild>
+          <Button size="sm" asChild className="bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white">
             <Link to="/book">
               Book Consultation
             </Link>
@@ -212,7 +212,7 @@ export const Navbar = () => {
                       (954) 816-4002
                     </a>
                   </Button>
-                  <Button className="w-full" asChild>
+                  <Button className="w-full bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white" asChild>
                     <Link to="/book" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
                     </Link>
