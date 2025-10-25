@@ -60,6 +60,33 @@ export default function WeightLoss() {
               <span className="text-sm text-muted-foreground">• No hidden fees</span>
               <span className="text-sm text-muted-foreground">• No subscriptions</span>
             </div>
+            
+            {/* Price Rectangles */}
+            <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
+              <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
+                <div>
+                  <p className="font-semibold text-foreground">Tirzepatide</p>
+                  <p className="text-2xl font-bold text-primary">$300/month</p>
+                </div>
+                <Button size="sm" asChild>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </a>
+                </Button>
+              </div>
+              
+              <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
+                <div>
+                  <p className="font-semibold text-foreground">Semaglutide</p>
+                  <p className="text-2xl font-bold text-primary">$175/month</p>
+                </div>
+                <Button size="sm" asChild>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                    Get Started
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
 
