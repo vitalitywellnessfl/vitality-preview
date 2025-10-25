@@ -53,6 +53,13 @@ export default function WeightLoss() {
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
               Get Medical Weight Loss with Semaglutide & Tirzepatide
             </h1>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Affordable, transparent pricing for medical weight loss therapy
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+              <span className="text-sm text-muted-foreground">• No hidden fees</span>
+              <span className="text-sm text-muted-foreground">• No subscriptions</span>
+            </div>
           </div>
         </section>
 
@@ -61,13 +68,6 @@ export default function WeightLoss() {
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">Choose Your GLP-1 Medication</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Affordable, transparent pricing for medical weight loss therapy
-              </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-                <span className="text-sm text-muted-foreground">• No hidden fees</span>
-                <span className="text-sm text-muted-foreground">• No subscriptions</span>
-              </div>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Tirzepatide Card */}
