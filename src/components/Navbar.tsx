@@ -15,7 +15,6 @@ import {
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
 ];
 
 const servicesFirst = true; // Flag to render Services after Home
