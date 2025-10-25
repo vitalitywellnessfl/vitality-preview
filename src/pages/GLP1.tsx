@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -10,6 +11,33 @@ import tirzepatideImage from "@/assets/tirzepatide.png";
 import semaglutideImage from "@/assets/semaglutide.png";
 
 export default function WeightLoss() {
+  const journeySteps = [
+    {
+      title: "Initial Consultation",
+      description: "Meet with the doctor to discuss your health history, goals, and create your personalized plan."
+    },
+    {
+      title: "Medical Evaluation",
+      description: "Comprehensive lab testing and health assessment to ensure safe, effective treatment."
+    },
+    {
+      title: "Treatment Begins",
+      description: "Start your GLP-1 medication with ongoing guidance on nutrition, lifestyle, and wellness."
+    },
+    {
+      title: "Progress Tracking",
+      description: "Regular check-ins and adjustments to optimize your results and support your journey."
+    },
+    {
+      title: "Sustainable Success",
+      description: "Achieve lasting results with continued support and maintenance strategies."
+    }
+  ];
+
+  useEffect(() => {
+    document.title = "Weight Loss Therapy - GLP-1 | Vitality Wellness Clinic";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -25,13 +53,6 @@ export default function WeightLoss() {
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
               Get Medical Weight Loss with Semaglutide & Tirzepatide
             </h1>
-            <div className="mb-8 flex justify-center">
-              <img 
-                src={glp1MedicationsImage} 
-                alt="Semaglutide and Tirzepatide injection vials" 
-                className="rounded-lg shadow-lg max-w-2xl w-full h-auto"
-              />
-            </div>
             <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
               Take control of your health and achieve sustainable, evidence-based weight loss with GLP-1 therapy at Vitality Wellness Clinic in Weston, Florida. Led by Dr. Xochil Echeona, DNP, our medical team provides FDA-approved treatments using semaglutide (Ozempic®, Wegovy®) and tirzepatide (Mounjaro®, Zepbound®) to help you lose weight safely and effectively under medical supervision.
             </p>
@@ -116,6 +137,40 @@ export default function WeightLoss() {
                   </Button>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Your Personalized Journey */}
+        <section className="py-12 px-6 lg:px-8 bg-muted/20">
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Your Personalized Journey</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Every step is designed with your success in mind. Here's what to expect on your transformation journey.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-5 gap-4 mb-8">
+              {journeySteps.map((step, index) => (
+                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                  <CardContent className="p-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <span className="text-primary font-bold">{index + 1}</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2 text-sm">{step.title}</h3>
+                    <p className="text-xs text-muted-foreground">{step.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Button size="lg" asChild>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  Start Your Journey Today
+                </a>
+              </Button>
             </div>
           </div>
         </section>
