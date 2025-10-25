@@ -223,10 +223,10 @@ All colors MUST be HSL.
     color: hsl(var(--primary));
   }
 
-  /* Tangerine Calligraphy Font for Single Word Accents */
+  /* Hurricane Calligraphy Font for Single Word Accents */
   .text-calligraphy {
-    font-family: 'Tangerine', cursive;
-    font-weight: 700;
+    font-family: 'Hurricane', cursive;
+    font-weight: 400;
     font-size: 4.5rem;
     line-height: 0.85;
     letter-spacing: 0.02em;

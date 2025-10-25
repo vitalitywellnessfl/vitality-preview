@@ -14,12 +14,12 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['Playfair Display', 'serif'],    // Main headlines (H1)
-        serif: ['Lora', 'serif'],                  // Subheadings (H2, H3)
-        caps: ['Cinzel', 'serif'],                 // All-caps labels/eyebrows
+        display: ['Playfair Display', 'serif'],    // Main headlines (H1, H2)
+        serif: ['Roboto Condensed', 'sans-serif'], // Subheadings (H3, H4)
+        caps: ['Roboto Condensed', 'sans-serif'],  // All-caps labels/eyebrows
         sans: ['Raleway', 'sans-serif'],           // Body text, buttons
         script: ['Britany', 'cursive'],            // Accent phrases
-        calligraphy: ['Tangerine', 'cursive'],     // Single word accents
+        calligraphy: ['Hurricane', 'cursive'],     // Single word accents (changed from Tangerine)
         hurricane: ['Hurricane', 'cursive'],       // Hurricane font for specific words
       },
       colors: {
