@@ -57,6 +57,10 @@ export default function WeightLoss() {
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Affordable, transparent pricing for medical weight loss therapy
               </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
+                <span className="text-sm text-muted-foreground">• No hidden fees</span>
+                <span className="text-sm text-muted-foreground">• No subscriptions</span>
+              </div>
             </div>
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Tirzepatide Card */}
