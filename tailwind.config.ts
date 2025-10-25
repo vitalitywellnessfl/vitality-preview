@@ -18,7 +18,7 @@ export default {
         serif: ['Roboto Condensed', 'sans-serif'], // Subheadings (H3, H4)
         caps: ['Roboto Condensed', 'sans-serif'],  // All-caps labels/eyebrows
         sans: ['Raleway', 'sans-serif'],           // Body text, buttons
-        script: ['Britany', 'cursive'],            // Accent phrases
+        script: ['Roboto Condensed', 'sans-serif'], // Accent phrases (changed from Britany)
         calligraphy: ['Hurricane', 'cursive'],     // Single word accents (changed from Tangerine)
         hurricane: ['Hurricane', 'cursive'],       // Hurricane font for specific words
       },
