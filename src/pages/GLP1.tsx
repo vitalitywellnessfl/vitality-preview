@@ -23,7 +23,7 @@ export default function WeightLoss() {
               <span className="text-sm font-semibold text-primary uppercase tracking-wider">GLP-1 Weight Loss Therapy</span>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
-              Medical Weight Loss with Semaglutide & Tirzepatide
+              Get Medical Weight Loss with Semaglutide & Tirzepatide
             </h1>
             <div className="mb-8 flex justify-center">
               <img 
