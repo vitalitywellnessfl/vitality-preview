@@ -53,20 +53,6 @@ export default function WeightLoss() {
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
               Get Medical Weight Loss with Semaglutide & Tirzepatide
             </h1>
-            <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
-              Take control of your health and achieve sustainable, evidence-based weight loss with GLP-1 therapy at Vitality Wellness Clinic in Weston, Florida. Led by Dr. Xochil Echeona, DNP, our medical team provides FDA-approved treatments using semaglutide (Ozempic®, Wegovy®) and tirzepatide (Mounjaro®, Zepbound®) to help you lose weight safely and effectively under medical supervision.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Your Consultation Today</a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:9548164002">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call (954) 816-4002
-                </a>
-              </Button>
-            </div>
           </div>
         </section>
 
