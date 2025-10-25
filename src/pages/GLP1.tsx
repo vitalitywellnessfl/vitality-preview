@@ -188,6 +188,54 @@ export default function WeightLoss() {
           </div>
         </section>
 
+        {/* Quick Facts */}
+        <section className="py-10 px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl">
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <Zap className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl font-bold text-foreground text-center">Quick Facts</h2>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              <Card>
+                <CardContent className="p-6">
+                  <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">FDA-approved for weight management</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <Syringe className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">Weekly self-administered injections</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <Shield className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">Medically supervised by Dr. Xochil Echeona, DNP</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <TrendingDown className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">Average 15-20% total body weight reduction</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">Transparent, affordable self-pay pricing</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="p-6">
+                  <Heart className="h-6 w-6 text-primary mb-3" />
+                  <p className="font-medium text-foreground">Comprehensive support for nutrition, exercise, and mindset</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* What Are GLP-1 Medications */}
         <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
@@ -410,54 +458,6 @@ export default function WeightLoss() {
                   Call (954) 816-4002
                 </a>
               </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Facts */}
-        <section className="py-16 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <div className="flex items-center justify-center gap-3 mb-8">
-              <Zap className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold text-foreground text-center">Quick Facts</h2>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
-                <CardContent className="p-6">
-                  <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">FDA-approved for weight management</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <Syringe className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Weekly self-administered injections</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <Shield className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Medically supervised by Dr. Xochil Echeona, DNP</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <TrendingDown className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Average 15-20% total body weight reduction</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <CheckCircle2 className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Transparent, affordable self-pay pricing</p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="p-6">
-                  <Heart className="h-6 w-6 text-primary mb-3" />
-                  <p className="font-medium text-foreground">Comprehensive support for nutrition, exercise, and mindset</p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
