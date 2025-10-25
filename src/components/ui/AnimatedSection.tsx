@@ -65,7 +65,7 @@ export const AnimatedSection = ({
     <div
       ref={ref}
       className={cn(
-        "transition-all duration-700",
+        "transition-opacity duration-700",
         !isVisible && "opacity-0",
         isVisible && {
           "fade-in-up": "animate-fade-in-up",
@@ -74,6 +74,7 @@ export const AnimatedSection = ({
         }[animation],
         className
       )}
+      style={{ willChange: isVisible ? 'auto' : 'transform, opacity' }}
     >
       {children}
     </div>

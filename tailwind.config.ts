@@ -92,7 +92,7 @@ export default {
         "fade-in-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(30px)",
+            transform: "translateY(15px)",
           },
           "100%": {
             opacity: "1",
@@ -112,24 +112,24 @@ export default {
             transform: "translate(0, 0) scale(1)",
           },
           "25%": {
-            transform: "translate(20px, -30px) scale(1.1)",
+            transform: "translate(10px, -15px) scale(1.02)",
           },
           "50%": {
-            transform: "translate(-20px, 20px) scale(0.9)",
+            transform: "translate(-10px, 10px) scale(0.98)",
           },
           "75%": {
-            transform: "translate(30px, 10px) scale(1.05)",
+            transform: "translate(15px, 5px) scale(1.01)",
           },
         },
         "blob-slow": {
           "0%, 100%": {
-            transform: "translate(0, 0) scale(1) rotate(0deg)",
+            transform: "translate(0, 0) scale(1)",
           },
           "33%": {
-            transform: "translate(-30px, 40px) scale(1.15) rotate(120deg)",
+            transform: "translate(-15px, 20px) scale(1.03)",
           },
           "66%": {
-            transform: "translate(40px, -20px) scale(0.85) rotate(240deg)",
+            transform: "translate(20px, -10px) scale(0.97)",
           },
         },
         "gradient-shift": {
