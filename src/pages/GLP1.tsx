@@ -44,7 +44,7 @@ export default function WeightLoss() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-20 bg-white">
+        <section className="py-12 bg-white">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Syringe className="h-8 w-8 text-primary" />
@@ -90,8 +90,42 @@ export default function WeightLoss() {
           </div>
         </section>
 
+        {/* Your Personalized Journey */}
+        <section className="py-10 px-6 lg:px-8" style={{ backgroundColor: '#70B4B5' }}>
+          <div className="mx-auto max-w-5xl">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold text-white mb-4">Your Personalized Journey</h2>
+              <p className="text-lg text-white/90 max-w-2xl mx-auto">
+                Every step is designed with your success in mind. Here's what to expect on your transformation journey.
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-5 gap-4 mb-8">
+              {journeySteps.map((step, index) => (
+                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                  <CardContent className="p-4">
+                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <span className="text-primary font-bold">{index + 1}</span>
+                    </div>
+                    <h3 className="font-semibold text-foreground mb-2 text-sm">{step.title}</h3>
+                    <p className="text-xs text-muted-foreground">{step.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center">
+              <Button size="lg" variant="secondary" asChild>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  Start Your Journey Today
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Product Cards - Choose Your Medication */}
-        <section className="py-16 px-6 lg:px-8 bg-muted/30">
+        <section className="py-10 px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">Choose Your GLP-1 Medication</h2>
@@ -154,42 +188,8 @@ export default function WeightLoss() {
           </div>
         </section>
 
-        {/* Your Personalized Journey */}
-        <section className="py-12 px-6 lg:px-8 bg-muted/20">
-          <div className="mx-auto max-w-5xl">
-            <div className="text-center mb-10">
-              <h2 className="text-3xl font-bold text-foreground mb-4">Your Personalized Journey</h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Every step is designed with your success in mind. Here's what to expect on your transformation journey.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-5 gap-4 mb-8">
-              {journeySteps.map((step, index) => (
-                <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                  <CardContent className="p-4">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                      <span className="text-primary font-bold">{index + 1}</span>
-                    </div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm">{step.title}</h3>
-                    <p className="text-xs text-muted-foreground">{step.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-
-            <div className="text-center">
-              <Button size="lg" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
-                  Start Your Journey Today
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
-
         {/* What Are GLP-1 Medications */}
-        <section className="py-16 px-6 lg:px-8">
+        <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-foreground mb-4">What Are GLP-1 Medications?</h2>
@@ -247,7 +247,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Addressing Common Concerns */}
-        <section className="py-16 px-6 lg:px-8 bg-muted/20">
+        <section className="py-10 px-6 lg:px-8 bg-muted/20">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
@@ -276,7 +276,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Medication Access */}
-        <section className="py-16 px-6 lg:px-8">
+        <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
@@ -315,7 +315,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Protecting Muscle */}
-        <section className="py-16 px-6 lg:px-8 bg-muted/20">
+        <section className="py-10 px-6 lg:px-8 bg-muted/20">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
@@ -356,7 +356,7 @@ export default function WeightLoss() {
         </section>
 
         {/* Managing Side Effects */}
-        <section className="py-16 px-6 lg:px-8">
+        <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <Card>
               <CardContent className="p-8">
