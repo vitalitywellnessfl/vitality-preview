@@ -65,7 +65,7 @@ export default function WeightLoss() {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
               {/* Tirzepatide Card */}
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
-                <div className="aspect-square w-full bg-white p-6 flex items-center justify-center">
+                <div className="w-full bg-white p-6 flex items-center justify-center h-64">
                   <img 
                     src={tirzepatideImage} 
                     alt="Tirzepatide medication" 
@@ -92,7 +92,7 @@ export default function WeightLoss() {
 
               {/* Semaglutide Card */}
               <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 border-2">
-                <div className="aspect-square w-full bg-white p-6 flex items-center justify-center">
+                <div className="w-full bg-white p-6 flex items-center justify-center h-64">
                   <img 
                     src={semaglutideImage} 
                     alt="Semaglutide medication" 
