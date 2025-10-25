@@ -2,8 +2,14 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { Testimonials } from "@/components/Testimonials";
+import { 
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { 
   Zap, 
   Brain, 
@@ -11,59 +17,82 @@ import {
   Clock,
   Shield,
   CheckCircle2,
-  Phone,
-  Sparkles,
+  Users,
+  FileText,
+  TrendingUp,
+  Activity,
   ArrowRight
 } from "lucide-react";
 
 const benefits = [
+  "Boost energy and reduce chronic fatigue",
+  "Improve mental clarity and focus",
+  "Support healthy aging and longevity",
+  "Enhance athletic performance and recovery",
+  "Improve mood and reduce brain fog",
+  "Support cellular repair and DNA health",
+  "Aid in addiction recovery and withdrawal symptoms",
+  "Promote better sleep quality"
+];
+
+const backgroundFacts = [
+  "NAD+ is found in every cell of your body",
+  "Essential for converting food into cellular energy",
+  "Levels naturally decline with age (up to 50% by age 60)",
+  "Used in over 400 biological reactions",
+  "Critical for DNA repair and cellular health",
+  "Supports mitochondrial function"
+];
+
+const resultsStats = [
+  { percentage: "93%", description: "noticed improvements in overall energy levels" },
+  { percentage: "87%", description: "reported better mental clarity and focus" },
+  { percentage: "81%", description: "experienced enhanced mood and well-being" },
+  { percentage: "78%", description: "saw improvements in sleep quality" }
+];
+
+const howItWorksSteps = [
   {
-    icon: Zap,
-    title: "Cellular Energy Production",
-    description: "NAD+ is essential for mitochondrial function, helping your cells produce energy more efficiently for sustained vitality throughout the day."
+    icon: FileText,
+    title: "Simple consultation",
+    description: "Complete a brief online consultation or speak with one of our healthcare providers to determine if NAD+ therapy is right for you."
   },
   {
-    icon: Brain,
-    title: "Cognitive Enhancement",
-    description: "Support mental clarity, focus, and memory by optimizing brain cell function and protecting against age-related cognitive decline."
+    icon: CheckCircle2,
+    title: "Personalized plan",
+    description: "Receive a customized treatment plan based on your health goals, whether it's IV infusions, injections, or a combination approach."
   },
   {
-    icon: Clock,
-    title: "Anti-Aging Benefits",
-    description: "Activate sirtuins, proteins that regulate cellular aging, DNA repair, and metabolic health to promote healthy longevity."
-  },
-  {
-    icon: Heart,
-    title: "Metabolic Support",
-    description: "Improve metabolic function, support healthy weight management, and enhance your body's ability to convert food into usable energy."
-  },
-  {
-    icon: Shield,
-    title: "Cellular Repair & Recovery",
-    description: "NAD+ plays a crucial role in DNA repair mechanisms, helping your body recover from stress and damage at the cellular level."
+    icon: TrendingUp,
+    title: "Track your progress",
+    description: "Experience the benefits and track your improvements in energy, mental clarity, and overall wellness over time."
   }
 ];
 
-const administrationMethods = [
+const faqs = [
   {
-    title: "NAD+ IV Therapy",
-    description: "Direct intravenous infusion for maximum bioavailability and rapid results. Sessions typically last 2-4 hours.",
-    benefits: [
-      "100% absorption directly into bloodstream",
-      "Immediate cellular benefits",
-      "Optimal for intensive therapy protocols",
-      "Customizable dosing based on your needs"
-    ]
+    question: "How do I administer NAD+ Injections?",
+    answer: "NAD+ injections are administered either intramuscularly (into the muscle) or subcutaneously (under the skin). After consultation, our medical team will provide detailed instructions and, if appropriate, teach you how to self-administer at home."
   },
   {
-    title: "NAD+ Injections",
-    description: "Intramuscular or subcutaneous injections offer a convenient middle ground with excellent absorption.",
-    benefits: [
-      "Faster administration than IV",
-      "High bioavailability",
-      "Perfect for maintenance therapy",
-      "Can be self-administered at home"
-    ]
+    question: "How often should I receive NAD+ treatments?",
+    answer: "Treatment frequency varies based on individual needs and goals. Many patients start with 1-2 IV infusions per week for 4-6 weeks, then transition to maintenance therapy. For injections, 2-3 times per week is common. Your provider will create a personalized schedule."
+  },
+  {
+    question: "What are the side effects of NAD+ therapy?",
+    answer: "NAD+ therapy is generally well-tolerated. Some patients may experience mild side effects during IV infusions including flushing, mild cramping, or nausea. These typically resolve by slowing the infusion rate. Injection site reactions are rare and mild."
+  },
+  {
+    question: "How quickly will I see results?",
+    answer: "Many patients notice improved energy and mental clarity within the first few treatments. Optimal results typically develop over 4-6 weeks as cellular NAD+ levels are restored. Individual response times vary."
+  },
+  {
+    question: "Is NAD+ therapy safe?",
+    answer: "NAD+ is a naturally occurring coenzyme in your body and has an excellent safety profile. Our medical team screens all patients before treatment and monitors throughout your therapy. NAD+ therapy has been used for decades with minimal side effects."
+  },
+  {
+    question: "Who is a good candidate for NAD+ therapy?",
+    answer: "NAD+ therapy may benefit individuals experiencing fatigue, brain fog, age-related decline, or those seeking enhanced wellness and longevity. It's also used in addiction recovery. Your healthcare provider will evaluate your specific situation during consultation."
   }
 ];
 
@@ -74,84 +103,121 @@ export default function NADPlus() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative py-20 lg:py-28 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
+        <section className="relative py-20 px-6 lg:px-8 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
           <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+              {/* Left Column - Product Image Placeholder */}
               <AnimatedSection animation="fade-in">
-                <Badge className="mb-4 bg-vitality-teal text-white">
-                  <Sparkles className="h-3 w-3 mr-1" />
-                  Cellular Rejuvenation
-                </Badge>
-                <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl mb-6">
-                  NAD+ Therapy
-                </h1>
-                <p className="text-xl font-serif text-muted-foreground mb-6">
-                  Restore cellular energy and optimize biological function
-                </p>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-                  NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in every cell of your body, essential for energy production, DNA repair, and cellular communication. As we age, NAD+ levels naturally decline, contributing to fatigue, cognitive decline, and accelerated aging. Our NAD+ therapy replenishes these vital levels to help you feel energized, focused, and revitalized.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="metallic" size="lg" asChild>
-                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book NAD+ Therapy</a>
-                  </Button>
-                  <Button variant="metallic-outline" size="lg" asChild>
-                    <a href="#benefits">Explore Benefits</a>
-                  </Button>
+                <div className="bg-muted/30 rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
+                  <p className="text-muted-foreground text-lg">Product Image Placeholder</p>
                 </div>
               </AnimatedSection>
 
-              {/* Right Column - Stats Card */}
-              <AnimatedSection animation="scale-in" delay={200}>
-                <Card className="border-2 border-primary/20 shadow-elevated">
-                  <CardContent className="p-8">
-                    <div className="space-y-6">
-                      <div>
-                        <div className="text-4xl font-bold text-primary mb-2">Essential Coenzyme</div>
-                        <p className="text-muted-foreground">Present in every living cell in your body</p>
-                      </div>
-                      <div>
-                        <div className="text-4xl font-bold text-primary mb-2">50% Decline</div>
-                        <p className="text-muted-foreground">NAD+ levels can drop by 50% between ages 40-60</p>
-                      </div>
-                      <div>
-                        <div className="text-4xl font-bold text-primary mb-2">400+ Functions</div>
-                        <p className="text-muted-foreground">NAD+ is involved in over 400 biological processes</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
+              {/* Right Column - Product Info */}
+              <AnimatedSection animation="fade-in" delay={100}>
+                <div className="lg:pt-8">
+                  <div className="inline-block px-3 py-1 bg-vitality-teal/10 text-vitality-teal text-sm font-medium rounded-full mb-4">
+                    Injection
+                  </div>
+                  <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
+                    NAD+ Injection
+                  </h1>
+                  <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                    Boost your energy, improve your focus, and support healthy aging with NAD+ therapy. This essential coenzyme plays a crucial role in cellular energy production, DNA repair, and overall vitality. Experience the transformative benefits of optimized NAD+ levels.
+                  </p>
+                  <div className="mb-8">
+                    <p className="text-3xl font-bold text-foreground">Starting at <span className="text-primary">$235</span></p>
+                  </div>
+                  <Button size="lg" className="w-full sm:w-auto" asChild>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                      Start online visit
+                    </a>
+                  </Button>
+                </div>
               </AnimatedSection>
             </div>
           </div>
         </section>
 
         {/* Benefits Section */}
-        <section id="benefits" className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="bg-muted/30 w-12 h-12 rounded flex items-center justify-center">
+                  <Zap className="h-6 w-6 text-primary" />
+                </div>
+                <p className="text-sm font-semibold text-primary uppercase tracking-wide">NAD+ INJECTION BENEFITS</p>
+              </div>
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-8">
+                Take control of your health
+              </h2>
+              <ul className="space-y-3 mb-6">
+                {benefits.map((benefit, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                    <span className="text-muted-foreground">{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+              <a href="#science" className="text-primary hover:underline font-medium inline-flex items-center gap-2">
+                See the longevity science
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Background Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in">
+              <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">NAD+ INJECTION</p>
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-12">
+                Background and history
+              </h2>
+            </AnimatedSection>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <AnimatedSection animation="fade-in" delay={100}>
+                <ul className="space-y-3">
+                  {backgroundFacts.map((fact, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{fact}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in" delay={200}>
+                <div className="bg-muted/30 rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
+                  <p className="text-muted-foreground text-lg">Background Image Placeholder</p>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Results Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-7xl">
             <AnimatedSection animation="fade-in" className="text-center mb-12">
-              <div className="flex items-center justify-center gap-3 mb-4">
-                <Zap className="h-8 w-8 text-vitality-teal" />
-                <h2 className="text-3xl font-serif font-semibold text-foreground sm:text-4xl">
-                  The Power of NAD+ Therapy
-                </h2>
-              </div>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Experience comprehensive cellular rejuvenation with science-backed NAD+ supplementation
-              </p>
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
+                Science-backed treatment, real results
+              </h2>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {benefits.map((benefit, index) => (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {resultsStats.map((stat, index) => (
                 <AnimatedSection key={index} animation="fade-in" delay={index * 100}>
-                  <Card className="h-full hover:shadow-lg transition-shadow border-2">
-                    <CardContent className="p-6">
-                      <div className="mb-4 rounded-lg bg-vitality-teal/10 p-3 inline-block">
-                        <benefit.icon className="h-8 w-8 text-vitality-teal" />
+                  <Card className="text-center p-6">
+                    <CardContent className="p-0">
+                      <div className="mb-4">
+                        <Activity className="h-12 w-12 text-primary mx-auto" />
                       </div>
-                      <h3 className="text-xl font-semibold mb-3 text-foreground">{benefit.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                      <div className="text-4xl font-bold text-primary mb-2">{stat.percentage}</div>
+                      <p className="text-sm text-muted-foreground">{stat.description}</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -160,34 +226,67 @@ export default function NADPlus() {
           </div>
         </section>
 
-        {/* Administration Methods */}
+        {/* Science Section */}
+        <section id="science" className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+                The science of NAD+
+              </h2>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <AnimatedSection animation="fade-in">
+                <div className="bg-muted/30 rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
+                  <p className="text-muted-foreground text-lg">Science Image Placeholder</p>
+                </div>
+              </AnimatedSection>
+
+              <AnimatedSection animation="fade-in" delay={100}>
+                <div>
+                  <p className="font-bold text-foreground text-lg mb-4">Essential for cellular function:</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in all living cells that plays a fundamental role in energy metabolism and cellular health. It acts as a crucial electron carrier in metabolic reactions, particularly in the mitochondria where ATP (cellular energy) is produced. Beyond energy production, NAD+ activates sirtuins—proteins that regulate cellular aging, DNA repair, and metabolic processes. Research shows that NAD+ levels decline significantly with age, contributing to reduced cellular function, decreased energy, and accelerated aging. Supplementing NAD+ through injections or IV therapy can help restore optimal cellular function, improve energy levels, enhance cognitive performance, and support healthy aging processes.
+                  </p>
+                </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+                Real results from people like you
+              </h2>
+            </AnimatedSection>
+            <Testimonials />
+          </div>
+        </section>
+
+        {/* How It Works Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
           <div className="mx-auto max-w-7xl">
             <AnimatedSection animation="fade-in" className="text-center mb-12">
-              <p className="font-script text-primary text-2xl mb-4">Choose Your Method</p>
-              <h2 className="text-3xl font-serif font-semibold text-foreground sm:text-4xl mb-6">
-                NAD+ Administration Options
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+                How it works
               </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                We offer flexible administration methods to fit your lifestyle and therapeutic goals
-              </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {administrationMethods.map((method, index) => (
-                <AnimatedSection key={index} animation="scale-in" delay={index * 100}>
-                  <Card className="h-full border-2 hover:shadow-xl transition-all">
-                    <CardContent className="p-8">
-                      <h3 className="text-2xl font-serif font-semibold mb-4 text-foreground">{method.title}</h3>
-                      <p className="text-muted-foreground mb-6 leading-relaxed">{method.description}</p>
-                      <div className="space-y-3">
-                        {method.benefits.map((benefit, i) => (
-                          <div key={i} className="flex items-start gap-3">
-                            <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-muted-foreground">{benefit}</span>
-                          </div>
-                        ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {howItWorksSteps.map((step, index) => (
+                <AnimatedSection key={index} animation="fade-in" delay={index * 100}>
+                  <Card className="text-center p-6 h-full">
+                    <CardContent className="p-0">
+                      <div className="mb-4">
+                        <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto">
+                          <step.icon className="h-8 w-8 text-primary" />
+                        </div>
                       </div>
+                      <h3 className="font-bold text-foreground text-lg mb-3">{step.title}</h3>
+                      <p className="text-muted-foreground text-left">{step.description}</p>
                     </CardContent>
                   </Card>
                 </AnimatedSection>
@@ -196,81 +295,142 @@ export default function NADPlus() {
           </div>
         </section>
 
-        {/* Pricing Section */}
+        {/* Video Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-4xl">
             <AnimatedSection animation="fade-in">
-              <Card className="border-2 border-primary/20 shadow-elevated">
-                <CardContent className="p-8 lg:p-12">
-                  <div className="text-center mb-8">
-                    <h2 className="text-3xl font-serif font-semibold text-foreground mb-4">
-                      NAD+ Therapy Pricing
-                    </h2>
-                    <p className="text-lg text-muted-foreground">
-                      Transparent pricing for premium cellular rejuvenation therapy
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <div className="flex items-center justify-between p-6 bg-muted/30 rounded-lg">
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground mb-1">NAD+ IV Therapy</h3>
-                        <p className="text-sm text-muted-foreground">250mg-500mg per session</p>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-primary">Starting at $350</div>
-                        <p className="text-sm text-muted-foreground">per session</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between p-6 bg-muted/30 rounded-lg">
-                      <div>
-                        <h3 className="text-xl font-semibold text-foreground mb-1">NAD+ Injections</h3>
-                        <p className="text-sm text-muted-foreground">Intramuscular or subcutaneous</p>
-                      </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-primary">Starting at $150</div>
-                        <p className="text-sm text-muted-foreground">per injection</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-8 p-6 bg-vitality-teal/5 rounded-lg border border-vitality-teal/20">
-                    <p className="text-sm text-muted-foreground text-center mb-4">
-                      Package pricing available for multi-session protocols. Many patients see optimal results with a series of 4-6 treatments.
-                    </p>
-                    <div className="text-center">
-                      <Button variant="metallic" size="lg" asChild>
-                        <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
-                          Schedule Consultation
-                        </a>
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <h2 className="text-3xl font-bold text-foreground mb-8">101 video</h2>
+              <div className="bg-muted/30 rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
+                <p className="text-muted-foreground text-lg">Video Placeholder</p>
+              </div>
+              <hr className="mt-8 border-border" />
             </AnimatedSection>
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* FAQs Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-4xl">
+            <AnimatedSection animation="fade-in">
+              <h2 className="text-3xl font-bold text-foreground mb-8">FAQs</h2>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6">
+                    <AccordionTrigger className="text-left">
+                      <span className="font-bold text-foreground">{faq.question}</span>
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Safety Information Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-4xl">
+            <AnimatedSection animation="fade-in">
+              <p className="font-bold text-foreground text-xl mb-6">Important safety information and common side effects</p>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>
+                  <strong>Common Side Effects:</strong> NAD+ therapy is generally well-tolerated. During IV infusions, some patients may experience mild flushing, warmth, tingling sensations, mild cramping, or nausea. These effects are typically temporary and can be managed by adjusting the infusion rate. For injections, mild injection site reactions such as redness or tenderness may occur.
+                </p>
+                <p>
+                  <strong>Who Should Not Use NAD+:</strong> NAD+ therapy may not be appropriate for individuals who are pregnant or breastfeeding, have certain medical conditions, or are taking specific medications. A thorough medical consultation is required before starting treatment.
+                </p>
+                <p>
+                  <strong>Important Precautions:</strong> Always inform your healthcare provider of all medications, supplements, and medical conditions before beginning NAD+ therapy. Treatment should be administered under medical supervision, especially for first-time patients. If you experience severe side effects, discontinue treatment and contact your healthcare provider immediately.
+                </p>
+                <p>
+                  This information is not intended to replace professional medical advice. Consult with a qualified healthcare provider to determine if NAD+ therapy is appropriate for your individual health needs.
+                </p>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Data/Studies Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-4xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-foreground mb-4">We've got the data</h2>
+              <p className="text-lg text-muted-foreground">
+                We read the clinical studies so you don't have to. Here's what the science says.
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in" delay={100}>
+              <div className="space-y-6">
+                <Card className="p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="text-muted-foreground">
+                        Study on NAD+ supplementation and its effects on aging biomarkers, showing significant improvements in cellular energy metabolism.
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-end">
+                      <a href="#" className="text-primary hover:underline font-medium inline-flex items-center gap-2">
+                        Read study
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="text-muted-foreground">
+                        Clinical research demonstrating NAD+ therapy's positive impact on cognitive function and mental clarity in adults.
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-end">
+                      <a href="#" className="text-primary hover:underline font-medium inline-flex items-center gap-2">
+                        Read study
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+
+                <Card className="p-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <p className="text-muted-foreground">
+                        Research on NAD+ and sirtuin activation, revealing key mechanisms for cellular repair and longevity.
+                      </p>
+                    </div>
+                    <div className="flex items-center justify-end">
+                      <a href="#" className="text-primary hover:underline font-medium inline-flex items-centergap-2">
+                        Read study
+                        <ArrowRight className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Final CTA Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-vitality-charcoal text-white">
           <div className="mx-auto max-w-4xl text-center">
             <AnimatedSection animation="fade-in">
-              <p className="font-script text-vitality-teal text-2xl mb-4">Cellular Optimization</p>
-              <h2 className="text-3xl font-serif font-semibold text-white sm:text-4xl mb-6">
-                Experience the NAD+ Difference
+              <h2 className="text-3xl font-bold text-white sm:text-4xl mb-6">
+                Ready to experience NAD+ therapy?
               </h2>
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                Ready to boost your cellular energy, enhance mental clarity, and support healthy aging? Schedule your NAD+ therapy consultation today.
+                Start your journey to enhanced energy, mental clarity, and optimal cellular health today.
               </p>
-              <Button variant="metallic" size="lg" className="mb-6" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Start NAD+ Therapy</a>
+              <Button size="lg" asChild>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  Book Your Consultation
+                </a>
               </Button>
-              <p className="text-sm text-white/80 flex items-center justify-center gap-2">
-                <Phone className="h-4 w-4" />
-                Questions? Call us at <a href="tel:9548164002" className="text-vitality-teal hover:underline">(954) 816-4002</a>
-              </p>
             </AnimatedSection>
           </div>
         </section>
