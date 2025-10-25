@@ -123,7 +123,7 @@ export default function Index() {
               <div className="flex flex-col items-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-[#54a0e7]" />
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl text-center">
-                  The Body You Deserve Starts <span className="font-calligraphy text-calligraphy text-[#54a0e7]">Here</span>
+                  The Body You Deserve Starts <span className="font-hurricane text-6xl text-[#54a0e7]">Here</span>
                 </h1>
               </div>
               <div className="mb-8 flex justify-center">
@@ -174,7 +174,7 @@ export default function Index() {
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center mb-12">
-              <p className="text-script text-[#A39070] text-sm mb-2">Your Partner in Wellness</p>
+              <p className="text-script text-[#A39070] text-sm mb-2">Your Partner in <span className="font-hurricane text-2xl">Wellness</span></p>
               <div className="flex items-center justify-center gap-3 mb-4">
                 <Stethoscope className="h-8 w-8 text-[#70B4B5]" />
                 <h2 className="text-3xl font-serif font-semibold tracking-tight text-foreground sm:text-4xl">
@@ -346,7 +346,7 @@ export default function Index() {
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8">
-                <p className="text-script text-vitality-teal text-sm mb-3">Begin Your Journey</p>
+                <p className="text-script text-vitality-teal text-sm mb-3">Begin Your <span className="font-hurricane text-2xl">Journey</span></p>
                 <div className="flex items-center gap-3 mb-4">
                   <Star className="h-7 w-7 text-vitality-gold fill-vitality-gold" />
                   <h3 className="text-2xl font-serif font-semibold">Start Your Wellness Journey Today</h3>

@@ -20,6 +20,7 @@ export default {
         sans: ['Raleway', 'sans-serif'],           // Body text, buttons
         script: ['Britany', 'cursive'],            // Accent phrases
         calligraphy: ['Tangerine', 'cursive'],     // Single word accents
+        hurricane: ['Hurricane', 'cursive'],       // Hurricane font for specific words
       },
       colors: {
         border: "hsl(var(--border))",
