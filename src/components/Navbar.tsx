@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Instagram, Facebook, ChevronDown } from "lucide-react";
+import { Menu, X, Phone, Instagram, Facebook, ChevronDown, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/logo.jpg";
 import {
@@ -121,6 +121,9 @@ export const Navbar = () => {
           <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
             <Facebook className="h-6 w-6" />
           </a>
+          <a href="https://wa.me/19548164002" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+            <MessageCircle className="h-6 w-6" />
+          </a>
           <Button variant="outline" size="sm" asChild>
             <a href="tel:9548164002">
               <Phone className="h-4 w-4 mr-2" />
@@ -204,6 +207,9 @@ export const Navbar = () => {
                     </a>
                     <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
                       <Facebook className="h-6 w-6" />
+                    </a>
+                    <a href="https://wa.me/19548164002" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
+                      <MessageCircle className="h-6 w-6" />
                     </a>
                   </div>
                   <Button className="w-full" variant="outline" asChild>

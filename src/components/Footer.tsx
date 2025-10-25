@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Clock, Instagram, Facebook } from "lucide-react";
+import { MapPin, Phone, Clock, Instagram, Facebook, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 export const Footer = () => {
@@ -74,6 +74,9 @@ export const Footer = () => {
               </a>
               <a href="https://www.facebook.com/share/15mPdw4RP2/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
+              </a>
+              <a href="https://wa.me/19548164002" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+                <MessageCircle className="h-5 w-5" />
               </a>
               <div className="flex gap-6 ml-4">
                 <Link to="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
