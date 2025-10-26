@@ -57,9 +57,13 @@ export default function WeightLoss() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Affordable, transparent pricing for medical weight loss therapy
             </p>
-            <div className="flex flex-wrap items-center justify-center gap-4 mt-4">
-              <span className="text-sm text-muted-foreground">• No hidden fees</span>
-              <span className="text-sm text-muted-foreground">• No subscriptions</span>
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#A39070' }}>
+                No hidden fees
+              </span>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#A39070' }}>
+                No subscriptions
+              </span>
             </div>
             
             {/* Price Rectangles */}
@@ -233,6 +237,15 @@ export default function WeightLoss() {
                   <p className="font-medium text-foreground">Comprehensive support for nutrition, exercise, and mindset</p>
                 </CardContent>
               </Card>
+            </div>
+            
+            <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#70B4B5' }}>
+                No hidden fees
+              </span>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#70B4B5' }}>
+                No subscriptions
+              </span>
             </div>
           </div>
         </section>
