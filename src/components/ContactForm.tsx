@@ -157,7 +157,6 @@ export function ContactForm() {
                 <FormControl>
                   <Input 
                     type="tel"
-                    placeholder="(954) 816-4002" 
                     {...field}
                     className="bg-background"
                   />
