@@ -56,6 +56,13 @@ const services = [
     description: "Restore balance and vitality through bioidentical hormone therapy for optimal health and well-being.",
     link: "/hormone-therapy",
     color: "vitality-teal"
+  },
+  {
+    icon: Zap,
+    title: "NAD+ Therapy",
+    description: "Boost cellular energy, enhance mental clarity, and support healthy aging with advanced NAD+ injections and IV therapy.",
+    link: "/nad-plus",
+    color: "vitality-gold"
   }
 ];
 

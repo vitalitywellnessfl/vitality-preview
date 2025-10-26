@@ -33,7 +33,7 @@ import vitaminHeroImage from "@/assets/vitamin-hero.jpg";
 import contourHeroImage from "@/assets/contour-hero.jpg";
 import glp1HeroImage from "@/assets/glp1-hero.jpg";
 import peptideHeroImage from "@/assets/peptide-hero.jpg";
-import edHeroImage from "@/assets/ed-hero.jpg";
+
 import homepageGlp1Image from "@/assets/homepage-glp1.png";
 import glp1DiscountImage from "@/assets/glp1-discount.png";
 import drEcheonaHomepage from "@/assets/dr-echeona-new.png";
@@ -134,7 +134,7 @@ export default function Index() {
                 Vitality Wellness Clinic in Weston, FL provides science-backed treatments for lasting weight loss, hormone balance, and total body wellness.
               </p>
               <p className="text-base leading-7 text-muted-foreground mb-6">
-                Our medical team, led by <strong>Dr. Xochil Echeona, DNP</strong>, offers FDA-approved GLP-1 medications like semaglutide and tirzepatide, personalized hormone replacement therapy for men and women, advanced IV therapy, body contouring, peptide treatments, vitamin injections, and erectile dysfunction care, all designed to help you look, feel, and perform at your best.
+                Our medical team, led by <strong>Dr. Xochil Echeona, DNP</strong>, offers FDA-approved GLP-1 medications like semaglutide and tirzepatide, personalized hormone replacement therapy for men and women, advanced IV therapy, body contouring, peptide treatments, vitamin injections, and NAD+ therapy, all designed to help you look, feel, and perform at your best.
               </p>
               
               <div className="flex flex-wrap items-center justify-center gap-2 mb-8">

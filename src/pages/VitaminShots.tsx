@@ -63,12 +63,12 @@ export default function VitaminShots() {
     {
       title: "L-Arginine Circulation",
       subtitle: "Blood Flow & Performance",
-      description: "Enhances blood flow and cardiovascular health. Supports exercise performance and may help with erectile dysfunction. A natural vasodilator that promotes healthy circulation throughout the body.",
+      description: "Enhances blood flow and cardiovascular health. Supports exercise performance and circulation. A natural vasodilator that promotes healthy circulation throughout the body.",
       benefits: [
         "Improves blood flow and circulation",
         "Supports cardiovascular health",
         "Enhances exercise performance",
-        "May help with erectile function"
+        "Supports healthy circulation"
       ],
       icon: Heart,
       badge: "Popular",

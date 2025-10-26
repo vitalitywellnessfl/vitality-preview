@@ -59,7 +59,7 @@ const services = [
   "Hormone Replacement Therapy",
   "Vitamin & Wellness Shots",
   "Body Contouring",
-  "Erectile Dysfunction Treatment"
+  "NAD+ Therapy"
 ];
 
 export default function About() {
@@ -263,8 +263,8 @@ export default function About() {
                     <div className="flex items-start gap-3">
                       <Activity className="h-5 w-5 text-vitality-gold flex-shrink-0 mt-1" />
                       <div>
-                        <p className="font-semibold text-foreground">Erectile dysfunction treatments</p>
-                        <p className="text-sm text-muted-foreground">centered on regenerative health</p>
+                        <p className="font-semibold text-foreground">NAD+ therapy</p>
+                        <p className="text-sm text-muted-foreground">for cellular energy and longevity</p>
                       </div>
                     </div>
                   </div>
