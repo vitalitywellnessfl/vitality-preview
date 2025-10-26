@@ -53,7 +53,7 @@ const services = [
   "Vitamin Shots",
   "Body Contouring",
   "Hormone Replacement Therapy",
-  "Erectile Dysfunction Treatment",
+  "NAD+",
   "General Consultation",
 ];
 
@@ -119,7 +119,6 @@ export function ContactForm() {
                 <FormLabel>Full Name *</FormLabel>
                 <FormControl>
                   <Input 
-                    placeholder="John Doe" 
                     {...field}
                     className="bg-background"
                   />
@@ -138,7 +137,6 @@ export function ContactForm() {
                 <FormControl>
                   <Input 
                     type="email"
-                    placeholder="john@example.com" 
                     {...field}
                     className="bg-background"
                   />
