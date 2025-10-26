@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone, Lightbulb, Dumbbell, Settings, Leaf, MessageCircle, Calendar, Zap, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonials } from "@/components/Testimonials";
@@ -236,207 +237,231 @@ export default function WeightLoss() {
           </div>
         </section>
 
-        {/* What Are GLP-1 Medications */}
+        {/* FAQ Section */}
         <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-foreground mb-4">What Are GLP-1 Medications?</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                GLP-1 receptor agonists are a breakthrough in medical weight management. These medications mimic your body's natural hormones that regulate blood sugar, appetite, and metabolism, helping you achieve lasting weight loss without extreme diets or surgery.
+                Everything you need to know about GLP-1 weight loss therapy
               </p>
             </div>
 
-            <Card className="mb-8">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-foreground mb-6">How GLP-1 Medications Work</h3>
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div className="flex gap-4">
-                    <Activity className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Appetite Regulation</h4>
-                      <p className="text-muted-foreground">Slows digestion and helps you feel full longer.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <TrendingDown className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Blood Sugar Control</h4>
-                      <p className="text-muted-foreground">Improves insulin sensitivity and glucose metabolism.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <Heart className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Cravings Reduction</h4>
-                      <p className="text-muted-foreground">Decreases food cravings and emotional eating.</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-foreground mb-2">Sustainable Results</h4>
-                      <p className="text-muted-foreground">Promotes gradual, consistent weight loss while supporting long-term maintenance.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-8 pt-6 border-t space-y-2">
-                  <p className="flex items-center gap-2 text-foreground">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span className="font-medium">Average weight loss: 15-20% of total body weight (clinical studies)</span>
-                  </p>
-                  <p className="flex items-center gap-2 text-foreground">
-                    <CheckCircle2 className="h-5 w-5 text-primary" />
-                    <span className="font-medium">Weekly self-administered injections under physician supervision</span>
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Addressing Common Concerns */}
-        <section className="py-10 px-6 lg:px-8 bg-muted/20">
-          <div className="mx-auto max-w-4xl">
-            <Card>
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <Users className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Addressing Common Concerns</h2>
-                    <h3 className="text-xl font-semibold text-foreground mb-3">"Is this just the easy way out?"</h3>
-                  </div>
-                </div>
-                <div className="space-y-4 text-muted-foreground">
-                  <p className="font-semibold text-foreground">Absolutely not.</p>
-                  <p>
-                    Obesity is a complex medical condition influenced by hormones, genetics, and environment, not just willpower. GLP-1 medications treat the biological barriers that make long-term weight management difficult.
-                  </p>
-                  <p>
-                    Patients still make lifestyle changes, but now, your body has the biological support to sustain them.
-                  </p>
-                  <p className="italic">
-                    Just like we use insulin for diabetes or medication for high blood pressure, GLP-1 therapy supports your health from the inside out.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Medication Access */}
-        <section className="py-10 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Card>
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <Shield className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <h2 className="text-2xl font-bold text-foreground mb-4">Medication Access & Availability</h2>
-                    <p className="text-muted-foreground mb-4">
-                      We understand that national supply shortages can be frustrating. At Vitality Wellness, we ensure reliable access by:
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="what-are-glp1" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-xl font-semibold text-foreground hover:no-underline">
+                  What Are GLP-1 Medications?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="pt-4 space-y-6">
+                    <p className="text-muted-foreground">
+                      GLP-1 receptor agonists are a breakthrough in medical weight management. These medications mimic your body's natural hormones that regulate blood sugar, appetite, and metabolism, helping you achieve lasting weight loss without extreme diets or surgery.
                     </p>
+                    
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-4">How GLP-1 Medications Work</h3>
+                      <div className="grid gap-6 md:grid-cols-2">
+                        <div className="flex gap-4">
+                          <Activity className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-2">Appetite Regulation</h4>
+                            <p className="text-muted-foreground">Slows digestion and helps you feel full longer.</p>
+                          </div>
+                        </div>
+                        <div className="flex gap-4">
+                          <TrendingDown className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-2">Blood Sugar Control</h4>
+                            <p className="text-muted-foreground">Improves insulin sensitivity and glucose metabolism.</p>
+                          </div>
+                        </div>
+                        <div className="flex gap-4">
+                          <Heart className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-2">Cravings Reduction</h4>
+                            <p className="text-muted-foreground">Decreases food cravings and emotional eating.</p>
+                          </div>
+                        </div>
+                        <div className="flex gap-4">
+                          <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-2">Sustainable Results</h4>
+                            <p className="text-muted-foreground">Promotes gradual, consistent weight loss while supporting long-term maintenance.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="mt-6 pt-6 border-t space-y-2">
+                        <p className="flex items-center gap-2 text-foreground">
+                          <CheckCircle2 className="h-5 w-5 text-primary" />
+                          <span className="font-medium">Average weight loss: 15-20% of total body weight (clinical studies)</span>
+                        </p>
+                        <p className="flex items-center gap-2 text-foreground">
+                          <CheckCircle2 className="h-5 w-5 text-primary" />
+                          <span className="font-medium">Weekly self-administered injections under physician supervision</span>
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Partnering with multiple licensed pharmacies</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Prioritizing patients with medical necessity</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Offering alternative medication options when needed</span>
-                  </li>
-                </ul>
-                <div className="flex items-center gap-2">
-                  <Lightbulb className="h-5 w-5 text-primary flex-shrink-0" />
-                  <p className="text-foreground font-medium">
-                    Your health comes first. We'll find a treatment plan that fits your needs and budget.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="common-concerns" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-xl font-semibold text-foreground hover:no-underline">
+                  Is this just the easy way out?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="pt-4 space-y-4">
+                    <div className="flex items-start gap-4">
+                      <Users className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                      <div className="space-y-4 text-muted-foreground">
+                        <p className="font-semibold text-foreground">Absolutely not.</p>
+                        <p>
+                          Obesity is a complex medical condition influenced by hormones, genetics, and environment, not just willpower. GLP-1 medications treat the biological barriers that make long-term weight management difficult.
+                        </p>
+                        <p>
+                          Patients still make lifestyle changes, but now, your body has the biological support to sustain them.
+                        </p>
+                        <p className="italic">
+                          Just like we use insulin for diabetes or medication for high blood pressure, GLP-1 therapy supports your health from the inside out.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="medication-access" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-xl font-semibold text-foreground hover:no-underline">
+                  Medication Access & Availability
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="pt-4">
+                    <div className="flex items-start gap-4 mb-6">
+                      <Shield className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <p className="text-muted-foreground mb-4">
+                          We understand that national supply shortages can be frustrating. At Vitality Wellness, we ensure reliable access by:
+                        </p>
+                      </div>
+                    </div>
+                    <ul className="space-y-3 mb-6">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Partnering with multiple licensed pharmacies</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Prioritizing patients with medical necessity</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Offering alternative medication options when needed</span>
+                      </li>
+                    </ul>
+                    <div className="flex items-center gap-2">
+                      <Lightbulb className="h-5 w-5 text-primary flex-shrink-0" />
+                      <p className="text-foreground font-medium">
+                        Your health comes first. We'll find a treatment plan that fits your needs and budget.
+                      </p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="protecting-muscle" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-xl font-semibold text-foreground hover:no-underline">
+                  How do I protect muscle while losing fat?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="pt-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Dumbbell className="h-7 w-7 text-primary" />
+                      <h3 className="text-lg font-semibold text-foreground">Protecting Muscle While Losing Fat</h3>
+                    </div>
+                    <p className="text-muted-foreground mb-6">
+                      Research shows that up to 39% of weight loss may come from muscle mass. That's why our program includes body composition monitoring and muscle-preserving strategies, such as:
+                    </p>
+                    <div className="grid gap-6 md:grid-cols-2 mb-6">
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Protein Optimization</h4>
+                        <p className="text-muted-foreground">Personalized macronutrient planning</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Resistance Training</h4>
+                        <p className="text-muted-foreground">Tailored fitness recommendations</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">DEXA or Bioimpedance Scans</h4>
+                        <p className="text-muted-foreground">Regular body composition tracking</p>
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-2">Supplement Support</h4>
+                        <p className="text-muted-foreground">Targeted amino acid and creatine supplementation</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <Settings className="h-5 w-5 text-primary flex-shrink-0" />
+                      <p className="text-foreground font-medium">
+                        Lose fat, not muscle. We help you maintain strength, energy, and vitality throughout your journey.
+                      </p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="side-effects" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-xl font-semibold text-foreground hover:no-underline">
+                  What about side effects?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <div className="pt-4">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Leaf className="h-7 w-7 text-primary" />
+                      <h3 className="text-lg font-semibold text-foreground">Managing Side Effects</h3>
+                    </div>
+                    <p className="text-muted-foreground mb-6">
+                      Mild side effects such as nausea, bloating, or injection-site irritation are common but temporary. Our step-by-step medical supervision ensures your comfort and safety:
+                    </p>
+                    <ul className="space-y-3 mb-6">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Gradual Dose Titration to minimize GI symptoms</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Nutrition Guidance to reduce nausea</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-muted-foreground">Injection Technique Training for smooth administration</span>
+                      </li>
+                    </ul>
+                    <div className="flex items-center gap-2">
+                      <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                      <p className="text-foreground font-medium">We're with you every step of the way.</p>
+                    </div>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </section>
 
-        {/* Protecting Muscle */}
-        <section className="py-10 px-6 lg:px-8 bg-muted/20">
-          <div className="mx-auto max-w-4xl">
-            <Card>
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Dumbbell className="h-7 w-7 text-primary" />
-                  <h2 className="text-2xl font-bold text-foreground">Protecting Muscle While Losing Fat</h2>
-                </div>
-                <p className="text-muted-foreground mb-6">
-                  Research shows that up to 39% of weight loss may come from muscle mass. That's why our program includes body composition monitoring and muscle-preserving strategies, such as:
-                </p>
-                <div className="grid gap-6 md:grid-cols-2 mb-6">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Protein Optimization</h4>
-                    <p className="text-muted-foreground">Personalized macronutrient planning</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Resistance Training</h4>
-                    <p className="text-muted-foreground">Tailored fitness recommendations</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">DEXA or Bioimpedance Scans</h4>
-                    <p className="text-muted-foreground">Regular body composition tracking</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">Supplement Support</h4>
-                    <p className="text-muted-foreground">Targeted amino acid and creatine supplementation</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Settings className="h-5 w-5 text-primary flex-shrink-0" />
-                  <p className="text-foreground font-medium">
-                    Lose fat, not muscle. We help you maintain strength, energy, and vitality throughout your journey.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Managing Side Effects */}
-        <section className="py-10 px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <Card>
-              <CardContent className="p-8">
-                <div className="flex items-center gap-3 mb-4">
-                  <Leaf className="h-7 w-7 text-primary" />
-                  <h2 className="text-2xl font-bold text-foreground">Managing Side Effects</h2>
-                </div>
-                <p className="text-muted-foreground mb-6">
-                  Mild side effects such as nausea, bloating, or injection-site irritation are common but temporary. Our step-by-step medical supervision ensures your comfort and safety:
-                </p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Gradual Dose Titration to minimize GI symptoms</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Nutrition Guidance to reduce nausea</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">Injection Technique Training for smooth administration</span>
-                  </li>
-                </ul>
-                <div className="flex items-center gap-2">
-                  <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                  <p className="text-foreground font-medium">We're with you every step of the way.</p>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        {/* Testimonials Section */}
+        <Testimonials testimonials={[
+          {
+            name: "Gonzalo",
+            text: "I have always tried to lose weight... I found Vitality wellness and they helped me lose 40 pounds and for the first time in my life I am no longer a size XL but a medium. They followed…",
+            rating: 5,
+            category: "weight-loss"
+          },
+          {
+            name: "Shuki",
+            text: "Both Lina and Dr. Xochi were always kind, caring, and made me feel very comfortable as I went through my weight loss journey. I've lost 14 pounds so far and I'm still going. 100% recommended!",
+            rating: 5,
+            category: "weight-loss"
+          }
+        ]} />
 
         {/* CTA Section */}
         <section className="py-16 px-6 lg:px-8 bg-white">
@@ -461,22 +486,6 @@ export default function WeightLoss() {
             </div>
           </div>
         </section>
-
-        {/* Testimonials Section */}
-        <Testimonials testimonials={[
-          {
-            name: "Gonzalo",
-            text: "I have always tried to lose weight... I found Vitality wellness and they helped me lose 40 pounds and for the first time in my life I am no longer a size XL but a medium. They followed…",
-            rating: 5,
-            category: "weight-loss"
-          },
-          {
-            name: "Shuki",
-            text: "Both Lina and Dr. Xochi were always kind, caring, and made me feel very comfortable as I went through my weight loss journey. I've lost 14 pounds so far and I'm still going. 100% recommended!",
-            rating: 5,
-            category: "weight-loss"
-          }
-        ]} />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-muted/20">
