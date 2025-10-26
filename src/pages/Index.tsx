@@ -116,7 +116,9 @@ export default function Index() {
               <div className="flex flex-col items-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-[#54a0e7]" />
                 <h1 className="text-4xl font-display font-bold tracking-tight text-foreground sm:text-6xl text-center">
-                  The Body You Deserve Starts <span className="font-hurricane text-6xl text-[#54a0e7]">Here</span>
+                  The Body You<br />
+                  DESERVE<br />
+                  Starts Here
                 </h1>
               </div>
               <div className="mb-8 flex justify-center">
@@ -156,7 +158,7 @@ export default function Index() {
                   <a href="tel:9548164002">Call (954) 816-4002</a>
                 </Button>
                 <Button size="lg" variant="cream" asChild className="text-lg px-8">
-                  <Link to="/weight-loss-program">Join our Weight Loss Program</Link>
+                  <Link to="/glp1">Join our Weight Loss Program</Link>
                 </Button>
               </div>
             </div>

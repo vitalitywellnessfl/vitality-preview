@@ -20,7 +20,7 @@ const navigation = [
 const servicesFirst = true; // Flag to render Services after Home
 
 const servicesNav = [
-  { name: "GLP-1's", href: "/glp1" },
+  { name: "Weight Loss Program GLP-1's", href: "/glp1" },
   { name: "Healing Peptides", href: "/healing-peptides" },
   { name: "NAD+", href: "/nad-plus" },
   { name: "Glutathione", href: "/glutathione" },
