@@ -34,7 +34,7 @@ import contourHeroImage from "@/assets/contour-hero.jpg";
 import glp1HeroImage from "@/assets/glp1-hero.jpg";
 import peptideHeroImage from "@/assets/peptide-hero.jpg";
 
-import homepageGlp1Image from "@/assets/homepage-glp1.png";
+import heroHomeImage from "@/assets/hero-home.png";
 import glp1DiscountImage from "@/assets/glp1-discount.png";
 import drEcheonaHomepage from "@/assets/dr-echeona-new.png";
 
@@ -125,7 +125,7 @@ export default function Index() {
               </div>
               <div className="mb-8 flex justify-center">
                 <img 
-                  src={homepageGlp1Image} 
+                  src={heroHomeImage} 
                   alt="Semaglutide and Tirzepatide GLP-1 weight loss medications" 
                   className="rounded-lg shadow-lg max-w-2xl w-full h-auto"
                 />
