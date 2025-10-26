@@ -250,6 +250,30 @@ export default function WeightLoss() {
           </div>
         </section>
 
+        {/* CTA Section */}
+        <section className="py-16 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <Calendar className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl font-bold text-foreground">Start Your Weight Loss Journey Today</h2>
+            </div>
+            <p className="text-lg text-muted-foreground mb-8">
+              Your healthiest body begins here. Join hundreds of patients who have transformed their lives through GLP-1 medical weight loss therapy at Vitality Wellness Clinic.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <Button size="lg" asChild>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Consultation</a>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="tel:9548164002">
+                  <Phone className="mr-2 h-4 w-4" />
+                  Call (954) 816-4002
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-10 px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
@@ -475,30 +499,6 @@ export default function WeightLoss() {
             category: "weight-loss"
           }
         ]} />
-
-        {/* CTA Section */}
-        <section className="py-16 px-6 lg:px-8 bg-white">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Calendar className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold text-foreground">Start Your Weight Loss Journey Today</h2>
-            </div>
-            <p className="text-lg text-muted-foreground mb-8">
-              Your healthiest body begins here. Join hundreds of patients who have transformed their lives through GLP-1 medical weight loss therapy at Vitality Wellness Clinic.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Consultation</a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a href="tel:9548164002">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call (954) 816-4002
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-muted/20">
