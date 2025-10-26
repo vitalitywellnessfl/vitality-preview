@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { SocialCTA } from "@/components/SocialCTA";
 import drEcheonaImage from "@/assets/dr-echeona.png";
 import { 
   Heart, 
@@ -18,6 +19,7 @@ import {
   Calendar,
   Zap,
   Leaf,
+  MessageCircle,
   Syringe,
   Activity,
   Wind,
@@ -444,7 +446,10 @@ export default function About() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-vitality-teal hover:bg-vitality-teal/90 text-white text-lg px-8 py-6" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Chat on WhatsApp
+                </a>
               </Button>
               <Button size="lg" variant="outline" asChild className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-vitality-charcoal text-lg px-8 py-6">
                 <a href="tel:9548164002">
@@ -455,6 +460,9 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

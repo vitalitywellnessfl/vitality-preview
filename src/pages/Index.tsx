@@ -20,10 +20,12 @@ import {
   Shield,
   Leaf,
   Brain,
-  ArrowRight
+  ArrowRight,
+  MessageCircle
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Testimonials } from "@/components/Testimonials";
+import { SocialCTA } from "@/components/SocialCTA";
 import vitalityLogo from "@/assets/vitality-logo.gif";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
 import ivHeroImage from "@/assets/iv-hero.jpg";
@@ -351,7 +353,10 @@ export default function Index() {
                 </p>
                 <div className="flex flex-col gap-3">
                   <Button size="lg" variant="metallic" asChild className="w-full">
-                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
+                    <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="mr-2 h-5 w-5" />
+                      Chat on WhatsApp
+                    </a>
                   </Button>
                   <Button size="lg" variant="metallic-outline" asChild className="w-full bg-transparent text-white border-white hover:bg-white hover:text-vitality-charcoal">
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Contact Us</a>
@@ -364,6 +369,9 @@ export default function Index() {
             </div>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

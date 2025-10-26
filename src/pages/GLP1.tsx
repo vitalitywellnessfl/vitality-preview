@@ -7,6 +7,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Phone, Lightbulb, Dumbbell, Settings, Leaf, MessageCircle, Calendar, Zap, ArrowRight } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonials } from "@/components/Testimonials";
+import { SocialCTA } from "@/components/SocialCTA";
+import whatsappQR from "@/assets/whatsapp-qr.jpg";
 import glp1MedicationsImage from "@/assets/glp1-medications.png";
 import tirzepatideImage from "@/assets/tirzepatide-new.png";
 import semaglutideImage from "@/assets/semaglutide-new.png";
@@ -262,7 +264,10 @@ export default function WeightLoss() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Consultation</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Chat on WhatsApp
+                </a>
               </Button>
               <Button size="lg" variant="outline" asChild>
                 <a href="tel:9548164002">
@@ -270,6 +275,20 @@ export default function WeightLoss() {
                   Call (954) 816-4002
                 </a>
               </Button>
+            </div>
+            
+            {/* WhatsApp QR Code */}
+            <div className="flex flex-col items-center gap-3 pt-6 border-t">
+              <div className="bg-white p-4 rounded-lg shadow-md">
+                <img 
+                  src={whatsappQR} 
+                  alt="WhatsApp QR Code" 
+                  className="w-48 h-48 object-contain"
+                />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Or scan to chat on WhatsApp
+              </p>
             </div>
           </div>
         </section>
@@ -499,6 +518,9 @@ export default function WeightLoss() {
             category: "weight-loss"
           }
         ]} />
+
+        {/* Social Media CTA */}
+        <SocialCTA />
 
         {/* Contact Form Section */}
         <section className="py-16 px-6 lg:px-8 bg-muted/20">

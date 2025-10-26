@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
+import { SocialCTA } from "@/components/SocialCTA";
 
 export default function Contact() {
   return (
@@ -72,6 +73,9 @@ export default function Contact() {
             </div>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
+import { SocialCTA } from "@/components/SocialCTA";
 import { 
   Scissors,
   Clock,
@@ -510,6 +511,9 @@ export default function BodyContouring() {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

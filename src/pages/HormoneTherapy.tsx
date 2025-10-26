@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
+import { SocialCTA } from "@/components/SocialCTA";
 import { 
   Heart,
   Smile,
@@ -18,7 +19,8 @@ import {
   Sparkles,
   CheckCircle2,
   Phone,
-  Users
+  Users,
+  MessageCircle
 } from "lucide-react";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
 
@@ -453,7 +455,10 @@ export default function HormoneTherapy() {
                 Don't let hormone imbalance control your life. Discover how bioidentical hormone therapy can restore your energy, mood, and overall wellness. Your transformation begins with a simple consultation.
               </p>
               <Button variant="metallic" size="lg" className="mb-6" asChild>
-                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
+                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  Chat on WhatsApp
+                </a>
               </Button>
               <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
                 <Phone className="h-4 w-4" />
@@ -481,6 +486,9 @@ export default function HormoneTherapy() {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

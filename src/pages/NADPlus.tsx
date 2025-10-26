@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Testimonials } from "@/components/Testimonials";
+import { SocialCTA } from "@/components/SocialCTA";
 import { 
   Accordion,
   AccordionContent,
@@ -355,6 +356,9 @@ export default function NADPlus() {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

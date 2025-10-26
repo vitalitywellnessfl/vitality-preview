@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Testimonials } from "@/components/Testimonials";
+import { SocialCTA } from "@/components/SocialCTA";
 import { 
   Accordion,
   AccordionContent,
@@ -350,6 +351,9 @@ export default function Glutathione() {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />

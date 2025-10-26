@@ -8,6 +8,7 @@ import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/Glass
 import { BlobBackground } from "@/components/ui/BlobBackground";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
+import { SocialCTA } from "@/components/SocialCTA";
 import { Card, CardContent } from "@/components/ui/card";
 
 const WeightLossProgram = () => {
@@ -442,6 +443,9 @@ const WeightLossProgram = () => {
             </AnimatedSection>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
       
       <Footer />

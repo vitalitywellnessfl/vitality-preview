@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { SocialCTA } from "@/components/SocialCTA";
 
 export default function Book() {
   return (
@@ -41,6 +42,9 @@ export default function Book() {
             </Card>
           </div>
         </section>
+
+        {/* Social Media CTA */}
+        <SocialCTA />
       </main>
 
       <Footer />
