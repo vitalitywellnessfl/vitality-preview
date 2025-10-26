@@ -15,6 +15,7 @@ import {
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
+  { name: "Weight Loss Program GLP-1's", href: "/glp1" },
 ];
 
 const servicesFirst = true; // Flag to render Services after Home

@@ -216,6 +216,36 @@ export default function Glutathione() {
           </div>
         </section>
 
+        {/* Final CTA Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-primary/5">
+          <div className="mx-auto max-w-4xl text-center">
+            <AnimatedSection animation="fade-in">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-6">
+                Ready to experience Glutathione therapy?
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+                Start your journey to enhanced detoxification, immune support, and radiant skin today.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button 
+                  size="lg"
+                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
+                >
+                  <span className="mr-2">💬</span>
+                  Chat on WhatsApp
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => window.location.href = 'tel:+19548164002'}
+                >
+                  Call (954) 816-4002
+                </Button>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* Science of Glutathione Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-secondary/5">
           <div className="mx-auto max-w-7xl">
@@ -317,37 +347,6 @@ export default function Glutathione() {
                   </AccordionItem>
                 ))}
               </Accordion>
-            </AnimatedSection>
-          </div>
-        </section>
-
-
-        {/* Final CTA Section */}
-        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-primary/5">
-          <div className="mx-auto max-w-4xl text-center">
-            <AnimatedSection animation="fade-in">
-              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-6">
-                Ready to experience Glutathione therapy?
-              </h2>
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Start your journey to enhanced detoxification, immune support, and radiant skin today.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  size="lg"
-                  onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank')}
-                >
-                  <span className="mr-2">💬</span>
-                  Chat on WhatsApp
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  onClick={() => window.location.href = 'tel:+19548164002'}
-                >
-                  Call (954) 816-4002
-                </Button>
-              </div>
             </AnimatedSection>
           </div>
         </section>
