@@ -424,52 +424,7 @@ export default function BodyContouring() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 lg:py-24 bg-muted/30">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <AnimatedSection animation="fade-in" className="text-center mb-12">
-              <p className="font-script text-primary text-2xl mb-4">Real Transformations</p>
-              <h2 className="text-3xl font-serif font-semibold text-foreground sm:text-4xl">
-                Patient Success Stories
-              </h2>
-            </AnimatedSection>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <AnimatedSection animation="scale-in">
-                <GlassmorphicCard className="h-full">
-                  <GlassmorphicCardContent className="p-8">
-                    <p className="text-muted-foreground leading-relaxed mb-4 italic">
-                      "CoolSculpting transformed my abdomen without surgery. The results were gradual and natural-looking. I finally feel confident in fitted clothes again!"
-                    </p>
-                    <p className="font-semibold">- Rachel, 41</p>
-                  </GlassmorphicCardContent>
-                </GlassmorphicCard>
-              </AnimatedSection>
-
-              <AnimatedSection animation="scale-in" delay={100}>
-                <GlassmorphicCard className="h-full">
-                  <GlassmorphicCardContent className="p-8">
-                    <p className="text-muted-foreground leading-relaxed mb-4 italic">
-                      "The RF skin tightening tightened my post-baby skin on my arms and stomach. No downtime, just progressive improvement over months. Worth every penny."
-                    </p>
-                    <p className="font-semibold">- Amanda, 36</p>
-                  </GlassmorphicCardContent>
-                </GlassmorphicCard>
-              </AnimatedSection>
-
-              <AnimatedSection animation="scale-in" delay={200}>
-                <GlassmorphicCard className="h-full">
-                  <GlassmorphicCardContent className="p-8">
-                    <p className="text-muted-foreground leading-relaxed mb-4 italic">
-                      "Ultrasonic cavitation smoothed my cellulite better than any cream ever could. The immediate inch loss was real. I'm a believer in non-surgical options now!"
-                    </p>
-                    <p className="font-semibold">- Lisa, 47</p>
-                  </GlassmorphicCardContent>
-                </GlassmorphicCard>
-              </AnimatedSection>
-            </div>
-          </div>
-        </section>
 
         {/* Final CTA Section */}
         <section className="py-20 lg:py-28 bg-gradient-to-br from-muted/50 via-background to-muted/30">
