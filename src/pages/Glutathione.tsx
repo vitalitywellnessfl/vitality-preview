@@ -259,11 +259,6 @@ export default function Glutathione() {
         {/* Testimonials Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-7xl">
-            <AnimatedSection animation="fade-in" className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
-                Real results from people like you
-              </h2>
-            </AnimatedSection>
             <Testimonials />
           </div>
         </section>
@@ -325,44 +320,6 @@ export default function Glutathione() {
           </div>
         </section>
 
-        {/* Safety Information Section */}
-        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-secondary/5">
-          <div className="mx-auto max-w-4xl">
-            <AnimatedSection animation="fade-in">
-              <Card className="border-l-4 border-l-primary">
-                <CardContent className="pt-6">
-                  <div className="flex gap-4">
-                    <AlertCircle className="h-6 w-6 text-primary shrink-0 mt-1" />
-                    <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-4">
-                        Important Safety Information
-                      </h3>
-                      <div className="space-y-4 text-muted-foreground">
-                        <div>
-                          <p className="font-semibold text-foreground mb-2">Common Side Effects:</p>
-                          <p>Mild injection site reactions, temporary flushing, or digestive discomfort may occur. These effects are typically mild and resolve quickly.</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-foreground mb-2">Who Should Not Use:</p>
-                          <p>Pregnant or breastfeeding women, individuals with asthma, or those allergic to glutathione should avoid this treatment. Always consult your healthcare provider before starting any new therapy.</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-foreground mb-2">Important Precautions:</p>
-                          <p>Glutathione may interact with certain medications, including chemotherapy drugs. Inform your healthcare provider of all medications and supplements you're taking.</p>
-                        </div>
-                        <div className="mt-6 pt-6 border-t">
-                          <p className="text-sm italic">
-                            This information is for educational purposes only and does not constitute medical advice. Always consult with a qualified healthcare provider before starting any new treatment.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
-          </div>
-        </section>
 
         {/* Final CTA Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-primary/5">

@@ -42,7 +42,7 @@ export const Testimonials = ({ testimonials = allTestimonials }: TestimonialsPro
           </p>
         </div>
         
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="relative overflow-hidden hover:shadow-xl transition-shadow border-2 hover:border-primary/50">
               <CardContent className="p-8">
