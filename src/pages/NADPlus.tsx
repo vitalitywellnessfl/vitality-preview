@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Testimonials } from "@/components/Testimonials";
 import { SocialCTA } from "@/components/SocialCTA";
+import { ContactForm } from "@/components/ContactForm";
 import { 
   Accordion,
   AccordionContent,
@@ -353,6 +354,23 @@ export default function NADPlus() {
                   Book Your Consultation
                 </a>
               </Button>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-3xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
+                Contact Us
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Have questions about NAD+ therapy? Fill out the form below and our team will get back to you shortly.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection animation="fade-in" delay={100}>
+              <ContactForm />
             </AnimatedSection>
           </div>
         </section>
