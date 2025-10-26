@@ -8,8 +8,8 @@ import { CheckCircle2, Syringe, Activity, Shield, Users, TrendingDown, Heart, Ph
 import { ContactForm } from "@/components/ContactForm";
 import { Testimonials } from "@/components/Testimonials";
 import glp1MedicationsImage from "@/assets/glp1-medications.png";
-import tirzepatideImage from "@/assets/tirzepatide.png";
-import semaglutideImage from "@/assets/semaglutide.png";
+import tirzepatideImage from "@/assets/tirzepatide-new.png";
+import semaglutideImage from "@/assets/semaglutide-new.png";
 
 export default function WeightLoss() {
   const journeySteps = [
