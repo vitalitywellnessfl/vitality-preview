@@ -159,11 +159,11 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
                   <div className="mb-4">
-                    <span className="text-primary">
-                      <span className="text-sm">Starting at </span>
+                    <div className="text-primary flex flex-col items-start leading-tight">
+                      <span className="text-sm">Starting at</span>
                       <span className="text-3xl font-bold">$300/month</span>
-                      <span className="text-sm"> at the Office</span>
-                    </span>
+                      <span className="text-sm">at the Office</span>
+                    </div>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Dual-action GLP-1 medication for enhanced weight loss results
@@ -189,11 +189,11 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
                   <div className="mb-4">
-                    <span className="text-primary">
-                      <span className="text-sm">Starting at </span>
+                    <div className="text-primary flex flex-col items-start leading-tight">
+                      <span className="text-sm">Starting at</span>
                       <span className="text-3xl font-bold">$175/month</span>
-                      <span className="text-sm"> at the Office</span>
-                    </span>
+                      <span className="text-sm">at the Office</span>
+                    </div>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Proven GLP-1 medication for effective appetite control and weight loss
