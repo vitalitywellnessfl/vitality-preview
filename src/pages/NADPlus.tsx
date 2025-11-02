@@ -8,6 +8,7 @@ import { SocialCTA } from "@/components/SocialCTA";
 import { ContactForm } from "@/components/ContactForm";
 import nadScienceDiagram from "@/assets/nad-science-diagram.png";
 import nadHero from "@/assets/nad-hero.png";
+import nadPromo from "@/assets/nad-promo.png";
 import { 
   Accordion,
   AccordionContent,
@@ -165,6 +166,19 @@ export default function NADPlus() {
                 Learn About the Science of NAD⁺ Therapy
                 <ArrowRight className="h-4 w-4" />
               </a>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Promotional Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-5xl">
+            <AnimatedSection animation="fade-in">
+              <img 
+                src={nadPromo} 
+                alt="NAD+ Treatment - Turn back time with NAD+ therapy, now only $199 per month"
+                className="rounded-lg w-full h-auto shadow-lg"
+              />
             </AnimatedSection>
           </div>
         </section>
