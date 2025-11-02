@@ -74,7 +74,11 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Tirzepatide</p>
-                  <p className="text-2xl font-bold text-primary">Starting at $300/month at the Office</p>
+                  <p className="text-primary">
+                    <span className="text-sm">Starting at </span>
+                    <span className="text-2xl font-bold">$300/month</span>
+                    <span className="text-sm"> at the Office</span>
+                  </p>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
@@ -86,7 +90,11 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Semaglutide</p>
-                  <p className="text-2xl font-bold text-primary">Starting at $175/month at the Office</p>
+                  <p className="text-primary">
+                    <span className="text-sm">Starting at </span>
+                    <span className="text-2xl font-bold">$175/month</span>
+                    <span className="text-sm"> at the Office</span>
+                  </p>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
@@ -151,7 +159,11 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">Starting at $300/month at the Office</span>
+                    <span className="text-primary">
+                      <span className="text-sm">Starting at </span>
+                      <span className="text-3xl font-bold">$300/month</span>
+                      <span className="text-sm"> at the Office</span>
+                    </span>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Dual-action GLP-1 medication for enhanced weight loss results
@@ -177,7 +189,11 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">Starting at $175/month at the Office</span>
+                    <span className="text-primary">
+                      <span className="text-sm">Starting at </span>
+                      <span className="text-3xl font-bold">$175/month</span>
+                      <span className="text-sm"> at the Office</span>
+                    </span>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Proven GLP-1 medication for effective appetite control and weight loss
