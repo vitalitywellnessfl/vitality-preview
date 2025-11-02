@@ -130,7 +130,7 @@ export default function NADPlus() {
                     Revitalize your energy, sharpen your mind, and slow the effects of aging with advanced NAD⁺ therapy. NAD⁺ (Nicotinamide Adenine Dinucleotide) is an essential coenzyme that fuels your cells, supports DNA repair, and enhances overall vitality. Restore balance, boost focus, and feel your best from the inside out.
                   </p>
                   <div className="mb-8">
-                    <p className="text-3xl font-bold text-foreground">Starting at <span className="text-primary">$235</span></p>
+                    <p className="text-3xl font-bold text-foreground">Starting at <span className="text-primary">$250</span></p>
                   </div>
                   <Button size="lg" className="w-full sm:w-auto" asChild>
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
