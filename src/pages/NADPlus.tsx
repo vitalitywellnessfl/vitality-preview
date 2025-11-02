@@ -6,6 +6,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Testimonials } from "@/components/Testimonials";
 import { SocialCTA } from "@/components/SocialCTA";
 import { ContactForm } from "@/components/ContactForm";
+import nadScienceDiagram from "@/assets/nad-science-diagram.png";
 import { 
   Accordion,
   AccordionContent,
@@ -237,9 +238,11 @@ export default function NADPlus() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <AnimatedSection animation="fade-in">
-                <div className="bg-muted/30 rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
-                  <p className="text-muted-foreground text-lg">Science Image Placeholder</p>
-                </div>
+                <img 
+                  src={nadScienceDiagram} 
+                  alt="NAD+ benefits diagram showing how NAD+ from exercise, diet, and NAD boosters affects various body systems including brain, liver, heart, and muscles"
+                  className="rounded-lg w-full h-auto"
+                />
               </AnimatedSection>
 
               <AnimatedSection animation="fade-in" delay={100}>
