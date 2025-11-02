@@ -181,7 +181,7 @@ export default function NADPlus() {
               </p>
             </AnimatedSection>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-8">
+            <div className="grid grid-cols-1 gap-12 items-center mt-8">
               <AnimatedSection animation="fade-in" delay={100}>
                 <p className="font-bold text-foreground text-lg mb-4">Key benefits backed by research:</p>
                 <ul className="space-y-3">
@@ -192,12 +192,6 @@ export default function NADPlus() {
                     </li>
                   ))}
                 </ul>
-              </AnimatedSection>
-
-              <AnimatedSection animation="fade-in" delay={200}>
-                <div className="bg-muted/30 rounded-lg aspect-video flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
-                  <p className="text-muted-foreground text-lg">Science Image Placeholder</p>
-                </div>
               </AnimatedSection>
             </div>
           </div>
