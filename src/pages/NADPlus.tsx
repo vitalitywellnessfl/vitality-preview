@@ -273,6 +273,19 @@ export default function NADPlus() {
           </div>
         </section>
 
+        {/* Science Diagram */}
+        <section className="py-12 px-6 lg:px-8 bg-gray-50">
+          <div className="mx-auto max-w-3xl">
+            <AnimatedSection animation="fade-in">
+              <img 
+                src={nadScienceDiagram} 
+                alt="NAD+ benefits diagram showing how NAD+ from exercise, diet, and NAD boosters affects various body systems including brain, liver, heart, and muscles"
+                className="rounded-lg w-full h-auto max-w-xl mx-auto"
+              />
+            </AnimatedSection>
+          </div>
+        </section>
+
         {/* Benefits Section */}
         <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-7xl">
@@ -376,24 +389,14 @@ export default function NADPlus() {
               </h2>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <AnimatedSection animation="fade-in">
-                <img 
-                  src={nadScienceDiagram} 
-                  alt="NAD+ benefits diagram showing how NAD+ from exercise, diet, and NAD boosters affects various body systems including brain, liver, heart, and muscles"
-                  className="rounded-lg w-full h-auto"
-                />
-              </AnimatedSection>
-
-              <AnimatedSection animation="fade-in" delay={100}>
+            <AnimatedSection animation="fade-in">
                 <div>
                   <p className="font-bold text-foreground text-lg mb-4">Essential for cellular function:</p>
                   <p className="text-muted-foreground leading-relaxed">
                     NAD+ (Nicotinamide Adenine Dinucleotide) is a coenzyme found in all living cells that plays a fundamental role in energy metabolism and cellular health. It acts as a crucial electron carrier in metabolic reactions, particularly in the mitochondria where ATP (cellular energy) is produced. Beyond energy production, NAD+ activates sirtuins—proteins that regulate cellular aging, DNA repair, and metabolic processes. Research shows that NAD+ levels decline significantly with age, contributing to reduced cellular function, decreased energy, and accelerated aging. Supplementing NAD+ through injections or IV therapy can help restore optimal cellular function, improve energy levels, enhance cognitive performance, and support healthy aging processes.
                   </p>
                 </div>
-              </AnimatedSection>
-            </div>
+            </AnimatedSection>
           </div>
         </section>
 
