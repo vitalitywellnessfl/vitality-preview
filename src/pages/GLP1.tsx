@@ -74,11 +74,11 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Tirzepatide</p>
-                  <p className="text-primary">
-                    <span className="text-sm">Starting at </span>
+                  <div className="text-primary flex flex-col items-start leading-tight">
+                    <span className="text-sm">Starting at</span>
                     <span className="text-2xl font-bold">$300/month</span>
-                    <span className="text-sm"> at the Office</span>
-                  </p>
+                    <span className="text-sm">at the Office</span>
+                  </div>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
@@ -90,11 +90,11 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Semaglutide</p>
-                  <p className="text-primary">
-                    <span className="text-sm">Starting at </span>
+                  <div className="text-primary flex flex-col items-start leading-tight">
+                    <span className="text-sm">Starting at</span>
                     <span className="text-2xl font-bold">$175/month</span>
-                    <span className="text-sm"> at the Office</span>
-                  </p>
+                    <span className="text-sm">at the Office</span>
+                  </div>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
