@@ -21,7 +21,9 @@ import {
   FileText,
   TrendingUp,
   Activity,
-  AlertCircle
+  AlertCircle,
+  Package,
+  Droplet
 } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
@@ -126,10 +128,10 @@ export default function Glutathione() {
                   <p className="text-xl text-muted-foreground mb-6 leading-relaxed">
                     Harness the power of your body's master antioxidant. Glutathione is a tripeptide that plays a crucial role in cellular protection, detoxification, and immune function.
                   </p>
-                  <div className="mb-8">
-                    <p className="text-lg text-muted-foreground mb-2">Starting at</p>
-                    <p className="text-4xl font-bold text-primary">$120<span className="text-2xl font-normal text-muted-foreground">/vial</span></p>
-                  </div>
+                  <p className="text-lg text-muted-foreground mb-6 flex items-center gap-2">
+                    <span className="inline-block animate-bounce">↓</span>
+                    See all treatment options and pricing below
+                  </p>
                   <Button 
                     size="lg" 
                     className="w-full sm:w-auto"
@@ -138,6 +140,139 @@ export default function Glutathione() {
                     Start Your Consultation
                   </Button>
                 </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Treatment Options & Pricing Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-secondary/5">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
+                Treatment Options & Pricing
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Choose the glutathione therapy format that works best for your lifestyle
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in-up" delay={100}>
+              <div className="grid gap-8 md:grid-cols-3">
+                {/* 10-Week Therapy Plan */}
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="pt-6">
+                    <div className="mb-6 inline-flex items-center justify-center rounded-lg bg-primary/10 p-4">
+                      <Package className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      10-Week Therapy Plan
+                    </h3>
+                    <p className="text-4xl font-bold text-primary mb-4">
+                      $120
+                    </p>
+                    <p className="text-muted-foreground mb-6">
+                      2000mg vial - Perfect for 10-week at-home or office use
+                    </p>
+                    <ul className="space-y-3 mb-6 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Complete 10-week supply
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Self-administered or clinic visits
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Comprehensive detox program
+                      </li>
+                    </ul>
+                    <Button 
+                      className="w-full"
+                      onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi! I'm interested in the 10-Week Glutathione Therapy Plan ($120).")}`, '_blank')}
+                    >
+                      Book Now
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* Monthly Shots */}
+                <Card className="hover:shadow-lg transition-shadow border-primary/50">
+                  <CardContent className="pt-6">
+                    <div className="mb-6 inline-flex items-center justify-center rounded-lg bg-primary/10 p-4">
+                      <Zap className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      Monthly Shots
+                    </h3>
+                    <p className="text-4xl font-bold text-primary mb-4">
+                      $60<span className="text-lg font-normal text-muted-foreground">/month</span>
+                    </p>
+                    <p className="text-muted-foreground mb-6">
+                      4 shots per month - Convenient monthly plan for regular detox and antioxidant boost
+                    </p>
+                    <ul className="space-y-3 mb-6 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        4 shots per month
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Consistent antioxidant support
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Flexible scheduling
+                      </li>
+                    </ul>
+                    <Button 
+                      className="w-full"
+                      onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi! I'm interested in the Monthly Glutathione Shots ($60/month).")}`, '_blank')}
+                    >
+                      Book Now
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* IV Glutathione */}
+                <Card className="hover:shadow-lg transition-shadow">
+                  <CardContent className="pt-6">
+                    <div className="mb-6 inline-flex items-center justify-center rounded-lg bg-primary/10 p-4">
+                      <Droplet className="h-8 w-8 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">
+                      IV Glutathione
+                    </h3>
+                    <p className="text-2xl font-bold text-primary mb-4">
+                      Available upon request
+                    </p>
+                    <p className="text-muted-foreground mb-6">
+                      Ideal for rapid absorption and enhanced effects - Contact us for pricing and details
+                    </p>
+                    <ul className="space-y-3 mb-6 text-sm text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Maximum bioavailability
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Faster results
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                        Direct cellular delivery
+                      </li>
+                    </ul>
+                    <Button 
+                      variant="outline"
+                      className="w-full"
+                      onClick={() => window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Hi! I'm interested in IV Glutathione therapy. Can you provide pricing and details?")}`, '_blank')}
+                    >
+                      Contact Us
+                    </Button>
+                  </CardContent>
+                </Card>
               </div>
             </AnimatedSection>
           </div>
