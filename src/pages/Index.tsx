@@ -153,7 +153,7 @@ export default function Index() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="metallic" asChild className="text-lg px-8">
+                <Button size="lg" variant="cream" asChild className="text-lg px-8">
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
                 </Button>
                 <Button size="lg" variant="metallic-outline" asChild className="text-lg px-8">
