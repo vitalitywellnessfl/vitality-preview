@@ -12,6 +12,7 @@ import whatsappQR from "@/assets/whatsapp-qr.jpg";
 import glp1MedicationsImage from "@/assets/glp1-medications.png";
 import tirzepatideImage from "@/assets/tirzepatide-new.png";
 import semaglutideImage from "@/assets/semaglutide-new.png";
+import microdosingImage from "@/assets/microdosing-glp1.png";
 
 export default function WeightLoss() {
   const journeySteps = [
@@ -73,7 +74,7 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Tirzepatide</p>
-                  <p className="text-2xl font-bold text-primary">$300/month</p>
+                  <p className="text-2xl font-bold text-primary">Starting at $300/month at the Office</p>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
@@ -85,7 +86,7 @@ export default function WeightLoss() {
               <div className="bg-white border border-border rounded-lg px-6 py-4 flex items-center gap-4 shadow-sm">
                 <div>
                   <p className="font-semibold text-foreground">Semaglutide</p>
-                  <p className="text-2xl font-bold text-primary">$175/month</p>
+                  <p className="text-2xl font-bold text-primary">Starting at $175/month at the Office</p>
                 </div>
                 <Button size="sm" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
@@ -150,8 +151,7 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Tirzepatide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">$300</span>
-                    <span className="text-muted-foreground">/month</span>
+                    <span className="text-3xl font-bold text-primary">Starting at $300/month at the Office</span>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Dual-action GLP-1 medication for enhanced weight loss results
@@ -177,8 +177,7 @@ export default function WeightLoss() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold text-foreground mb-3">Semaglutide</h3>
                   <div className="mb-4">
-                    <span className="text-3xl font-bold text-primary">$175</span>
-                    <span className="text-muted-foreground">/month</span>
+                    <span className="text-3xl font-bold text-primary">Starting at $175/month at the Office</span>
                   </div>
                   <p className="text-muted-foreground mb-6">
                     Proven GLP-1 medication for effective appetite control and weight loss
@@ -191,6 +190,46 @@ export default function WeightLoss() {
                   </Button>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Microdosing GLP-1s */}
+        <section className="py-10 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl font-bold text-foreground mb-4">Microdosing GLP-1s</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="space-y-4">
+                <p className="text-lg text-muted-foreground">
+                  Microdosing GLP-1 medications offers a personalized approach to weight loss therapy. By starting with smaller doses and gradually increasing, patients can minimize side effects while still achieving effective results.
+                </p>
+                <p className="text-lg text-muted-foreground">
+                  This approach allows your body to adjust more comfortably to the medication, reducing common side effects like nausea while maintaining the appetite suppression and metabolic benefits that make GLP-1 therapy so effective.
+                </p>
+                <div className="space-y-2 pt-4">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Reduced side effects with gradual dose escalation</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Personalized dosing tailored to your body's response</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-1" />
+                    <p className="text-foreground">Sustainable weight loss with improved tolerability</p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex justify-center">
+                <img 
+                  src={microdosingImage}
+                  alt="Microdosing GLP-1 therapy" 
+                  className="rounded-lg shadow-lg max-w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </section>
