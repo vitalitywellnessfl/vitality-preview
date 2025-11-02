@@ -119,7 +119,7 @@ export const Navbar = () => {
               (954) 816-4002
             </a>
           </Button>
-          <Button size="sm" asChild className="bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white">
+          <Button size="sm" asChild className="bg-[#145b70] hover:bg-[#145b70]/90 text-white">
             <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
               Book Consultation
             </a>
@@ -197,7 +197,7 @@ export const Navbar = () => {
                       (954) 816-4002
                     </a>
                   </Button>
-                  <Button className="w-full bg-[#54a0e7] hover:bg-[#54a0e7]/90 text-white" asChild>
+                  <Button className="w-full bg-[#145b70] hover:bg-[#145b70]/90 text-white" asChild>
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                       Book Consultation
                     </a>
