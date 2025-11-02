@@ -61,10 +61,10 @@ export default function WeightLoss() {
               Affordable, transparent pricing for medical weight loss therapy
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
-              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#A39070' }}>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#db9925' }}>
                 No hidden fees
               </span>
-              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#A39070' }}>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#db9925' }}>
                 No subscriptions
               </span>
             </div>
@@ -281,10 +281,10 @@ export default function WeightLoss() {
             </div>
             
             <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
-              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#70B4B5' }}>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#db9925' }}>
                 No hidden fees
               </span>
-              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#70B4B5' }}>
+              <span className="px-4 py-2 rounded-full text-sm font-medium text-white" style={{ backgroundColor: '#db9925' }}>
                 No subscriptions
               </span>
             </div>
