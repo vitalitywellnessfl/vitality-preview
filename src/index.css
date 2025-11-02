@@ -18,14 +18,14 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Brand Colors - Vitality Wellness Clinic (2026 Refresh) */
-    --vitality-coral: 217 64% 31%;       /* #1c4086 - Navy Blue Primary CTA */
+    --vitality-coral: 192 70% 26%;       /* #145b70 - Teal-Blue Primary CTA */
     --vitality-teal: 172 38% 62%;        /* #6DD3C7 - Modern teal accent */
     --vitality-charcoal: 215 25% 20%;    /* #1A2B48 - Dark text */
     --vitality-grey-light: 216 25% 97%; /* #F4F7FC - Light background */
     --vitality-grey: 216 20% 95%;        /* #F0F3F7 - Muted sections */
     --vitality-sky: 199 57% 77%;         /* #a3c9e1 - Sky accent */
     --vitality-gold: 43 96% 56%;         /* #F4C430 - Gold accent */
-    --vitality-cream: 38 19% 54%;        /* #A39070 - Warm cream accent */
+    --vitality-cream: 38 69% 51%;        /* #db9925 - Golden accent */
     
     --background: 0 0% 100%;             /* Pure white */
     --foreground: 215 25% 20%;           /* Modern dark blue */
@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 20%;
 
-    --primary: 217 64% 31%;              /* Navy Blue CTA */
+    --primary: 192 70% 26%;              /* Teal-Blue CTA */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 172 38% 62%;            /* Modern teal */
@@ -84,7 +84,7 @@ All colors MUST be HSL.
     --popover: 215 25% 18%;
     --popover-foreground: 216 25% 97%;
 
-    --primary: 217 64% 31%;
+    --primary: 192 70% 26%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 172 38% 62%;
@@ -237,9 +237,9 @@ All colors MUST be HSL.
   /* Metallic gradient utilities */
   .gradient-metallic {
     background: linear-gradient(135deg, 
-      hsl(var(--vitality-coral)) 0%, 
-      hsl(var(--vitality-coral) / 0.9) 50%, 
-      hsl(var(--vitality-coral) / 0.8) 100%
+      hsl(192 70% 26%) 0%, 
+      hsl(192 70% 26% / 0.9) 50%, 
+      hsl(192 70% 26% / 0.8) 100%
     );
     position: relative;
     overflow: hidden;
