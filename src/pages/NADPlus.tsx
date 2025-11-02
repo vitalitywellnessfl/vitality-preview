@@ -26,7 +26,10 @@ import {
   FileText,
   TrendingUp,
   Activity,
-  ArrowRight
+  ArrowRight,
+  Calendar,
+  Droplet,
+  Package
 } from "lucide-react";
 
 const benefits = [
@@ -113,7 +116,7 @@ export default function NADPlus() {
               <AnimatedSection animation="fade-in">
                 <img 
                   src={nadHero} 
-                  alt="NAD+ Injection Therapy - Cellular renewal formula starting at $250 USD for 10-week vial"
+                  alt="NAD+ Therapy - Multiple treatment options available including IV drip, monthly plan, and vial options"
                   className="rounded-lg w-full h-auto shadow-lg"
                 />
               </AnimatedSection>
@@ -122,23 +125,149 @@ export default function NADPlus() {
               <AnimatedSection animation="fade-in" delay={100}>
                 <div className="lg:pt-8">
                   <div className="inline-block px-3 py-1 bg-vitality-teal/10 text-vitality-teal text-sm font-medium rounded-full mb-4">
-                    Injection
+                    Multiple Treatment Options
                   </div>
                   <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl mb-6">
-                    NAD⁺ Injection Therapy
+                    NAD⁺ Therapy
                   </h1>
                   <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
                     Revitalize your energy, sharpen your mind, and slow the effects of aging with advanced NAD⁺ therapy. NAD⁺ (Nicotinamide Adenine Dinucleotide) is an essential coenzyme that fuels your cells, supports DNA repair, and enhances overall vitality. Restore balance, boost focus, and feel your best from the inside out.
                   </p>
-                  <div className="mb-8">
-                    <p className="text-3xl font-bold text-foreground">Starting at <span className="text-primary">$250</span></p>
-                  </div>
+                  <p className="text-lg text-muted-foreground mb-8">
+                    See all treatment options and pricing below ↓
+                  </p>
                   <Button size="lg" className="w-full sm:w-auto" asChild>
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                       Start Your Online Consultation
                     </a>
                   </Button>
                 </div>
+              </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Treatment Options & Pricing Section */}
+        <section className="py-16 lg:py-24 px-6 lg:px-8 bg-white">
+          <div className="mx-auto max-w-7xl">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-foreground sm:text-4xl mb-4">
+                NAD+ Treatment Options & Pricing
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                Choose the treatment option that best fits your lifestyle and wellness goals
+              </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Monthly NAD+ Plan */}
+              <AnimatedSection animation="fade-in" delay={0}>
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-8">
+                    <div className="mb-6">
+                      <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center">
+                        <Calendar className="h-8 w-8 text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">Monthly NAD+ Plan</h3>
+                    <div className="mb-6">
+                      <span className="text-5xl font-bold text-primary">$199</span>
+                      <span className="text-muted-foreground">/month</span>
+                    </div>
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>4 in-office doses per month</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Professional administration</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Convenient scheduling</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Ongoing support</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
+
+              {/* IV Drip Therapy */}
+              <AnimatedSection animation="fade-in" delay={100}>
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-8">
+                    <div className="mb-6">
+                      <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center">
+                        <Droplet className="h-8 w-8 text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">IV Drip Therapy</h3>
+                    <div className="mb-6">
+                      <span className="text-5xl font-bold text-primary">$199</span>
+                      <span className="text-muted-foreground">/session</span>
+                    </div>
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Intravenous NAD+ infusion</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Rapid absorption</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Immediate effects</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Single session option</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
+
+              {/* 1000mg Vial */}
+              <AnimatedSection animation="fade-in" delay={200}>
+                <Card className="h-full hover:shadow-lg transition-shadow duration-300 border-primary/50">
+                  <CardContent className="p-8">
+                    <div className="mb-6">
+                      <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center">
+                        <Package className="h-8 w-8 text-primary" />
+                      </div>
+                    </div>
+                    <h3 className="text-2xl font-bold text-foreground mb-2">1000mg Vial</h3>
+                    <div className="mb-6">
+                      <span className="text-5xl font-bold text-primary">$250</span>
+                      <div className="inline-block ml-2 px-2 py-1 bg-primary/10 text-primary text-xs font-medium rounded">
+                        PROMO
+                      </div>
+                    </div>
+                    <ul className="space-y-3 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>10-week supply</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Self-administered at home</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Delivery or office pickup</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span>Most cost-effective option</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
               </AnimatedSection>
             </div>
           </div>
