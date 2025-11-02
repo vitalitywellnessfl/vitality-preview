@@ -275,7 +275,8 @@ export default function Index() {
                   />
                   <Button 
                     size="lg" 
-                    className="bg-[#70B4B5] hover:bg-[#5da3a4] text-white w-full max-w-md"
+                    variant="cream"
+                    className="w-full max-w-md"
                     asChild
                   >
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
