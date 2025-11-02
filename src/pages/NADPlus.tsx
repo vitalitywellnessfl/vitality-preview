@@ -7,6 +7,7 @@ import { Testimonials } from "@/components/Testimonials";
 import { SocialCTA } from "@/components/SocialCTA";
 import { ContactForm } from "@/components/ContactForm";
 import nadScienceDiagram from "@/assets/nad-science-diagram.png";
+import nadHero from "@/assets/nad-hero.png";
 import { 
   Accordion,
   AccordionContent,
@@ -109,9 +110,11 @@ export default function NADPlus() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               {/* Left Column - Product Image Placeholder */}
               <AnimatedSection animation="fade-in">
-                <div className="bg-muted/30 rounded-lg aspect-square flex items-center justify-center border-2 border-dashed border-muted-foreground/20">
-                  <p className="text-muted-foreground text-lg">Product Image Placeholder</p>
-                </div>
+                <img 
+                  src={nadHero} 
+                  alt="NAD+ Injection Therapy - Cellular renewal formula starting at $250 USD for 10-week vial"
+                  className="rounded-lg w-full h-auto shadow-lg"
+                />
               </AnimatedSection>
 
               {/* Right Column - Product Info */}
