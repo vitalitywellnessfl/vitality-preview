@@ -1,3 +1,4 @@
+import lipotropicResults from "@/assets/lipotropic-mic-results.jpg";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -56,9 +57,7 @@ export default function VitaminShots() {
         "Supports metabolism and weight management",
         "Improves mood and sleep quality"
       ],
-      icon: Zap,
-      image: "/placeholder.svg",
-      imageAlt: "B12 Energy Boost vitamin shot injection"
+      icon: Zap
     },
     {
       title: "L-Arginine Circulation",
@@ -71,9 +70,7 @@ export default function VitaminShots() {
         "Supports healthy circulation"
       ],
       icon: Heart,
-      badge: "Popular",
-      image: "/placeholder.svg",
-      imageAlt: "L-Arginine circulation support injection"
+      badge: "Popular"
     },
     {
       title: "L-Glutamine Gut Care",
@@ -85,9 +82,7 @@ export default function VitaminShots() {
         "Supports immune function",
         "Enhances gut barrier integrity"
       ],
-      icon: Shield,
-      image: "/placeholder.svg",
-      imageAlt: "L-Glutamine gut health injection"
+      icon: Shield
     },
     {
       title: "Lipotropic Blend (MIC)",
@@ -99,9 +94,7 @@ export default function VitaminShots() {
         "Boosts energy levels",
         "Aids weight management goals"
       ],
-      icon: Activity,
-      image: "/placeholder.svg",
-      imageAlt: "Lipotropic MIC injection for metabolism"
+      icon: Activity
     },
     {
       title: "Amino Acid Complex",
@@ -113,9 +106,7 @@ export default function VitaminShots() {
         "Enhances protein synthesis",
         "Improves athletic endurance"
       ],
-      icon: Dumbbell,
-      image: "/placeholder.svg",
-      imageAlt: "Amino acid complex for athletic performance"
+      icon: Dumbbell
     },
     {
       title: "Alpha-Lipoic Acid (ALA)",
@@ -127,9 +118,7 @@ export default function VitaminShots() {
         "Enhances nutrient absorption",
         "Promotes cellular health"
       ],
-      icon: Sparkles,
-      image: "/placeholder.svg",
-      imageAlt: "Alpha-lipoic acid antioxidant injection"
+      icon: Sparkles
     }
   ];
 
@@ -184,8 +173,7 @@ export default function VitaminShots() {
         {/* Hero Section */}
         <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-gray-100 to-slate-100">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
+            <div className="mx-auto max-w-4xl text-center">
               <AnimatedSection animation="fade-in">
                 <Badge variant="outline" className="mb-6 bg-white border-vitality-teal text-vitality-teal">
                   Quick IM Injections
@@ -199,25 +187,13 @@ export default function VitaminShots() {
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Our intramuscular (IM) vitamin shots deliver concentrated nutrients directly into your muscle tissue for rapid absorption. Perfect for busy lifestyles, these quick injections provide targeted support without the time commitment of an IV drip. Feel the difference in hours, not days.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="metallic" size="lg" asChild>
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Your Shot</a>
                   </Button>
                   <Button variant="metallic-outline" size="lg" asChild>
                     <a href="#shots">Explore Options</a>
                   </Button>
-                </div>
-              </AnimatedSection>
-
-              {/* Right Column - Image */}
-              <AnimatedSection animation="scale-in" delay={200}>
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
-                  <img 
-                    src="/placeholder.svg" 
-                    alt="Professional vitamin shot injection at Vitality Wellness Clinic"
-                    className="w-full h-full object-cover"
-                  />
-                  {/* TODO: Replace with professional image of vitamin shot being administered, close-up of injection vial, or patient receiving treatment */}
                 </div>
               </AnimatedSection>
             </div>
@@ -263,66 +239,78 @@ export default function VitaminShots() {
               </h2>
             </AnimatedSection>
 
-            <div className="space-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {shots.map((shot, index) => {
-                const isEven = index % 2 === 0;
                 const Icon = shot.icon;
                 
                 return (
-                  <AnimatedSection key={index} animation="fade-in-up" delay={index * 100}>
-                    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${isEven ? '' : 'lg:grid-flow-dense'}`}>
-                      {/* Image */}
-                      <div className={`${isEven ? '' : 'lg:col-start-2'}`}>
-                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
-                          <img 
-                            src={shot.image} 
-                            alt={shot.imageAlt}
-                            className="w-full h-full object-cover"
-                          />
-                          {/* TODO: Replace with professional images for each vitamin shot */}
+                  <AnimatedSection key={index} animation="scale-in" delay={index * 100}>
+                    <Card className="h-full hover:shadow-lg transition-all duration-300">
+                      <CardContent className="p-8">
+                        {shot.badge && (
+                          <Badge className="mb-4 bg-vitality-gold text-white">
+                            {shot.badge}
+                          </Badge>
+                        )}
+                        <div className="flex items-center gap-3 mb-4">
+                          <Icon className="h-10 w-10 text-primary" />
+                          <div>
+                            <h3 className="text-2xl font-serif font-semibold">{shot.title}</h3>
+                            <p className="text-sm text-primary font-semibold">{shot.subtitle}</p>
+                          </div>
                         </div>
-                      </div>
-
-                      {/* Content */}
-                      <div className={`${isEven ? '' : 'lg:col-start-1 lg:row-start-1'}`}>
-                        <Card className="h-full">
-                          <CardContent className="p-8">
-                            {shot.badge && (
-                              <Badge className="mb-4 bg-vitality-gold text-white">
-                                {shot.badge}
-                              </Badge>
-                            )}
-                            <div className="flex items-center gap-3 mb-4">
-                              <Icon className="h-8 w-8 text-primary" />
-                              <div>
-                                <h3 className="text-2xl font-serif font-semibold">{shot.title}</h3>
-                                <p className="text-sm text-primary font-semibold">{shot.subtitle}</p>
-                              </div>
+                        <p className="text-muted-foreground leading-relaxed mb-6">
+                          {shot.description}
+                        </p>
+                        <div className="space-y-2">
+                          {shot.benefits.map((benefit, i) => (
+                            <div key={i} className="flex items-start gap-2">
+                              <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">{benefit}</span>
                             </div>
-                            <p className="text-muted-foreground leading-relaxed mb-6">
-                              {shot.description}
-                            </p>
-                            <div className="space-y-2 mb-6">
-                              {shot.benefits.map((benefit, i) => (
-                                <div key={i} className="flex items-start gap-2">
-                                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                                  <span className="text-sm text-muted-foreground">{benefit}</span>
-                                </div>
-                              ))}
-                            </div>
-                            {index === shots.length - 1 && (
-                              <Button variant="metallic" size="lg" className="w-full sm:w-auto" asChild>
-                                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Get Your Boost</a>
-                              </Button>
-                            )}
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
                   </AnimatedSection>
                 );
               })}
             </div>
+
+            {/* Featured: Lipotropic MIC Results */}
+            <AnimatedSection animation="fade-in-up" delay={300}>
+              <div className="max-w-4xl mx-auto">
+                <div className="text-center mb-8">
+                  <Badge className="mb-4 bg-vitality-gold text-white">
+                    Real Results
+                  </Badge>
+                  <h3 className="text-2xl font-serif font-semibold text-foreground mb-3">
+                    Lipotropic Blend (MIC) Transformation
+                  </h3>
+                  <p className="text-muted-foreground">
+                    Before and after results from our fat metabolism support program
+                  </p>
+                </div>
+                <div className="rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src={lipotropicResults} 
+                    alt="Lipotropic MIC injection before and after results - fat metabolism transformation"
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* CTA Button */}
+            <AnimatedSection animation="fade-in" delay={400}>
+              <div className="text-center mt-12">
+                <Button variant="metallic" size="lg" asChild>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                    Start Your Transformation
+                  </a>
+                </Button>
+              </div>
+            </AnimatedSection>
           </div>
         </section>
 
