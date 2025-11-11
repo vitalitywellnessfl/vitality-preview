@@ -1,3 +1,4 @@
+import glutathioneHero from "@/assets/glutathione-hero.jpg";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -107,14 +108,13 @@ export default function Glutathione() {
           <div className="mx-auto max-w-7xl">
             <AnimatedSection animation="fade-in">
               <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-                {/* Image Placeholder */}
+                {/* Hero Image */}
                 <div className="order-2 lg:order-1">
-                  <AspectRatio ratio={1} className="bg-muted rounded-lg border-2 border-dashed border-primary/20 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <Sparkles className="h-16 w-16 mx-auto mb-4 text-primary/40" />
-                      <p className="text-sm text-muted-foreground">Product Image</p>
-                    </div>
-                  </AspectRatio>
+                  <img 
+                    src={glutathioneHero} 
+                    alt="Glutathione molecular structure and liver health visualization - master antioxidant therapy"
+                    className="w-full h-auto rounded-2xl shadow-2xl"
+                  />
                 </div>
 
                 {/* Product Info */}
@@ -320,32 +320,21 @@ export default function Glutathione() {
             </AnimatedSection>
 
             <AnimatedSection animation="fade-in-up" delay={100}>
-              <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground mb-6">
-                    Key Benefits Backed by Research
-                  </h3>
-                  <ul className="space-y-4">
-                    {keyBenefits.map((benefit, index) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                        <span className="text-muted-foreground">{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-6 text-muted-foreground">
-                    Unfortunately, glutathione levels naturally decline with age, stress, poor diet, environmental toxins, and illness. Supplementation through injection therapy can help restore optimal levels and support your body's natural defense systems.
-                  </p>
-                </div>
-                
-                <div>
-                  <AspectRatio ratio={16/9} className="bg-muted rounded-lg border-2 border-dashed border-primary/20 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <Shield className="h-16 w-16 mx-auto mb-4 text-primary/40" />
-                      <p className="text-sm text-muted-foreground">Scientific Research Image</p>
-                    </div>
-                  </AspectRatio>
-                </div>
+              <div className="max-w-3xl mx-auto">
+                <h3 className="text-2xl font-bold text-foreground mb-6">
+                  Key Benefits Backed by Research
+                </h3>
+                <ul className="space-y-4">
+                  {keyBenefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                      <span className="text-muted-foreground">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-6 text-muted-foreground">
+                  Unfortunately, glutathione levels naturally decline with age, stress, poor diet, environmental toxins, and illness. Supplementation through injection therapy can help restore optimal levels and support your body's natural defense systems.
+                </p>
               </div>
             </AnimatedSection>
           </div>
