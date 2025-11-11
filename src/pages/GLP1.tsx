@@ -222,6 +222,84 @@ export default function WeightLoss() {
           </div>
         </section>
 
+        {/* Microdosing Pricing Options */}
+        <section className="py-10 px-6 lg:px-8 bg-muted/30">
+          <div className="mx-auto max-w-6xl">
+            <div id="microdosing-pricing" className="pt-8">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl font-bold text-foreground mb-2">Microdosing Pricing Options</h3>
+                <p className="text-muted-foreground">Start with lower doses for better tolerability</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                {/* Semaglutide Microdosing Card */}
+                <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 border bg-secondary/5">
+                  <div className="w-full bg-white p-4 flex items-center justify-center h-48">
+                    <img 
+                      src={semaglutideImage} 
+                      alt="Semaglutide microdosing - 0.15mg starting dose" 
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <CardContent className="p-5">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="text-xl font-bold text-foreground">Semaglutide Microdosing</h4>
+                      <span className="px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+                        Starter Dose
+                      </span>
+                    </div>
+                    <div className="mb-3">
+                      <div className="text-primary flex flex-col items-start leading-tight">
+                        <span className="text-2xl font-bold">$99/month</span>
+                      </div>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-4 font-medium">
+                      4 shots of 0.15mg per month
+                    </p>
+                    <Button size="sm" className="w-full" asChild>
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                        Book Microdose Consultation
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+
+                {/* Tirzepatide Microdosing Card */}
+                <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 border bg-secondary/5">
+                  <div className="w-full bg-white p-4 flex items-center justify-center h-48">
+                    <img 
+                      src={tirzepatideImage} 
+                      alt="Tirzepatide microdosing - 1.25mg starting dose" 
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                  <CardContent className="p-5">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="text-xl font-bold text-foreground">Tirzepatide Microdosing</h4>
+                      <span className="px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
+                        Low Dose
+                      </span>
+                    </div>
+                    <div className="mb-3">
+                      <div className="text-primary flex flex-col items-start leading-tight">
+                        <span className="text-2xl font-bold">$150/month</span>
+                      </div>
+                    </div>
+                    <p className="text-sm text-muted-foreground mb-4 font-medium">
+                      4 shots of 1.25mg per month
+                    </p>
+                    <Button size="sm" className="w-full" asChild>
+                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                        Book Microdose Consultation
+                      </a>
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Microdosing GLP-1s */}
         <section className="py-10 px-6 lg:px-8 bg-white">
           <div className="mx-auto max-w-6xl">
@@ -260,89 +338,6 @@ export default function WeightLoss() {
               </div>
             </div>
 
-            {/* Microdosing Pricing Cards */}
-            <div id="microdosing-pricing" className="mt-16 pt-8 border-t border-gray-200">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-foreground mb-2">Microdosing Pricing Options</h3>
-                <p className="text-muted-foreground">Start with lower doses for better tolerability</p>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                {/* Semaglutide Microdosing Card */}
-                <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 border bg-secondary/5">
-                  <div className="w-full bg-white p-4 flex items-center justify-center h-48">
-                    <img 
-                      src={semaglutideImage} 
-                      alt="Semaglutide microdosing - 0.15mg starting dose" 
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <CardContent className="p-5">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="text-xl font-bold text-foreground">Semaglutide Microdosing</h4>
-                      <span className="px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                        Starter Dose
-                      </span>
-                    </div>
-                    <div className="mb-3">
-                      <div className="text-primary flex flex-col items-start leading-tight">
-                        <span className="text-xs">Starting at</span>
-                        <span className="text-2xl font-bold">$99/month</span>
-                        <span className="text-xs">at the Office</span>
-                      </div>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-2 font-medium">
-                      4 shots of 0.15mg per month
-                    </p>
-                    <p className="text-xs text-muted-foreground mb-4">
-                      Perfect for beginners or those seeking minimal side effects
-                    </p>
-                    <Button size="sm" className="w-full" asChild>
-                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
-                        Book Microdose Consultation
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-
-                {/* Tirzepatide Microdosing Card */}
-                <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 border bg-secondary/5">
-                  <div className="w-full bg-white p-4 flex items-center justify-center h-48">
-                    <img 
-                      src={tirzepatideImage} 
-                      alt="Tirzepatide microdosing - 1.25mg starting dose" 
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
-                  <CardContent className="p-5">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="text-xl font-bold text-foreground">Tirzepatide Microdosing</h4>
-                      <span className="px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full">
-                        Low Dose
-                      </span>
-                    </div>
-                    <div className="mb-3">
-                      <div className="text-primary flex flex-col items-start leading-tight">
-                        <span className="text-xs">Starting at</span>
-                        <span className="text-2xl font-bold">$150/month</span>
-                        <span className="text-xs">at the Office</span>
-                      </div>
-                    </div>
-                    <p className="text-sm text-muted-foreground mb-2 font-medium">
-                      4 shots of 1.25mg per month
-                    </p>
-                    <p className="text-xs text-muted-foreground mb-4">
-                      Gentle introduction to dual-action weight loss
-                    </p>
-                    <Button size="sm" className="w-full" asChild>
-                      <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
-                        Book Microdose Consultation
-                      </a>
-                    </Button>
-                  </CardContent>
-                </Card>
-              </div>
-            </div>
           </div>
         </section>
 
