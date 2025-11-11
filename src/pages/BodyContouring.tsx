@@ -66,30 +66,6 @@ export default function BodyContouring() {
       ],
       icon: Droplet,
       badge: "Most Popular"
-    },
-    {
-      title: "RF Skin Tightening",
-      subtitle: "Collagen-Boosting Technology",
-      description: "Radiofrequency energy stimulates collagen production for firmer, tighter skin. Treats sagging skin on face, neck, arms, and abdomen. Progressive improvements over 3-6 months. Perfect for post-weight loss or natural aging concerns.",
-      benefits: [
-        "Stimulates collagen production",
-        "Tightens loose, sagging skin",
-        "Face, neck, arms, abdomen",
-        "Progressive improvements"
-      ],
-      icon: Radio
-    },
-    {
-      title: "Ultrasonic Cavitation",
-      subtitle: "Cellulite Smoothing & Inch Loss",
-      description: "Low-frequency ultrasound breaks down fat cells and smooths cellulite. Non-invasive alternative to liposuction with immediate inch loss and continued improvement. Ideal for circumference reduction and body sculpting.",
-      benefits: [
-        "Breaks down stubborn fat cells",
-        "Smooths cellulite appearance",
-        "Immediate inch loss",
-        "No surgery or recovery time"
-      ],
-      icon: Zap
     }
   ];
 
@@ -236,10 +212,10 @@ export default function BodyContouring() {
               </h2>
             </AnimatedSection>
 
-            {/* Liquid Lipo Image - Before Treatments */}
+            {/* Liquid Lipo Image - Before Treatment */}
             <AnimatedSection animation="fade-in" delay={100}>
               <div className="mb-12 flex justify-center">
-                <div className="max-w-3xl w-full">
+                <div className="max-w-4xl w-full">
                   <img 
                     src={liquidLipoInjection} 
                     alt="Liquid Lipo injection treatment procedure - non-surgical fat reduction"
@@ -249,61 +225,62 @@ export default function BodyContouring() {
               </div>
             </AnimatedSection>
 
-            {/* Treatment Cards in 2-Column Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-              {treatments.map((treatment, index) => {
-                const Icon = treatment.icon;
-                
-                return (
-                  <AnimatedSection key={index} animation="scale-in" delay={index * 100}>
-                    <Card className="h-full hover:shadow-lg transition-all duration-300">
-                      <CardContent className="p-8">
-                        {treatment.badge && (
-                          <Badge className="mb-4 bg-vitality-gold text-white">
-                            {treatment.badge}
-                          </Badge>
-                        )}
-                        <div className="flex items-center gap-3 mb-4">
-                          <Icon className="h-10 w-10 text-primary" />
-                          <div>
-                            <h3 className="text-2xl font-serif font-semibold">{treatment.title}</h3>
-                            <p className="text-sm text-primary font-semibold">{treatment.subtitle}</p>
-                          </div>
-                        </div>
-                        <p className="text-muted-foreground leading-relaxed mb-6">
-                          {treatment.description}
-                        </p>
-                        <div className="space-y-2">
-                          {treatment.benefits.map((benefit, i) => (
-                            <div key={i} className="flex items-start gap-2">
-                              <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                              <span className="text-sm text-muted-foreground">{benefit}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  </AnimatedSection>
-                );
-              })}
-            </div>
+            {/* Treatment Card and Results Image Side-by-Side */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {/* Liquid Lipo Treatment Card */}
+              <AnimatedSection animation="scale-in" delay={100}>
+                <Card className="h-full hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-8">
+                    <Badge className="mb-4 bg-vitality-gold text-white">
+                      Most Popular
+                    </Badge>
+                    <div className="flex items-center gap-3 mb-4">
+                      <Droplet className="h-10 w-10 text-primary" />
+                      <div>
+                        <h3 className="text-2xl font-serif font-semibold">Liquid Lipo</h3>
+                        <p className="text-sm text-primary font-semibold">Non-Surgical Injectable Fat Reduction</p>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed mb-6">
+                      Sculpt your body without surgery with Liquid Lipo at Vitality Wellness Clinic FL in Weston, Florida. Using PC/DC (phosphatidylcholine/deoxycholate) injections, Liquid Lipo permanently destroys fat cells for a smoother, more contoured silhouette — all with minimal downtime. This advanced treatment targets stubborn fat that doesn't respond to diet or exercise.
+                    </p>
+                    <div className="space-y-2">
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">Permanently destroys fat cells</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">Targets stubborn resistant fat</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">Non-surgical with minimal downtime</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-muted-foreground">Results visible in weeks</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AnimatedSection>
 
-            {/* Liquid Lipo Results Image - After Treatments */}
-            <AnimatedSection animation="fade-in-up" delay={300}>
-              <div className="flex justify-center">
-                <div className="max-w-3xl w-full">
+              {/* Liquid Lipo Results Image */}
+              <AnimatedSection animation="fade-in-up" delay={200}>
+                <div className="h-full flex items-center">
                   <img 
                     src={liquidLipoResults} 
                     alt="Liquid Lipo treatment results - body contouring before and after"
                     className="w-full h-auto rounded-2xl shadow-xl"
                   />
                 </div>
-              </div>
-            </AnimatedSection>
+              </AnimatedSection>
+            </div>
 
             {/* Call to Action Button */}
-            <AnimatedSection animation="fade-in" delay={400}>
-              <div className="mt-12 text-center">
+            <AnimatedSection animation="fade-in" delay={300}>
+              <div className="text-center">
                 <Button variant="metallic" size="lg" asChild>
                   <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
                     Schedule Your Consultation
