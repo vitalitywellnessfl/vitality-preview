@@ -10,6 +10,7 @@ import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/Glass
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
 import { SocialCTA } from "@/components/SocialCTA";
 import ivGlutaglowHero from "@/assets/iv-glutaglow-hero.jpg";
+import ivReasonsImage from "@/assets/iv-reasons.jpg";
 import { 
   Droplets, 
   Zap, 
@@ -60,9 +61,7 @@ export default function IVTherapy() {
         "Enhances mood and focus"
       ],
       icon: Star,
-      badge: "Most Popular",
-      image: "/placeholder.svg",
-      imageAlt: "Modified Myers Cocktail IV therapy formula"
+      badge: "Most Popular"
     },
     {
       title: "Inner Radiance",
@@ -74,9 +73,7 @@ export default function IVTherapy() {
         "Supports liver detoxification",
         "Enhances skin luminosity"
       ],
-      icon: Sparkles,
-      image: "/placeholder.svg",
-      imageAlt: "Inner Radiance glutathione IV therapy"
+      icon: Sparkles
     },
     {
       title: "Slim Fit IV",
@@ -88,9 +85,7 @@ export default function IVTherapy() {
         "Boosts energy for workouts",
         "Enhances body composition"
       ],
-      icon: Activity,
-      image: "/placeholder.svg",
-      imageAlt: "Slim Fit IV therapy for metabolism support"
+      icon: Activity
     },
     {
       title: "Athlete Performance",
@@ -102,9 +97,7 @@ export default function IVTherapy() {
         "Reduces inflammation",
         "Enhances endurance"
       ],
-      icon: Dumbbell,
-      image: "/placeholder.svg",
-      imageAlt: "Athlete Performance IV for workout recovery"
+      icon: Dumbbell
     },
     {
       title: "High-Dose Vitamin C",
@@ -116,9 +109,7 @@ export default function IVTherapy() {
         "Powerful antioxidant",
         "Reduces illness duration"
       ],
-      icon: Shield,
-      image: "/placeholder.svg",
-      imageAlt: "High-dose Vitamin C IV therapy for immune support"
+      icon: Shield
     },
     {
       title: "Hangover Hydration",
@@ -130,9 +121,7 @@ export default function IVTherapy() {
         "Restores electrolyte balance",
         "Detoxifies and energizes"
       ],
-      icon: Droplets,
-      image: "/placeholder.svg",
-      imageAlt: "Hangover Hydration IV therapy for rapid recovery"
+      icon: Droplets
     }
   ];
 
@@ -289,66 +278,67 @@ export default function IVTherapy() {
               </h2>
             </AnimatedSection>
 
-            <div className="space-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {formulas.map((formula, index) => {
-                const isEven = index % 2 === 0;
                 const Icon = formula.icon;
                 
                 return (
-                  <AnimatedSection key={index} animation="fade-in-up" delay={index * 100}>
-                    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${isEven ? '' : 'lg:grid-flow-dense'}`}>
-                      {/* Image */}
-                      <div className={`${isEven ? '' : 'lg:col-start-2'}`}>
-                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
-                          <img 
-                            src={formula.image} 
-                            alt={formula.imageAlt}
-                            className="w-full h-full object-cover"
-                          />
-                          {/* TODO: Replace with professional images for each formula */}
+                  <AnimatedSection key={index} animation="scale-in" delay={index * 100}>
+                    <Card className="h-full hover:shadow-lg transition-all duration-300">
+                      <CardContent className="p-8">
+                        {formula.badge && (
+                          <Badge className="mb-4 bg-vitality-gold text-white">
+                            {formula.badge}
+                          </Badge>
+                        )}
+                        <div className="flex items-center gap-3 mb-4">
+                          <Icon className="h-10 w-10 text-primary" />
+                          <div>
+                            <h3 className="text-2xl font-serif font-semibold">{formula.title}</h3>
+                            <p className="text-sm text-primary font-semibold">{formula.subtitle}</p>
+                          </div>
                         </div>
-                      </div>
-
-                      {/* Content */}
-                      <div className={`${isEven ? '' : 'lg:col-start-1 lg:row-start-1'}`}>
-                        <Card className="h-full">
-                          <CardContent className="p-8">
-                            {formula.badge && (
-                              <Badge className="mb-4 bg-vitality-gold text-white">
-                                {formula.badge}
-                              </Badge>
-                            )}
-                            <div className="flex items-center gap-3 mb-4">
-                              <Icon className="h-8 w-8 text-primary" />
-                              <div>
-                                <h3 className="text-2xl font-serif font-semibold">{formula.title}</h3>
-                                <p className="text-sm text-primary font-semibold">{formula.subtitle}</p>
-                              </div>
+                        <p className="text-muted-foreground leading-relaxed mb-6">
+                          {formula.description}
+                        </p>
+                        <div className="space-y-2">
+                          {formula.benefits.map((benefit, i) => (
+                            <div key={i} className="flex items-start gap-2">
+                              <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">{benefit}</span>
                             </div>
-                            <p className="text-muted-foreground leading-relaxed mb-6">
-                              {formula.description}
-                            </p>
-                            <div className="space-y-2 mb-6">
-                              {formula.benefits.map((benefit, i) => (
-                                <div key={i} className="flex items-start gap-2">
-                                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                                  <span className="text-sm text-muted-foreground">{benefit}</span>
-                                </div>
-                              ))}
-                            </div>
-                            {index === formulas.length - 1 && (
-                              <Button variant="metallic" size="lg" className="w-full sm:w-auto" asChild>
-                                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Your Formula</a>
-                              </Button>
-                            )}
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
                   </AnimatedSection>
                 );
               })}
             </div>
+
+            {/* 3 Reasons to Try IV Therapy */}
+            <AnimatedSection animation="fade-in-up" delay={300}>
+              <div className="mt-16 flex justify-center">
+                <div className="max-w-2xl w-full">
+                  <img 
+                    src={ivReasonsImage} 
+                    alt="3 Reasons to Try IV Therapy: Increase Hydration, Maximize Focus, Boost Mood and Energy"
+                    className="w-full h-auto rounded-2xl shadow-xl"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Call to Action Button */}
+            <AnimatedSection animation="fade-in" delay={400}>
+              <div className="mt-12 text-center">
+                <Button variant="metallic" size="lg" asChild>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                    Schedule Your IV Session
+                  </a>
+                </Button>
+              </div>
+            </AnimatedSection>
           </div>
         </section>
 
