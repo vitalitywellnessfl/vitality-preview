@@ -8,12 +8,13 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
 import { SocialCTA } from "@/components/SocialCTA";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { 
   Scissors,
   Clock,
   Target,
   Sparkles,
-  Snowflake,
+  Droplet,
   Zap,
   Radio,
   CheckCircle2,
@@ -52,19 +53,19 @@ export default function BodyContouring() {
 
   const treatments = [
     {
-      title: "CoolSculpting",
-      subtitle: "FDA-Cleared Fat Freezing",
-      description: "FDA-cleared fat freezing technology that permanently eliminates fat cells. Ideal for abdomen, flanks, thighs, and chin. Results visible in 4-8 weeks as your body naturally processes frozen fat cells. The most proven non-invasive fat reduction treatment available.",
+      title: "Liquid Lipo",
+      subtitle: "Non-Surgical Injectable Fat Reduction",
+      description: "Sculpt your body without surgery with Liquid Lipo at Vitality Wellness Clinic FL in Weston, Florida. Using PC/DC (phosphatidylcholine/deoxycholate) injections, Liquid Lipo permanently destroys fat cells for a smoother, more contoured silhouette — all with minimal downtime. This advanced treatment targets stubborn fat that doesn't respond to diet or exercise.",
       benefits: [
-        "Permanent fat cell elimination",
-        "No surgery or needles required",
-        "Treats multiple areas",
-        "Results in 4-8 weeks"
+        "Permanently destroys fat cells",
+        "Targets stubborn resistant fat",
+        "Non-surgical with minimal downtime",
+        "Results visible in weeks"
       ],
-      icon: Snowflake,
+      icon: Droplet,
       badge: "Most Popular",
       image: "/placeholder.svg",
-      imageAlt: "CoolSculpting fat freezing body contouring treatment"
+      imageAlt: "Liquid Lipo injectable fat reduction treatment in Weston, Florida"
     },
     {
       title: "RF Skin Tightening",
@@ -357,6 +358,79 @@ export default function BodyContouring() {
                   </div>
                 </CardContent>
               </Card>
+            </AnimatedSection>
+          </div>
+        </section>
+
+        {/* Liquid Lipo FAQ Section */}
+        <section className="py-16 lg:py-24 bg-background">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8">
+            <AnimatedSection animation="fade-in" className="text-center mb-12">
+              <p className="font-script text-primary text-2xl mb-4">Everything You Need to Know</p>
+              <h2 className="text-3xl font-serif font-semibold text-foreground sm:text-4xl mb-6">
+                Liquid Lipo Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Get answers to common questions about this innovative treatment
+              </p>
+            </AnimatedSection>
+
+            <AnimatedSection animation="fade-in-up" delay={200}>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="item-1" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    Is Liquid Lipo the same as liposuction?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    No, Liquid Lipo is a non-surgical injectable treatment that permanently destroys fat cells. Liposuction is a surgical procedure that manually removes fat cells through suction. Liquid Lipo is ideal for smaller, localized areas of fat.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    What is deoxycholic acid, and how does it work?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    Deoxycholic acid is a naturally occurring molecule in the body that helps break down and absorb fat. When used in a cosmetic injectable, it destroys fat cells in the treated area, which are then cleared away by the body over time.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    Is Liquid Lipo a one-time treatment?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    It depends on the amount of fat being treated. While the treated fat cells are destroyed permanently, multiple sessions (typically 3-4) spaced several weeks apart are often needed to achieve the desired level of fat reduction and contouring.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    Will I have loose skin after Liquid Lipo?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    Liquid Lipo is most effective for individuals with good skin elasticity. For those with a significant amount of loose skin in the treatment area, the skin may not retract fully, and other procedures may be recommended to achieve a tighter, smoother result.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    What are some common side effects after the injections?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    The most common side effects are swelling, bruising, and some temporary numbness in the treated area. This is a normal part of the process as the deoxycholic acid works to destroy the fat cells. These effects typically subside over a few weeks.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border rounded-lg px-6 bg-card">
+                  <AccordionTrigger className="text-lg font-semibold hover:no-underline">
+                    How soon can I return to exercise after Liquid Lipo?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                    Most patients can resume normal activities the same day, with light exercise typically acceptable within 24-48 hours. Strenuous exercise should be avoided for about a week to allow proper healing and minimize swelling.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </AnimatedSection>
           </div>
         </section>
