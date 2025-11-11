@@ -22,7 +22,7 @@ import {
   Users,
   MessageCircle
 } from "lucide-react";
-import hrtHeroImage from "@/assets/hrt-hero.jpg";
+import hrtHeroImage from "@/assets/hrt-hero-new.png";
 import hormoneWomenImage from "@/assets/hormone-women.png";
 import hormoneMenImage from "@/assets/hormone-men.png";
 
