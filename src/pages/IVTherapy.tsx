@@ -9,6 +9,7 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/GlassmorphicCard";
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
 import { SocialCTA } from "@/components/SocialCTA";
+import ivGlutaglowHero from "@/assets/iv-glutaglow-hero.jpg";
 import { 
   Droplets, 
   Zap, 
@@ -239,11 +240,10 @@ export default function IVTherapy() {
               <AnimatedSection animation="scale-in" delay={200}>
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
                   <img 
-                    src="/placeholder.svg" 
-                    alt="Relaxing IV therapy session at Vitality Wellness Clinic"
+                    src={ivGlutaglowHero} 
+                    alt="IV Drip for Skin - The GlutaGlow Benefits including luminous skin, liver detoxification, and immunity boost"
                     className="w-full h-full object-cover"
                   />
-                  {/* TODO: Replace with professional image of IV drip in serene setting, close-up of IV bag, or peaceful patient receiving therapy */}
                 </div>
               </AnimatedSection>
             </div>
