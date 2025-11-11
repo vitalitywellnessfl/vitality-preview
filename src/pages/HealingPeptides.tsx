@@ -1,4 +1,8 @@
 import { Navbar } from "@/components/Navbar";
+import peptidesHeroImage from "@/assets/peptides-hero.png";
+import bpc157Image from "@/assets/bpc-157.png";
+import tb500Image from "@/assets/tb-500.png";
+import semaxImage from "@/assets/semax.png";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
@@ -61,7 +65,7 @@ export default function HealingPeptides() {
       ],
       icon: Shield,
       badge: "Most Popular",
-      image: "/placeholder.svg",
+      image: bpc157Image,
       imageAlt: "BPC-157 healing peptide therapy"
     },
     {
@@ -75,7 +79,7 @@ export default function HealingPeptides() {
         "Reduces acute and chronic inflammation"
       ],
       icon: Activity,
-      image: "/placeholder.svg",
+      image: tb500Image,
       imageAlt: "TB-500 recovery peptide therapy"
     },
     {
@@ -89,7 +93,7 @@ export default function HealingPeptides() {
         "Stabilizes mood and reduces anxiety"
       ],
       icon: Brain,
-      image: "/placeholder.svg",
+      image: semaxImage,
       imageAlt: "Semax cognitive enhancement peptide"
     }
   ];
@@ -184,11 +188,10 @@ export default function HealingPeptides() {
               <AnimatedSection animation="scale-in" delay={200}>
                 <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
                   <img 
-                    src="/placeholder.svg" 
+                    src={peptidesHeroImage} 
                     alt="Therapeutic peptide healing therapy at Vitality Wellness Clinic"
                     className="w-full h-full object-cover"
                   />
-                  {/* TODO: Replace with professional image of peptide vials, athlete recovering, or medical/wellness setting */}
                 </div>
               </AnimatedSection>
             </div>
@@ -250,7 +253,6 @@ export default function HealingPeptides() {
                             alt={peptide.imageAlt}
                             className="w-full h-full object-cover"
                           />
-                          {/* TODO: Replace with professional images for each peptide */}
                         </div>
                       </div>
 

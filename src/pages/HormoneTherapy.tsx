@@ -23,6 +23,8 @@ import {
   MessageCircle
 } from "lucide-react";
 import hrtHeroImage from "@/assets/hrt-hero.jpg";
+import hormoneWomenImage from "@/assets/hormone-women.png";
+import hormoneMenImage from "@/assets/hormone-men.png";
 
 export default function HormoneTherapy() {
   const benefits = [
@@ -73,7 +75,7 @@ export default function HormoneTherapy() {
       ],
       icon: Sparkles,
       badge: "Women's Health",
-      image: "/placeholder.svg",
+      image: hormoneWomenImage,
       imageAlt: "Bioidentical hormone therapy for women at Vitality Wellness"
     },
     {
@@ -90,7 +92,7 @@ export default function HormoneTherapy() {
       ],
       icon: TrendingUp,
       badge: "Men's Health",
-      image: "/placeholder.svg",
+      image: hormoneMenImage,
       imageAlt: "Testosterone replacement therapy for men at Vitality Wellness"
     }
   ];
@@ -233,7 +235,6 @@ export default function HormoneTherapy() {
                             alt={treatment.imageAlt}
                             className="w-full h-full object-cover"
                           />
-                          {/* TODO: Replace with professional images for each treatment type */}
                         </div>
                       </div>
 
