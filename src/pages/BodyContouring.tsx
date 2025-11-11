@@ -9,6 +9,8 @@ import { GlassmorphicCard, GlassmorphicCardContent } from "@/components/ui/Glass
 import { ProgressJourney } from "@/components/ui/ProgressJourney";
 import { SocialCTA } from "@/components/SocialCTA";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import liquidLipoInjection from "@/assets/liquid-lipo-injection.jpg";
+import liquidLipoResults from "@/assets/liquid-lipo-results.jpg";
 import { 
   Scissors,
   Clock,
@@ -63,9 +65,7 @@ export default function BodyContouring() {
         "Results visible in weeks"
       ],
       icon: Droplet,
-      badge: "Most Popular",
-      image: "/placeholder.svg",
-      imageAlt: "Liquid Lipo injectable fat reduction treatment in Weston, Florida"
+      badge: "Most Popular"
     },
     {
       title: "RF Skin Tightening",
@@ -77,9 +77,7 @@ export default function BodyContouring() {
         "Face, neck, arms, abdomen",
         "Progressive improvements"
       ],
-      icon: Radio,
-      image: "/placeholder.svg",
-      imageAlt: "Radiofrequency skin tightening treatment"
+      icon: Radio
     },
     {
       title: "Ultrasonic Cavitation",
@@ -91,9 +89,7 @@ export default function BodyContouring() {
         "Immediate inch loss",
         "No surgery or recovery time"
       ],
-      icon: Zap,
-      image: "/placeholder.svg",
-      imageAlt: "Ultrasonic cavitation body contouring treatment"
+      icon: Zap
     }
   ];
 
@@ -174,8 +170,7 @@ export default function BodyContouring() {
         {/* Hero Section */}
         <section className="py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-gray-100 to-slate-100">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Left Column - Content */}
+            <div className="max-w-4xl mx-auto text-center">
               <AnimatedSection animation="fade-in">
                 <Badge variant="outline" className="mb-6 bg-white border-vitality-teal text-vitality-teal">
                   Non-Surgical Body Sculpting
@@ -189,25 +184,13 @@ export default function BodyContouring() {
                 <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
                   Our advanced body contouring technologies offer non-invasive alternatives to surgery. Target stubborn fat deposits, tighten loose skin, and smooth cellulite without downtime or incisions. Achieve your body goals with FDA-cleared treatments that deliver real, visible results.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button variant="metallic" size="lg" asChild>
                     <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Book Consultation</a>
                   </Button>
                   <Button variant="metallic-outline" size="lg" asChild>
                     <a href="#treatments">View Treatments</a>
                   </Button>
-                </div>
-              </AnimatedSection>
-
-              {/* Right Column - Image */}
-              <AnimatedSection animation="scale-in" delay={200}>
-                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-elevated">
-                  <img 
-                    src="/placeholder.svg" 
-                    alt="Body contouring treatment results at Vitality Wellness Clinic"
-                    className="w-full h-full object-cover"
-                  />
-                  {/* TODO: Replace with professional image of body contouring treatment, before/after results, or treatment device in use */}
                 </div>
               </AnimatedSection>
             </div>
@@ -253,66 +236,81 @@ export default function BodyContouring() {
               </h2>
             </AnimatedSection>
 
-            <div className="space-y-16">
+            {/* Liquid Lipo Image - Before Treatments */}
+            <AnimatedSection animation="fade-in" delay={100}>
+              <div className="mb-12 flex justify-center">
+                <div className="max-w-3xl w-full">
+                  <img 
+                    src={liquidLipoInjection} 
+                    alt="Liquid Lipo injection treatment procedure - non-surgical fat reduction"
+                    className="w-full h-auto rounded-2xl shadow-xl"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Treatment Cards in 2-Column Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {treatments.map((treatment, index) => {
-                const isEven = index % 2 === 0;
                 const Icon = treatment.icon;
                 
                 return (
-                  <AnimatedSection key={index} animation="fade-in-up" delay={index * 100}>
-                    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ${isEven ? '' : 'lg:grid-flow-dense'}`}>
-                      {/* Image */}
-                      <div className={`${isEven ? '' : 'lg:col-start-2'}`}>
-                        <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
-                          <img 
-                            src={treatment.image} 
-                            alt={treatment.imageAlt}
-                            className="w-full h-full object-cover"
-                          />
-                          {/* TODO: Replace with professional images for each treatment modality */}
+                  <AnimatedSection key={index} animation="scale-in" delay={index * 100}>
+                    <Card className="h-full hover:shadow-lg transition-all duration-300">
+                      <CardContent className="p-8">
+                        {treatment.badge && (
+                          <Badge className="mb-4 bg-vitality-gold text-white">
+                            {treatment.badge}
+                          </Badge>
+                        )}
+                        <div className="flex items-center gap-3 mb-4">
+                          <Icon className="h-10 w-10 text-primary" />
+                          <div>
+                            <h3 className="text-2xl font-serif font-semibold">{treatment.title}</h3>
+                            <p className="text-sm text-primary font-semibold">{treatment.subtitle}</p>
+                          </div>
                         </div>
-                      </div>
-
-                      {/* Content */}
-                      <div className={`${isEven ? '' : 'lg:col-start-1 lg:row-start-1'}`}>
-                        <Card className="h-full">
-                          <CardContent className="p-8">
-                            {treatment.badge && (
-                              <Badge className="mb-4 bg-vitality-gold text-white">
-                                {treatment.badge}
-                              </Badge>
-                            )}
-                            <div className="flex items-center gap-3 mb-4">
-                              <Icon className="h-8 w-8 text-primary" />
-                              <div>
-                                <h3 className="text-2xl font-serif font-semibold">{treatment.title}</h3>
-                                <p className="text-sm text-primary font-semibold">{treatment.subtitle}</p>
-                              </div>
+                        <p className="text-muted-foreground leading-relaxed mb-6">
+                          {treatment.description}
+                        </p>
+                        <div className="space-y-2">
+                          {treatment.benefits.map((benefit, i) => (
+                            <div key={i} className="flex items-start gap-2">
+                              <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                              <span className="text-sm text-muted-foreground">{benefit}</span>
                             </div>
-                            <p className="text-muted-foreground leading-relaxed mb-6">
-                              {treatment.description}
-                            </p>
-                            <div className="space-y-2 mb-6">
-                              {treatment.benefits.map((benefit, i) => (
-                                <div key={i} className="flex items-start gap-2">
-                                  <CheckCircle2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                                  <span className="text-sm text-muted-foreground">{benefit}</span>
-                                </div>
-                              ))}
-                            </div>
-                            {index === treatments.length - 1 && (
-                              <Button variant="metallic" size="lg" className="w-full sm:w-auto" asChild>
-                                <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
-                              </Button>
-                            )}
-                          </CardContent>
-                        </Card>
-                      </div>
-                    </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
                   </AnimatedSection>
                 );
               })}
             </div>
+
+            {/* Liquid Lipo Results Image - After Treatments */}
+            <AnimatedSection animation="fade-in-up" delay={300}>
+              <div className="flex justify-center">
+                <div className="max-w-3xl w-full">
+                  <img 
+                    src={liquidLipoResults} 
+                    alt="Liquid Lipo treatment results - body contouring before and after"
+                    className="w-full h-auto rounded-2xl shadow-xl"
+                  />
+                </div>
+              </div>
+            </AnimatedSection>
+
+            {/* Call to Action Button */}
+            <AnimatedSection animation="fade-in" delay={400}>
+              <div className="mt-12 text-center">
+                <Button variant="metallic" size="lg" asChild>
+                  <a href="https://wa.me/message/T42QKKUODLMXK1" target="_blank" rel="noopener noreferrer">
+                    Schedule Your Consultation
+                  </a>
+                </Button>
+              </div>
+            </AnimatedSection>
           </div>
         </section>
 
