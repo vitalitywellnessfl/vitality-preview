@@ -4,6 +4,7 @@ import bpc157Image from "@/assets/bpc-157.png";
 import tb500Image from "@/assets/tb-500.png";
 import semaxImage from "@/assets/semax.png";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
@@ -154,6 +155,7 @@ export default function HealingPeptides() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="Healing Peptides" parent={{ name: "Services", path: "/services" }} />
       
       <main className="flex-1">
         {/* Hero Section */}

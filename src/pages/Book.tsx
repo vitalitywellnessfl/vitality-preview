@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SocialCTA } from "@/components/SocialCTA";
@@ -8,6 +9,7 @@ export default function Book() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="Book Consultation" />
       
       <main className="flex-1">
         <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">
