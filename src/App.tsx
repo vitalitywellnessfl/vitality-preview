@@ -18,6 +18,7 @@ import BodyContouring from "./pages/BodyContouring";
 import HormoneTherapy from "./pages/HormoneTherapy";
 import Contact from "./pages/Contact";
 import Book from "./pages/Book";
+import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/body-contouring" element={<BodyContouring />} />
           <Route path="/hormone-therapy" element={<HormoneTherapy />} />
           <Route path="/book" element={<Book />} />
+          <Route path="/privacy" element={<Privacy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
