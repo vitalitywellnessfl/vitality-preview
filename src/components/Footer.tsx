@@ -80,7 +80,6 @@ export const Footer = () => {
               </a>
               <div className="flex gap-6 ml-4">
                 <Link to="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">Privacy Policy</Link>
-                <Link to="/hipaa" className="text-sm text-gray-400 hover:text-white transition-colors">HIPAA</Link>
                 <Link to="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">Terms of Service</Link>
               </div>
             </div>
