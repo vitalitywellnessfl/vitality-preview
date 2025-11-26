@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/ContactForm";
 import { Button } from "@/components/ui/button";
@@ -141,6 +142,7 @@ export default function BodyContouring() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="Body Contouring" parent={{ name: "Services", path: "/services" }} />
       
       <main className="flex-1">
         {/* Hero Section */}

@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Clock } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
@@ -9,6 +10,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="Contact" />
       
       <main className="flex-1">
         <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-vitality-sky/20">

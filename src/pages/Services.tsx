@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -70,6 +71,7 @@ export default function Services() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="Services" />
       
       <main className="flex-1">
         {/* Hero Section */}

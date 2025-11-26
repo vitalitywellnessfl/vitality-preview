@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -106,6 +107,7 @@ export default function NADPlus() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="NAD+ Therapy" parent={{ name: "Services", path: "/services" }} />
       
       <main className="flex-1">
         {/* Hero Section */}

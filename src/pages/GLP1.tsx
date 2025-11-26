@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -45,6 +46,7 @@ export default function WeightLoss() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
+      <PageBreadcrumb currentPage="GLP-1 Weight Loss" parent={{ name: "Services", path: "/services" }} />
       
       <main className="flex-1">
         {/* Hero Section */}
@@ -164,7 +166,7 @@ export default function WeightLoss() {
                 <div className="w-full bg-white p-6 flex items-center justify-center h-64">
                   <img 
                     src={tirzepatideImage} 
-                    alt="Tirzepatide medication" 
+                    alt="Tirzepatide injection vial for GLP-1 weight loss therapy at Vitality Wellness Clinic Weston FL" 
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -194,7 +196,7 @@ export default function WeightLoss() {
                 <div className="w-full bg-white p-6 flex items-center justify-center h-64">
                   <img 
                     src={semaglutideImage} 
-                    alt="Semaglutide medication" 
+                    alt="Semaglutide injection for medical weight loss treatment in Weston Florida" 
                     className="max-w-full max-h-full object-contain"
                   />
                 </div>
@@ -332,7 +334,7 @@ export default function WeightLoss() {
               <div className="flex justify-center">
                 <img 
                   src={microdosingImage}
-                  alt="Microdosing GLP-1 therapy" 
+                  alt="GLP-1 microdosing weight loss therapy - gradual dose approach for reduced side effects" 
                   className="rounded-lg shadow-lg max-w-full h-auto"
                 />
               </div>

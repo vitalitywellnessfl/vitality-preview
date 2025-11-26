@@ -113,7 +113,7 @@ export default function Index() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8 relative">
           <div className="mx-auto max-w-4xl text-center">
               <div className="flex justify-center mb-8">
-                <img src={vitalityLogo} alt="Vitality Wellness FL" className="h-32 sm:h-48 lg:h-64 w-auto drop-shadow-2xl" />
+                <img src={vitalityLogo} alt="Vitality Wellness Clinic logo - medical weight loss and wellness in Weston Florida" className="h-32 sm:h-48 lg:h-64 w-auto drop-shadow-2xl" />
               </div>
               <div className="flex flex-col items-center gap-3 mb-6">
                 <Leaf className="h-10 w-10 text-[#54a0e7]" />
@@ -270,7 +270,7 @@ export default function Index() {
                 <div className="flex flex-col items-center order-2 md:order-1 gap-4">
                   <img 
                     src={drEcheonaHomepage} 
-                    alt="Dr. Xochil Echeona, DNP - Family Nurse Practitioner" 
+                    alt="Dr. Xochil Echeona DNP - Board Certified Family Nurse Practitioner specializing in weight loss and hormone therapy in Weston Florida" 
                     className="rounded-lg shadow-xl w-full max-w-md object-cover"
                   />
                   <Button 

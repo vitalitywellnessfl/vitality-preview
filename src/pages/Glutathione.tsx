@@ -1,6 +1,7 @@
 import glutathioneHero from "@/assets/glutathione-hero.jpg";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import { PageBreadcrumb } from "@/components/PageBreadcrumb";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -101,6 +102,7 @@ export default function Glutathione() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-secondary/10">
       <Navbar />
+      <PageBreadcrumb currentPage="Glutathione" parent={{ name: "Services", path: "/services" }} />
       
       <main className="flex-1">
         {/* Hero Section */}
